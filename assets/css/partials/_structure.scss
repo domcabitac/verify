@@ -1,0 +1,382 @@
+/* ----------------------------------------------------------------------------
+ * Structure
+ * ------------------------------------------------------------------------- */
+
+/* global box-sizing */
+* {
+	font-family: Avenir;
+}
+*:after,
+*:before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: Avenir;
+	src: url("/assets/css/font/AvenirLTStd-Book.otf");
+}
+/* html element 62.5% font-size for REM use i.e. 1rem = 10px*/
+html,
+body {
+	@media screen and (max-width: 992px) {
+		overflow-x: hidden;
+		position: relative;
+		scroll-behavior: smooth !important;
+	}
+}
+html {
+	font-size: 62.5%;
+	height: 100%;
+	min-height: 100%;
+	background: #f9fbfd !important;
+}
+
+body {
+	font: 400 16px/1.6 sans-serif;
+	color: $c2;
+	margin: 0;
+	height: 100%;
+	min-height: 100%;
+	text-align: left;
+	background: $w !important;
+}
+/* clear */
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+
+.clear:after {
+	clear: both;
+}
+
+.clear {
+	*zoom: 1;
+}
+
+a {
+	color: $w;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #444;
+}
+
+a:focus {
+	outline: 0;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+// ol,
+// ul {
+// }
+// select {
+// 	width: 100%;
+// }
+
+nav#desktop {
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	// padding-top: 3rem;
+	margin: 2rem 3rem 3rem;
+	.menu-col {
+		padding-left: 2rem;
+	}
+	.menu {
+		display: flex;
+		align-items: left;
+		background: none;
+		margin-top: 5%;
+		color: $w;
+		font-family: Avenir;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 22px;
+	}
+	img {
+		float: left;
+	}
+	a {
+		list-style: none;
+		text-align: center;
+		padding-left: 0.8rem;
+		padding-right: 0.8rem;
+	}
+	.nav-contact {
+		display: inline-block;
+		font-size: 0.8rem;
+		margin-top: 0.4rem;
+		line-height: 22px;
+		// padding: 0.75rem 2rem;
+		display: inline-block;
+		&.white {
+			background-color: $w;
+			float: left;
+			color: #000;
+			font-family: Avenir;
+			font-weight: 300;
+		}
+	}
+}
+
+nav#mobile {
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 25;
+	padding: 1rem 1rem;
+	background-color: rgba(#000, 0.5);
+	position: absolute;
+	.logo-wrapper {
+		width: 120px;
+		height: auto;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&.open {
+		top: 0px !important;
+	}
+
+	.current-menu-item > a {
+		color: $g;
+	}
+	.sub-menu {
+		li {
+			font-size: 1rem;
+			border: none;
+		}
+	}
+}
+
+#mobile_menu {
+	background-color: rgba(#000, 0.9);
+	color: #fff;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.6rem;
+	overflow-x: hidden;
+	transition: 0.5s;
+	left: 0;
+	top: 0;
+	display: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+	&.open {
+		display: flex;
+	}
+
+	li {
+		padding: 0.5rem 0;
+		width: 100%;
+		float: center;
+		font-size: 1.5rem;
+
+		&.current-menu-item,
+		&.current-menu-parent {
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+		}
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+.hamburger {
+	display: inline-block;
+	cursor: pointer;
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	overflow: visible;
+	z-index: 21;
+	outline: none;
+	padding-right: 0.8rem;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&.is-active {
+		&:hover {
+			opacity: 0.7;
+		}
+
+		.hamburger-inner {
+			background-color: #fff;
+
+			&::before,
+			&::after {
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+.hamburger-box {
+	width: 40px;
+	height: 24px;
+	display: inline-block;
+	position: relative;
+}
+
+.hamburger-inner {
+	display: block;
+	top: 50%;
+	margin-top: -2px;
+	width: 40px;
+	height: 4px;
+	background-color: #fff;
+	position: absolute;
+	transition-property: transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+	border-radius: 42px;
+
+	&::before,
+	&::after {
+		width: 40px;
+		height: 4px;
+		background-color: #fff;
+		position: absolute;
+		transition-property: transform;
+		transition-duration: 0.15s;
+		transition-timing-function: ease;
+		border-radius: 42px;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+	}
+
+	&::before {
+		top: -10px;
+	}
+
+	&::after {
+		bottom: -10px;
+	}
+}
+
+.hamburger--spring {
+	.hamburger-inner {
+		top: 2px;
+		transition: background-color 0s 0.13s linear;
+
+		&::before {
+			top: 10px;
+			transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+				transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		}
+
+		&::after {
+			top: 20px;
+			transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+				transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		}
+	}
+
+	&.is-active .hamburger-inner {
+		transition-delay: 0.22s;
+		background-color: transparent !important;
+
+		&::before {
+			top: 0;
+			transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+				transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+			transform: translate3d(0, 10px, 0) rotate(45deg);
+		}
+
+		&::after {
+			top: 0;
+			transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+				transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+			transform: translate3d(0, 10px, 0) rotate(-45deg);
+		}
+	}
+}
+
+// Subtitle
+.subtitle {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.8rem;
+	font-weight: 900;
+	position: relative;
+}
+
+// Button
+.btn {
+	font-size: 0.8rem;
+	padding: 0.75rem 2rem;
+	border-radius: 42px;
+	transition: 250ms all ease;
+	border: 1px solid transparent;
+	display: inline-block;
+	&.red {
+		background-color: $r;
+		text-align: center;
+		color: $w;
+		width: 250px;
+	}
+
+	&.white {
+		background-color: $w;
+		float: left;
+		color: #000;
+		font-family: Avenir;
+		font-weight: 300;
+	}
+	&.green {
+		background-color: $g;
+		color: #fff;
+		text-align: left;
+		width: 160px;
+	}
+	&.arrow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			margin-left: 2rem;
+		}
+	}
+	@media screen and (max-width: 992px) {
+		padding: 0.75rem 2rem;
+		&.red {
+			font-size: 0.8rem;
+		}
+	}
+}

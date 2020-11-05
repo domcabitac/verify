@@ -1,0 +1,1595 @@
+/**
+ * Base SCSS
+ */
+@font-face {
+	font-family: Avenir;
+	src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
+}
+@font-face {
+	font-family: Avenir;
+	src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
+}
+* {
+	font-family: Avenir;
+}
+
+.wrap {
+	display: table;
+	width: 100%;
+	height: 100%;
+	font-size: 5vh;
+	padding: 3vh;
+	background: $color--primary;
+	color: $w;
+}
+
+.content {
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+	margin: 0 auto;
+	text-align: center;
+
+	h1,
+	p {
+		font-family: Lato;
+		font-weight: 100;
+		@include r(240) {
+			font-weight: 100;
+		}
+		@include r(320) {
+			font-weight: 100;
+		}
+		@include r(480) {
+			font-weight: 100;
+		}
+		@include r(767) {
+			font-weight: 100;
+		}
+		@include r(1024) {
+			font-weight: 100;
+		}
+		@include r(1280) {
+			font-weight: 100;
+		}
+	}
+
+	h1 {
+		text-transform: uppercase;
+		@include r(240) {
+			text-transform: uppercase;
+		}
+		@include r(320) {
+			text-transform: uppercase;
+		}
+		@include r(480) {
+			text-transform: uppercase;
+		}
+		@include r(767) {
+			text-transform: uppercase;
+		}
+		@include r(1024) {
+			text-transform: uppercase;
+		}
+		@include r(1280) {
+			text-transform: uppercase;
+		}
+	}
+}
+@keyframes b {
+	0%,
+	to {
+		transform-origin: center;
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+}
+
+// MASTHEAD -------------------------------------------------------------------------------------------------------------
+#masthead {
+	background-size: cover;
+	position: relative;
+	height: 700px;
+	color: aliceblue;
+	display: flex;
+	align-items: center;
+	padding: 2rem 15% 3rem;
+	font-size: 1rem;
+	text-align: left;
+	.title {
+		color: #ffffff;
+		font-family: Avenir;
+		font-size: 60px;
+		font-weight: 300;
+		line-height: 1.2;
+		text-align: left;
+		padding-bottom: 1rem;
+		// @media screen and (max-width: 991px) {
+		// 	font-size: 20px;
+		// 	font-weight: 400;
+		// 	line-height: 20px;
+		// }
+	}
+	.text .text {
+		padding-top: 2%;
+		// padding-bottom: 20%;
+		line-height: 1.2;
+		width: 60%;
+		font: 18px;
+		padding-bottom: 5%;
+	}
+	.covid_button {
+		position: relative;
+		.white_circle {
+			position: absolute;
+			left: 2.5%;
+			top: 0.5rem;
+			z-index: 1;
+			animation: b 4.5s infinite;
+		}
+		.white_arrow {
+			position: absolute;
+			// right: 60%;
+			padding-left: 3%;
+			top: 1rem;
+			z-index: 1;
+		}
+	}
+	// .picture {
+	// 	display: inline-block;
+	// 	max-width: 1000px;
+	// 	height: 850px;
+	// 	float: right;
+	// 	border-radius: 0 0 0 40px;
+	// 	position: absolute;
+	// 	right: 0;
+	// 	top: 0;
+	// 	object-fit: cover;
+	// 	@media screen and (max-width: 1400px) {
+	// 		max-width: 500px;
+	// 	}
+	// }
+	@media screen and (max-width: 767px) {
+		padding: 2rem 10% 1rem;
+		display: flex;
+		flex-direction: column-reverse;
+		height: 650px;
+		.text {
+			top: 30px;
+			text-align: left;
+			position: relative;
+			font-size: 0.8rem;
+			font-weight: 200;
+			display: inline-block;
+			letter-spacing: 0;
+		}
+		.title {
+			color: #ffffff;
+			font-family: Avenir;
+			text-align: left;
+			font-size: 1.5rem;
+			font-weight: 767;
+			line-height: 1.2;
+			padding-bottom: 2%;
+		}
+		.subtitle {
+			color: #26ac77;
+			font-family: Avenir;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 900;
+			line-height: 1.6;
+			font-size: 0.8rem;
+			font-weight: bold;
+		}
+		.text .text {
+			padding-top: 0;
+			padding-bottom: 20%;
+			line-height: 1.2;
+			top: 15px;
+		}
+		.covid_button {
+			position: relative;
+			.white_circle {
+				position: absolute;
+				left: 4%;
+				top: 0.5rem;
+				z-index: 1;
+				animation: b 4.5s infinite;
+			}
+			.white_arrow {
+				position: absolute;
+				padding-left: 7%;
+				top: 1rem;
+				z-index: 1;
+			}
+			// padding-bottom: 10%;
+		}
+		.picture {
+			display: inline-block;
+			height: 200px;
+			width: 100%;
+			position: relative;
+			border-radius: 8px;
+			margin-top: 1rem;
+		}
+	}
+	// @media screen and (max-width: 991px) {
+	// 	padding: 2rem 25% 1rem;
+	// 	display: flex;
+	// 	flex-direction: column-reverse;
+	// 	height: 700px;
+	// 	.text {
+	// 		top: 30px;
+	// 		text-align: left;
+	// 		position: relative;
+	// 		font-size: 0.8rem;
+	// 		font-weight: 200;
+	// 		display: inline-block;
+	// 		letter-spacing: 0;
+	// 	}
+	// 	.title {
+	// 		color: #ffffff;
+	// 		font-family: Avenir;
+	// 		text-align: left;
+	// 		font-size: 1.5rem;
+	// 		font-weight: 767;
+	// 		line-height: 1.2;
+	// 		padding-bottom: 2%;
+	// 	}
+	// 	.subtitle {
+	// 		color: #26ac77;
+	// 		font-family: Avenir;
+	// 		text-transform: uppercase;
+	// 		letter-spacing: 2px;
+	// 		font-weight: 900;
+	// 		line-height: 1.6;
+	// 		font-size: 0.8rem;
+	// 		font-weight: bold;
+	// 	}
+	// 	.text .text {
+	// 		padding-top: 0;
+	// 		padding-bottom: 20%;
+	// 		line-height: 1.2;
+	// 		top: 15px;
+	// 	}
+	// 	.covid_button {
+	// 		position: relative;
+	// 		justify-content: center;
+	// 		.white_circle {
+	// 			position: absolute;
+	// 			left: 4%;
+	// 			top: 0.5rem;
+	// 			z-index: 1;
+	// 			animation: b 4.5s infinite;
+	// 		}
+	// 		.white_arrow {
+	// 			position: absolute;
+	// 			padding-left: 7%;
+	// 			top: 1rem;
+	// 			z-index: 1;
+	// 		}
+	// 		// padding-bottom: 10%;
+	// 	}
+	// 	.picture {
+	// 		display: inline-block;
+	// 		height: 250px;
+	// 		width: 100%;
+	// 		position: relative;
+	// 		border-radius: 8px;
+	// 		margin-top: 2rem;
+	// 	}
+	// }
+}
+
+// SERVICES -------------------------------------------------------------------------------------------------------------
+#services {
+	padding: 5% 13% 5%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	// overflow: hidden;
+	background-color: $grey;
+	.subtitle {
+		color: #505760;
+		font-family: Avenir;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 3px;
+		line-height: 50px;
+		text-align: center;
+		padding-top: 6%;
+		text-transform: uppercase;
+		// height: 120px;
+	}
+	.title {
+		height: 100px;
+		color: #282b2f;
+		font-family: Avenir;
+		font-size: 45px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 34px;
+		text-align: center;
+	}
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
+		padding: 10%;
+		text-align: center;
+		background-color: #ffffff;
+		border: none;
+		margin: 0.8rem 0 0.8rem;
+		border-radius: 10px;
+		height: 320px;
+	}
+
+	.card-title {
+		// margin: 0 60px 0;
+		text-align: center;
+		color: #161616;
+		font-family: Avenir;
+		font-size: 22px;
+		font-weight: 900;
+		letter-spacing: 0;
+		line-height: 26px;
+	}
+
+	.card-text {
+		width: 100%;
+		color: #505760;
+		font-family: Avenir;
+		font-size: 0.85rem;
+		// line-height: 21px;
+		text-align: center;
+		margin-top: 5%;
+	}
+	.icon {
+		img {
+			width: 10%;
+			padding-bottom: 2rem;
+		}
+		.service_icon {
+			filter: invert(51%) sepia(100%) saturate(282%) hue-rotate(104deg)
+				brightness(88%) contrast(104%);
+		}
+	}
+	.ending {
+		width: 100%;
+		text-align: center;
+		padding-top: 5%;
+	}
+	.ending_text {
+		display: inline-block;
+		color: #191c20;
+		font-family: Avenir;
+		font-size: 20px;
+		font-weight: 500;
+		letter-spacing: 0;
+		text-align: right;
+		padding-right: 3%;
+	}
+	.btn_green {
+		display: inline-block;
+		position: relative;
+		.green_white_arrow {
+			position: absolute;
+			padding-left: 5%;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		padding: 2rem 10% 1rem;
+		.subtitle {
+			font-size: 0.8rem;
+			font-weight: 300;
+			letter-spacing: 3px;
+			line-height: 1.6;
+			text-align: center;
+			padding-top: 10%;
+			text-transform: uppercase;
+			// height: 120px;
+		}
+		.title {
+			height: 50px;
+			font-size: 1.5rem;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 1.2;
+			text-align: center;
+		}
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
+			padding: 7%;
+			text-align: center;
+			background-color: #ffffff;
+			border: none;
+			margin: 0.8rem 0 0.8rem;
+			border-radius: 10px;
+			height: 240px;
+		}
+
+		.card-title {
+			// margin: 0 60px 0;
+			text-align: center;
+			color: #161616;
+			font-family: Avenir;
+			font-size: 1rem;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 1.2;
+		}
+
+		.card-text {
+			width: 100%;
+			color: #505760;
+			font-family: Avenir;
+			font-size: 0.85rem;
+			line-height: 1.6;
+			text-align: center;
+			margin-top: 5%;
+		}
+		.icon {
+			img {
+				width: 7%;
+				padding-bottom: 0.8rem;
+			}
+		}
+	}
+	@media screen and (max-width: 991px) {
+		padding: 1rem 20% 2rem;
+		.subtitle {
+			font-size: 0.8rem;
+			font-weight: 300;
+			letter-spacing: 3px;
+			line-height: 1.6;
+			text-align: center;
+			padding-top: 10%;
+			text-transform: uppercase;
+			// height: 120px;
+		}
+		.title {
+			height: 50px;
+			font-size: 1.5rem;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 1.2;
+			text-align: center;
+		}
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
+			padding: 7%;
+			text-align: center;
+			background-color: #ffffff;
+			border: none;
+			margin: 0.8rem 0 0.8rem;
+			border-radius: 10px;
+			height: 240px;
+		}
+
+		.card-title {
+			// margin: 0 60px 0;
+			text-align: center;
+			color: #161616;
+			font-family: Avenir;
+			font-size: 1rem;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 1.2;
+		}
+
+		.card-text {
+			width: 100%;
+			color: #505760;
+			font-family: Avenir;
+			font-size: 0.85rem;
+			line-height: 1.6;
+			text-align: center;
+			margin-top: 4%;
+		}
+		.icon {
+			img {
+				width: 5%;
+				padding-bottom: 0.8rem;
+			}
+		}
+	}
+}
+
+// VALUES -------------------------------------------------------------------------------------------------------------
+#values {
+	padding: 3% 15% 5%;
+	background: linear-gradient(to bottom, #f9fbfd 50%, #191c20 50%);
+	height: auto;
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
+		margin-top: 5%;
+		padding: 7%;
+		text-align: left;
+		background-image: url("assets/img/val_background.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+		border: none;
+		border-radius: 10px;
+		height: auto;
+		width: 100%;
+		.title {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 45px;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 50px;
+		}
+		.subtitle {
+			color: rgba(217, 224, 239, 0.81);
+			font-family: Avenir;
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 3px;
+			line-height: 19px;
+			text-transform: uppercase;
+		}
+		.icon {
+			img {
+				width: 20%;
+				padding-bottom: 2rem;
+				padding-top: 2rem;
+			}
+		}
+		.values-content {
+			padding-top: 5%;
+		}
+		.value-title {
+			height: 48px;
+			width: 250px;
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 22px;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 24px;
+		}
+
+		.value-text {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 12px;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 21px;
+			margin-top: 0.8rem;
+			text-align: left;
+			margin-right: 4rem;
+		}
+	}
+	.value_quote {
+		text-align: center;
+		margin-top: 10%;
+		.quote {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 40px;
+			font-weight: 500;
+			letter-spacing: 0;
+			line-height: 40px;
+		}
+		.exp {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 31px;
+			padding: 1.2rem 10% 1.2rem;
+		}
+		.author {
+			color: $g;
+			font-family: Avenir;
+			font-size: 16px;
+			font-weight: 500;
+			letter-spacing: 3.43px;
+			line-height: 22px;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		padding: 4rem 10% 4rem;
+		.title {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 1.5rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 1.2;
+		}
+		.subtitle {
+			color: rgba(217, 224, 239, 0.81);
+			font-family: Avenir;
+			font-size: 1rem;
+			font-weight: 500;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+		}
+		.icon {
+			img {
+				width: 12%;
+				padding-bottom: 0.8rem;
+				padding-top: 0.8rem;
+			}
+		}
+		.values-content {
+			padding-top: 1%;
+		}
+		.value-title {
+			height: 30px;
+			width: 280px;
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 1.05rem;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 1.2;
+		}
+
+		.value-text {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 0.85rem;
+			font-weight: 100;
+			letter-spacing: 0;
+			line-height: 1.6;
+			margin-top: 0.1rem;
+			text-align: left;
+			margin-right: 0.1rem;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		padding: 2rem 20% 3rem;
+		.title {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 1.5rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 1.2;
+		}
+		.subtitle {
+			color: rgba(217, 224, 239, 0.81);
+			font-family: Avenir;
+			font-size: 1rem;
+			font-weight: 500;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+		}
+		.icon {
+			img {
+				width: 12%;
+				padding-bottom: 0.8rem;
+				padding-top: 0.8rem;
+			}
+		}
+		.values-content {
+			padding-top: 1%;
+		}
+		.value-title {
+			height: 30px;
+			width: 280px;
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 1.05rem;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 1.2;
+		}
+
+		.value-text {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 0.85rem;
+			font-weight: 100;
+			letter-spacing: 0;
+			line-height: 1.6;
+			margin-top: 0.1rem;
+			text-align: left;
+			margin-right: 0.1rem;
+		}
+	}
+}
+
+// PARTNER PROCESS -------------------------------------------------------------------------------------------------------------
+#partner_process {
+	padding: 5% 13% 5%;
+	position: relative;
+	.progress-container {
+		height: 80%;
+		position: absolute;
+		width: 1px;
+		z-index: 2;
+		background: #d9e0ef;
+		top: 21rem;
+		left: 50%;
+	}
+
+	.progress-bar {
+		width: 1px;
+		background: #26ac77;
+		height: 0%;
+	}
+	.progress-bar:after {
+		content: "";
+		border-radius: 10px;
+		float: left;
+		background: #000;
+		margin-top: -3px;
+		z-index: 2;
+	}
+
+	.progress_circle {
+		height: 40px;
+		width: 40px;
+		left: 30%;
+		top: -8px;
+		position: absolute;
+		z-index: 2;
+		background-repeat: no-repeat;
+	}
+
+	.image {
+		position: relative;
+		img {
+			width: 80%;
+			height: auto;
+			object-fit: cover;
+			box-shadow: 0 12px 24px 0 rgba(23, 25, 30, 0.16);
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-left: 5%;
+		}
+	}
+	.row.right {
+		flex-direction: row-reverse;
+		.image .dots {
+			left: unset;
+			right: -40%;
+		}
+	}
+
+	.icon {
+		img {
+			width: 8%;
+			padding-bottom: 1rem;
+		}
+		.PP_icon {
+			filter: invert(32%) sepia(9%) saturate(613%) hue-rotate(174deg)
+				brightness(95%) contrast(87%);
+		}
+	}
+	.title {
+		color: #161616;
+		font-family: Avenir;
+		font-size: 24px;
+		font-weight: 900;
+		letter-spacing: 0;
+		line-height: 26px;
+		padding-bottom: 2%;
+	}
+	.sub {
+		color: #161616;
+		font-family: Avenir;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 24px;
+	}
+	.text_proc {
+		// padding: 5rem 8rem 5rem;
+		width: 50%;
+		margin: auto;
+		position: relative;
+	}
+	.number {
+		position: absolute;
+		font-size: 17rem;
+		z-index: -1;
+		top: -30%;
+		bottom: 50%;
+		left: 2.5rem;
+		margin: auto;
+		opacity: 0.04;
+		font-family: Avenir Heavy;
+		// left: 50%;
+		// right: 50%;
+	}
+	.row_pp {
+		padding-bottom: 10%;
+	}
+	.pp_sub {
+		color: #505760;
+		font-family: Avenir;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 3px;
+		line-height: 50px;
+		text-align: center;
+		padding-top: 6%;
+		text-transform: uppercase;
+		// height: 120px;
+	}
+	.pp_title {
+		height: 100px;
+		color: #282b2f;
+		font-family: Avenir;
+		font-size: 45px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 34px;
+		text-align: center;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 2rem 10% 1rem;
+		.image {
+			position: relative;
+			img {
+				display: inline-block;
+				height: 200px;
+				width: 100%;
+				position: relative;
+				border-radius: 8px;
+				margin-bottom: 10%;
+				z-index: 2;
+			}
+
+			.dots {
+				position: absolute;
+				background-size: contain;
+				height: 300px;
+				width: 300px;
+				left: -40%;
+				z-index: 1;
+				fill: $r;
+				top: 2rem;
+				opacity: 20%;
+			}
+		}
+		.row.right {
+			flex-direction: row-reverse;
+			.image .dots {
+				left: unset;
+				right: -40%;
+				opacity: 20%;
+			}
+		}
+		.image.one .dots {
+			top: -3rem;
+		}
+		.icon {
+			img {
+				width: 8%;
+				padding-bottom: 1rem;
+			}
+		}
+		.title {
+			color: #161616;
+			font-family: Avenir;
+			font-size: 1.5rem;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 1.6;
+			padding-bottom: 2%;
+		}
+		.sub {
+			color: #161616;
+			font-family: Avenir;
+			font-size: 0.85rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 1.6;
+		}
+		.text_proc {
+			padding: 0;
+			position: relative;
+			.number {
+				position: absolute;
+				font-size: 17rem;
+				z-index: 1;
+				top: -45%;
+				bottom: 50%;
+				left: -1.5rem;
+				margin: auto;
+				opacity: 0.04;
+				font-family: Avenir Heavy;
+				// left: 50%;
+				// right: 50%;
+			}
+		}
+		.row_pp {
+			// padding-bottom: 10%;
+		}
+		.pp_sub {
+			color: #505760;
+			font-family: Avenir;
+			font-size: 1rem;
+			font-weight: 500;
+			letter-spacing: 3px;
+			line-height: 1.6;
+			text-align: center;
+			padding-top: 6%;
+			text-transform: uppercase;
+		}
+		.pp_title {
+			color: #282b2f;
+			font-family: Avenir;
+			font-size: 1.5rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			text-align: center;
+			line-height: 1.6;
+		}
+		.progress-container {
+			display: none;
+		}
+
+		.progress-bar {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		padding: 2rem 20% 1rem;
+		.image {
+			position: relative;
+			img {
+				display: inline-block;
+				height: 300px;
+				width: 100%;
+				position: relative;
+				border-radius: 8px;
+				margin-bottom: 10%;
+				z-index: 2;
+			}
+
+			.dots {
+				position: absolute;
+				background-size: contain;
+				height: 300px;
+				width: 300px;
+				left: -40%;
+				z-index: 1;
+				fill: $r;
+				top: 2rem;
+				opacity: 20%;
+			}
+		}
+		.row.right {
+			flex-direction: row-reverse;
+			.image .dots {
+				left: unset;
+				right: -40%;
+				opacity: 20%;
+			}
+		}
+		.image.one .dots {
+			top: -3rem;
+		}
+		.icon {
+			img {
+				width: 6%;
+				padding-bottom: 1rem;
+			}
+		}
+		.title {
+			color: #161616;
+			font-family: Avenir;
+			font-size: 1.5rem;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 1.6;
+			padding-bottom: 2%;
+		}
+		.sub {
+			color: #161616;
+			font-family: Avenir;
+			font-size: 0.85rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 1.6;
+		}
+		.text_proc {
+			padding: 0;
+			position: relative;
+			.number {
+				position: absolute;
+				font-size: 17rem;
+				z-index: 1;
+				top: -55%;
+				bottom: 50%;
+				left: -1.5rem;
+				margin: auto;
+				opacity: 0.04;
+				font-family: Avenir Heavy;
+				// left: 50%;
+				// right: 50%;
+			}
+		}
+		.row_pp {
+			// padding-bottom: 10%;
+		}
+		.pp_sub {
+			color: #505760;
+			font-family: Avenir;
+			font-size: 1rem;
+			font-weight: 500;
+			letter-spacing: 3px;
+			line-height: 1.6;
+			text-align: center;
+			padding-top: 6%;
+			text-transform: uppercase;
+		}
+		.pp_title {
+			color: #282b2f;
+			font-family: Avenir;
+			font-size: 1.5rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			text-align: center;
+			line-height: 1.6;
+		}
+		.progress-container {
+			display: none;
+		}
+
+		.progress-bar {
+			display: none;
+		}
+	}
+}
+
+// 	COVID RESPONSE -------------------------------------------------------------------------------------------------------------
+#response {
+	background-color: $w;
+	padding: 3% 10% 5%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background: linear-gradient(to bottom, #f9fbfd 50%, #ef6351 50%);
+
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
+		background-color: #191c20;
+		text-align: left;
+		background-size: auto;
+		border: none;
+		border-radius: 10px;
+		width: 100%;
+		display: flex;
+		height: auto;
+		.response-image img {
+			height: 100%;
+			width: 100%;
+			float: left;
+			object-fit: cover;
+			border-radius: 10px 0 0 10px;
+		}
+
+		.text {
+			height: auto;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 5%;
+			.our-covid-19-respons {
+				color: $r;
+				font-family: Avenir;
+				font-size: 14px;
+				font-weight: 500;
+				letter-spacing: 3px;
+				// line-height: 19px;
+				text-transform: uppercase;
+				position: relative;
+				margin-left: 30px;
+				margin-bottom: 5%;
+				.covid_sub {
+					margin-left: 25px;
+				}
+			}
+			.circle {
+				height: 40px;
+				width: 40px;
+				left: -30px;
+				top: -8px;
+				position: absolute;
+				z-index: 1;
+				background-repeat: no-repeat;
+				animation: b 4.5s infinite;
+				// box-shadow: 0 0 0 5px $r;
+			}
+
+			.the-world-is-not-cha {
+				color: #ffffff;
+				font-family: Avenir;
+				font-size: 36px;
+				font-weight: 500;
+				letter-spacing: 0;
+				line-height: 1.6;
+			}
+			.over-the-past-few-de {
+				color: #505760;
+				font-family: Avenir;
+				font-size: 16px;
+				font-weight: 300;
+				letter-spacing: 0;
+				line-height: 24px;
+				// margin-right: 7%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		padding: 2rem 10% 1rem;
+		.response-image {
+			padding: none;
+			img {
+				width: 100%;
+				border-radius: 8px;
+				display: inline-block;
+				height: 200px;
+			}
+		}
+		.our-covid-19-respons {
+			color: $r;
+			font-family: Avenir;
+			font-size: 1rem;
+			font-weight: 500;
+			letter-spacing: 3px;
+			line-height: 1.2;
+			text-transform: uppercase;
+			position: relative;
+			margin-left: 30px;
+			margin-bottom: 5%;
+			margin-top: 10%;
+			.covid_sub {
+				margin-left: 25px;
+			}
+		}
+		// // work in progress
+		.response_line {
+			background: #fff;
+			&::before {
+				content: "";
+				width: 100%;
+				border-bottom: solid 1px $r;
+				position: absolute;
+				left: -105%;
+				float: left;
+				z-index: 1;
+				top: 50%;
+				bottom: 50%;
+				margin: auto;
+			}
+		}
+		.circle {
+			height: 40px;
+			width: 40px;
+			left: -30px;
+			top: 0px;
+			position: absolute;
+			z-index: 1;
+			background-repeat: no-repeat;
+			animation: b 4.5s infinite;
+			// box-shadow: 0 0 0 5px $r;
+		}
+
+		.the-world-is-not-cha {
+			color: #161616;
+			font-family: Avenir;
+			font-size: 1.5rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 41px;
+			margin-bottom: 5%;
+		}
+		.over-the-past-few-de {
+			color: #505760;
+			font-family: Avenir;
+			font-size: 0.85rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 24px;
+			margin-right: 7%;
+			padding-bottom: 5%;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		padding: 2rem 20% 1rem;
+		.response-image {
+			padding: none;
+			img {
+				width: 100%;
+				border-radius: 8px;
+				display: inline-block;
+				height: auto;
+			}
+		}
+		.our-covid-19-respons {
+			color: $r;
+			font-family: Avenir;
+			font-size: 1rem;
+			font-weight: 500;
+			letter-spacing: 3px;
+			line-height: 1.2;
+			text-transform: uppercase;
+			position: relative;
+			margin-left: 30px;
+			margin-bottom: 5%;
+			margin-top: 10%;
+			.covid_sub {
+				margin-left: 25px;
+			}
+		}
+		// // work in progress
+		.response_line {
+			background: #fff;
+			&::before {
+				content: "";
+				width: 100%;
+				border-bottom: solid 1px $r;
+				position: absolute;
+				left: -103%;
+				float: left;
+				z-index: 1;
+				top: 40%;
+				bottom: 50%;
+				margin: auto;
+			}
+		}
+		.circle {
+			height: 40px;
+			width: 40px;
+			left: -30px;
+			top: -10px;
+			position: absolute;
+			z-index: 1;
+			background-repeat: no-repeat;
+			animation: b 4.5s infinite;
+			// box-shadow: 0 0 0 5px $r;
+		}
+
+		.the-world-is-not-cha {
+			color: #161616;
+			font-family: Avenir;
+			font-size: 1.5rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 41px;
+			margin-bottom: 5%;
+		}
+		.over-the-past-few-de {
+			color: #505760;
+			font-family: Avenir;
+			font-size: 0.85rem;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 24px;
+			margin-right: 7%;
+			padding-bottom: 5%;
+		}
+	}
+}
+
+// CONTACT -------------------------------------------------------------------------------------------------------------
+#contact {
+	background-color: $form;
+	// display: flex;
+	padding: 5% 13% 5%;
+	.subtitles {
+		color: #26ac77;
+		font-family: Avenir;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 0.8rem;
+		font-weight: 900;
+		padding-bottom: 1rem;
+	}
+	.as-canadas-fastest {
+		color: #ffffff;
+		font-family: Avenir;
+		font-size: 45px;
+		font-weight: 300;
+		line-height: 50px;
+		text-align: left;
+		padding-bottom: 1rem;
+		@media screen and (max-width: 991px) {
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 20px;
+		}
+	}
+	.get-in-touch {
+		height: 80px;
+		width: 410px;
+		color: #ffffff;
+		font-family: Avenir;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 20px;
+	}
+	.phone {
+		color: #ffffff;
+		font-family: Avenir;
+		font-size: 24px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 34px;
+		img {
+			padding-right: 5%;
+		}
+		padding-top: 3rem;
+		padding-bottom: 0.8rem;
+	}
+	.location {
+		color: #ffffff;
+		font-family: Avenir;
+		font-size: 24px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 30px;
+		img {
+			padding-right: 5%;
+			display: inline-block;
+			padding-bottom: 5%;
+		}
+		.text {
+			display: inline-block;
+		}
+	}
+	.form {
+		text-transform: uppercase;
+		color: $w;
+		input[type="text"],
+		input[type="email"] {
+			padding: 0.5rem 0 0.5rem;
+			width: 100%;
+			border-bottom: 2px solid $w;
+			outline: none;
+		}
+		::-webkit-input-placeholder {
+			opacity: 0.42;
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 14px;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 19px;
+		}
+		textarea {
+			// height: 15%;
+			padding: 0.5rem 0 0.5rem;
+			border-bottom: 2px solid $w;
+			outline: none;
+			width: 100%;
+		}
+		.wpcf7-form textarea {
+			width: 100% !important;
+			height: 50px;
+		}
+		.wpcf7-submit {
+			margin-top: 15%;
+		}
+		#f-name {
+			margin-bottom: 20%;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		padding: 2rem 10% 1rem;
+		.subtitles {
+			font-size: 0.8rem;
+			font-weight: 900;
+			padding-bottom: 0.1rem;
+		}
+		.as-canadas-fastest {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 1.3rem;
+			font-weight: 300;
+			line-height: 1.2;
+			text-align: left;
+			padding-bottom: 1rem;
+		}
+		.get-in-touch {
+			width: 100%;
+			font-size: 0.85rem;
+			font-weight: 300;
+			line-height: 1.2;
+		}
+		.phone {
+			font-size: 1rem;
+			line-height: 1.2;
+			img {
+				padding-right: 5%;
+			}
+			padding-bottom: 0.8rem;
+		}
+		.location {
+			font-size: 1rem;
+			line-height: 1.2;
+			img {
+				padding-right: 5%;
+				display: inline-block;
+				padding-bottom: 8%;
+				padding-top: 0;
+			}
+			.text {
+				display: inline-block;
+			}
+		}
+		.form {
+			text-transform: uppercase;
+			padding-top: 10%;
+			color: $w;
+			input[type="text"],
+			input[type="email"] {
+				padding: 0.5rem 0 0.5rem;
+				width: 100%;
+				border-bottom: 2px solid $w;
+				outline: none;
+			}
+			::-webkit-input-placeholder {
+				opacity: 0.42;
+				color: #ffffff;
+				font-family: Avenir;
+				font-size: 14px;
+				font-weight: 300;
+				letter-spacing: 0;
+				line-height: 20px;
+			}
+			textarea {
+				// height: 12%;
+				padding: 0.5rem 0 0;
+				border-bottom: 2px solid $w;
+				outline: none;
+				width: 100%;
+				overflow: hidden;
+			}
+
+			#f-name,
+			#email {
+				margin-bottom: 5%;
+			}
+			.wpcf7-submit {
+				top: -40%;
+			}
+		}
+	}
+	@media screen and (max-width: 991px) {
+		padding: 2rem 20% 1rem;
+		.subtitles {
+			font-size: 0.8rem;
+			font-weight: 900;
+			padding-bottom: 0.1rem;
+		}
+		.as-canadas-fastest {
+			color: #ffffff;
+			font-family: Avenir;
+			font-size: 1.3rem;
+			font-weight: 300;
+			line-height: 1.2;
+			text-align: left;
+			padding-bottom: 1rem;
+		}
+		.get-in-touch {
+			width: 100%;
+			font-size: 0.85rem;
+			font-weight: 300;
+			line-height: 1.2;
+		}
+		.phone {
+			font-size: 1rem;
+			line-height: 1.2;
+			padding-top: 0px;
+			img {
+				padding-right: 5%;
+			}
+			// padding-bottom: 0.8rem;
+		}
+		.location {
+			font-size: 1rem;
+			line-height: 1.5;
+			img {
+				padding-right: 5%;
+				display: inline-block;
+				padding-bottom: 8%;
+				padding-top: 0px;
+			}
+			.text {
+				display: inline-block;
+			}
+		}
+		.form {
+			text-transform: uppercase;
+			color: $w;
+			input[type="text"],
+			input[type="email"] {
+				padding: 0.5rem 0 0.5rem;
+				width: 100%;
+				border-bottom: 2px solid $w;
+				outline: none;
+			}
+			::-webkit-input-placeholder {
+				opacity: 0.42;
+				color: #ffffff;
+				font-family: Avenir;
+				font-size: 14px;
+				font-weight: 300;
+				letter-spacing: 0;
+				line-height: 20px;
+			}
+			textarea {
+				// height: 12%;
+				padding: 0.5rem 0 0;
+				border-bottom: 2px solid $w;
+				outline: none;
+				width: 100%;
+				overflow: hidden;
+			}
+
+			#f-name,
+			#email {
+				margin-bottom: 5%;
+			}
+			.wpcf7-submit {
+				top: -40%;
+			}
+		}
+	}
+}
+
+// scrolling-section {
+// 	position: relative;
+// 	height: 400px;
+// 	width: 100%;
+// 	overflow-y: hidden;
+// }
+// #scrollbar {
+// 	width: 2px;
+// 	height: 100%;
+// 	padding: 0;
+// 	margin: 0 auto;
+// 	left: 0;
+// 	right: 0;
+// 	top: 0;
+// 	position: absolute;
+// 	visibility: visible;
+// 	background-color: #ddd;
+// 	z-index: 2;
+// }
+// #scrollbar #bar {
+// 	width: inherit;
+// 	height: 0%;
+// 	background-color: green;
+// 	z-index: 2;
+// 	position: relative;
+// 	&:after {
+// 		content: "";
+// 		display: inline-block;
+// 		position: absolute;
+// 		width: 18px;
+// 		height: 18px;
+// 		border-radius: 2rem;
+// 		background-color: #226ce0;
+// 		bottom: 0;
+// 		left: 0;
+// 		right: 0;
+// 		margin: 0 auto;
+// 		z-index: 4;
+// 	}
+// }
+// .indicator {
+// 	svg {
+// 		height: 20px;
+// 		width: 20px;
+// 	}
+// }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Approach---Wide" transform="translate(-292.000000, -628.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-15" transform="translate(273.000000, 612.000000)">
+                <path d="M35,16 C43.836556,16 51,23.163444 51,32 C51,40.836556 43.836556,48 35,48 C26.163444,48 19,40.836556 19,32 C19,23.163444 26.163444,16 35,16 Z M35,17 C26.7157288,17 20,23.7157288 20,32 C20,40.2842712 26.7157288,47 35,47 C43.2842712,47 50,40.2842712 50,32 C50,23.7157288 43.2842712,17 35,17 Z M35,25 C38.8659932,25 42,28.1340068 42,32 C42,35.8659932 38.8659932,39 35,39 C31.1340068,39 28,35.8659932 28,32 C28,28.1340068 31.1340068,25 35,25 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
