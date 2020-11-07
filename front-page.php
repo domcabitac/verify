@@ -11,10 +11,10 @@
 get_header(); ?>
 <?php if ( have_rows( 'masthead' ) ) : ?>
 	<?php while ( have_rows( 'masthead' ) ) : the_row(); ?>
-	<section id="masthead" style="background: linear-gradient(270deg, rgba(25, 28, 32, 0) 0%, #191c20 100%), url(<?php the_sub_field('background');?>);">
+	<section id="masthead" style="background: linear-gradient(270deg, rgba(25, 28, 32, 0) 0%, #191C20 100%), url(<?php the_sub_field('background');?>);">
 	<div class='container'>
 		<div class="row">
-			<div class="col-12 col-lg-12 col-xl-9">
+			<div class="col-12 col-lg-12 col-xl-9 col-md-10">
 			<?php the_sub_field( 'logo' ); ?>
 				<div class="text">
 					<!-- <div class='subtitle'>
@@ -47,7 +47,7 @@ get_header(); ?>
 
 <?php if ( have_rows( 'services' ) ) : ?>
 	<?php while ( have_rows( 'services' ) ) : the_row(); ?>
-	<section id="services" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/serv_background.svg')">
+	<section id="services" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/service_background3.png')">
 		<div class='container'>
 			<div class='row'>
 				<div class="col-12 text-center">
@@ -62,7 +62,7 @@ get_header(); ?>
 			<div class='row'>
 				<?php if ( have_rows( 'blocks' ) ) : ?>
 					<?php while ( have_rows( 'blocks' ) ) : the_row(); ?>
-						<div class="col-12 col-lg-6 col-xl-4">
+						<div class="col-12 col-lg-6 col-xl-4 col-md-6">
 							<div class="card">
 								<div class="icon">
 								<?php if ( get_sub_field( 'icon' ) ) : ?>
@@ -103,7 +103,7 @@ get_header(); ?>
 
 <?php if ( have_rows( 'values' ) ) : ?>
 	<?php while ( have_rows( 'values' ) ) : the_row(); ?>
-	<section id="values">
+	<section id="values" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/values_background.svg')">
 		<div class='container card'>
 			<div class="row">
 				<div class="col-12 text-left">
@@ -118,7 +118,7 @@ get_header(); ?>
 			<div class="row">
 				<?php if ( have_rows( 'blocks' ) ) : ?>
 				<?php while ( have_rows( 'blocks' ) ) : the_row(); ?>
-					<div class="col-12 col-lg-6 col-xl-4">
+					<div class="col-12 col-lg-6 col-xl-4 col-md-6">
 						<div class="values-content">
 							<div class="icon">
 								<?php $image = get_sub_field( 'image' ); ?>
@@ -164,7 +164,7 @@ get_header(); ?>
 
 <?php if ( have_rows( 'partner_process' ) ) : ?>
 	<?php while ( have_rows( 'partner_process' ) ) : the_row(); ?>
-	<section id="partner_process">
+	<section id="partner_process" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/pp_background.svg')">
 	<div class='container'>
 			<div class="row">
 				<div class="col-12 text-center">
@@ -184,7 +184,7 @@ get_header(); ?>
 					<?php $i=0; ?> 
 				<?php while ( have_rows( 'steps' ) ) : the_row(); $i++; ?>
 				<div class="row justify-content-center row_pp <?php the_sub_field( 'image_position' ); ?>">
-					<div class="col-12 col-lg-4 col-xl-6 image <?php if ($i==1): echo 'one'; endif; ?>" >
+					<div class="col-12 col-lg-6 col-xl-6 image <?php if ($i==1): echo 'one'; endif; ?>" >
 						<?php if(get_sub_field('image_position') === 'left'):?>
 							<div class="dots" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dots-red.svg')"></div>
 						<?php else: ?>
@@ -237,10 +237,10 @@ get_header(); ?>
 
 <?php if ( have_rows( 'response' ) ) : ?>
 	<?php while ( have_rows( 'response' ) ) : the_row(); ?>
-	<section id="response">
+	<section id="response"style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/covid_background.svg')">
 		<div class="container-fluid">
 			<div class="row justify-content-center ">
-			<!-- <div class="col-12 col-lg-5 image">
+			<!-- <div class="col-12 col-lg-5 col-md-4 image">
 					<div class="response-image">
 						<?php $image = get_sub_field( 'image' ); ?>
 						<?php if ( $image ) : ?>
@@ -288,6 +288,10 @@ get_header(); ?>
 					</div>
 					</div>
 					</div>
+					<!-- <?php $background = get_sub_field( 'background' ); ?>
+		<?php if ( $background ) : ?>
+			<img src="<?php echo esc_url( $background['url'] ); ?>" alt="<?php echo esc_attr( $background['alt'] ); ?>" />
+		<?php endif; ?> -->
 				</div>
 		</div>
 		</section>
@@ -299,7 +303,7 @@ get_header(); ?>
 	<section id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6 col-md-6">
 						<div class="text">
 							<div class='subtitles'>
 								CONTACT
@@ -322,7 +326,7 @@ get_header(); ?>
 							</div>
 							</div>
 					</div>
-				<div class="col-12 col-lg-5 form">
+				<div class="col-12 col-lg-6 col-md-6 form">
 					<?php echo do_shortcode(get_sub_field( 'form_short_code' )); ?>
 				</div>
 			</div>

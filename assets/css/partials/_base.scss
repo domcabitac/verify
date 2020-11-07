@@ -98,6 +98,7 @@
 	padding: 2rem 15% 3rem;
 	font-size: 1rem;
 	text-align: left;
+
 	.title {
 		color: #ffffff;
 		font-family: Avenir;
@@ -286,7 +287,7 @@
 
 // SERVICES -------------------------------------------------------------------------------------------------------------
 #services {
-	padding: 5% 13% 5%;
+	padding: 5% 13% 1%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -347,7 +348,7 @@
 	}
 	.icon {
 		img {
-			width: 10%;
+			width: 9%;
 			padding-bottom: 2rem;
 		}
 		.service_icon {
@@ -498,13 +499,16 @@
 
 // VALUES -------------------------------------------------------------------------------------------------------------
 #values {
-	padding: 3% 15% 5%;
-	background: linear-gradient(to bottom, #f9fbfd 50%, #191c20 50%);
+	padding: 3% 10% 5%;
+	background: url("assets/img/values_background.svg") #f8fbfd repeat-x;
+	background-position: bottom, top;
+	width: 100%;
 	height: auto;
+	background-size: 80%;
 	.card {
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
-		margin-top: 5%;
-		padding: 7%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+		// margin-top: 0%;
+		padding: 3% 7%;
 		text-align: left;
 		background-image: url("assets/img/val_background.png");
 		background-position: center;
@@ -512,6 +516,8 @@
 		background-size: auto;
 		border: none;
 		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
 		height: auto;
 		width: 100%;
 		.title {
@@ -594,114 +600,117 @@
 			text-align: center;
 		}
 	}
-	@media screen and (max-width: 767px) {
-		padding: 4rem 10% 4rem;
-		.title {
-			color: #ffffff;
-			font-family: Avenir;
-			font-size: 1.5rem;
-			font-weight: 300;
-			letter-spacing: 0;
-			line-height: 1.2;
-		}
-		.subtitle {
-			color: rgba(217, 224, 239, 0.81);
-			font-family: Avenir;
-			font-size: 1rem;
-			font-weight: 500;
-			letter-spacing: 3px;
-			text-transform: uppercase;
-		}
-		.icon {
-			img {
-				width: 12%;
-				padding-bottom: 0.8rem;
-				padding-top: 0.8rem;
-			}
-		}
-		.values-content {
-			padding-top: 1%;
-		}
-		.value-title {
-			height: 30px;
-			width: 280px;
-			color: #ffffff;
-			font-family: Avenir;
-			font-size: 1.05rem;
-			font-weight: 900;
-			letter-spacing: 0;
-			line-height: 1.2;
-		}
+	// @media screen and (max-width: 767px) {
+	// 	padding: 4rem 10% 4rem;
+	// 	.title {
+	// 		color: #ffffff;
+	// 		font-family: Avenir;
+	// 		font-size: 1.5rem;
+	// 		font-weight: 300;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.2;
+	// 	}
+	// 	.subtitle {
+	// 		color: rgba(217, 224, 239, 0.81);
+	// 		font-family: Avenir;
+	// 		font-size: 1rem;
+	// 		font-weight: 500;
+	// 		letter-spacing: 3px;
+	// 		text-transform: uppercase;
+	// 	}
+	// 	.icon {
+	// 		img {
+	// 			width: 12%;
+	// 			padding-bottom: 0.8rem;
+	// 			padding-top: 0.8rem;
+	// 		}
+	// 	}
+	// 	.values-content {
+	// 		padding-top: 1%;
+	// 	}
+	// 	.value-title {
+	// 		height: 30px;
+	// 		width: 280px;
+	// 		color: #ffffff;
+	// 		font-family: Avenir;
+	// 		font-size: 1.05rem;
+	// 		font-weight: 900;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.2;
+	// 	}
 
-		.value-text {
-			color: #ffffff;
-			font-family: Avenir;
-			font-size: 0.85rem;
-			font-weight: 100;
-			letter-spacing: 0;
-			line-height: 1.6;
-			margin-top: 0.1rem;
-			text-align: left;
-			margin-right: 0.1rem;
-		}
-	}
-	@media screen and (max-width: 991px) {
-		padding: 2rem 20% 3rem;
-		.title {
-			color: #ffffff;
-			font-family: Avenir;
-			font-size: 1.5rem;
-			font-weight: 300;
-			letter-spacing: 0;
-			line-height: 1.2;
-		}
-		.subtitle {
-			color: rgba(217, 224, 239, 0.81);
-			font-family: Avenir;
-			font-size: 1rem;
-			font-weight: 500;
-			letter-spacing: 3px;
-			text-transform: uppercase;
-		}
-		.icon {
-			img {
-				width: 12%;
-				padding-bottom: 0.8rem;
-				padding-top: 0.8rem;
-			}
-		}
-		.values-content {
-			padding-top: 1%;
-		}
-		.value-title {
-			height: 30px;
-			width: 280px;
-			color: #ffffff;
-			font-family: Avenir;
-			font-size: 1.05rem;
-			font-weight: 900;
-			letter-spacing: 0;
-			line-height: 1.2;
-		}
+	// 	.value-text {
+	// 		color: #ffffff;
+	// 		font-family: Avenir;
+	// 		font-size: 0.85rem;
+	// 		font-weight: 100;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.6;
+	// 		margin-top: 0.1rem;
+	// 		text-align: left;
+	// 		margin-right: 0.1rem;
+	// 	}
+	// }
+	// @media screen and (max-width: 991px) {
+	// 	padding: 2rem 20% 3rem;
+	// 	.title {
+	// 		color: #ffffff;
+	// 		font-family: Avenir;
+	// 		font-size: 1.5rem;
+	// 		font-weight: 300;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.2;
+	// 	}
+	// 	.subtitle {
+	// 		color: rgba(217, 224, 239, 0.81);
+	// 		font-family: Avenir;
+	// 		font-size: 1rem;
+	// 		font-weight: 500;
+	// 		letter-spacing: 3px;
+	// 		text-transform: uppercase;
+	// 	}
+	// 	.icon {
+	// 		img {
+	// 			width: 12%;
+	// 			padding-bottom: 0.8rem;
+	// 			padding-top: 0.8rem;
+	// 		}
+	// 	}
+	// 	.values-content {
+	// 		padding-top: 1%;
+	// 	}
+	// 	.value-title {
+	// 		height: 30px;
+	// 		width: 280px;
+	// 		color: #ffffff;
+	// 		font-family: Avenir;
+	// 		font-size: 1.05rem;
+	// 		font-weight: 900;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.2;
+	// 	}
 
-		.value-text {
-			color: #ffffff;
-			font-family: Avenir;
-			font-size: 0.85rem;
-			font-weight: 100;
-			letter-spacing: 0;
-			line-height: 1.6;
-			margin-top: 0.1rem;
-			text-align: left;
-			margin-right: 0.1rem;
-		}
-	}
+	// 	.value-text {
+	// 		color: #ffffff;
+	// 		font-family: Avenir;
+	// 		font-size: 0.85rem;
+	// 		font-weight: 100;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.6;
+	// 		margin-top: 0.1rem;
+	// 		text-align: left;
+	// 		margin-right: 0.1rem;
+	// 	}
+	// }
 }
 
 // PARTNER PROCESS -------------------------------------------------------------------------------------------------------------
 #partner_process {
-	padding: 5% 13% 5%;
+	padding: 5% 13% 0%;
 	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	.progress-container {
 		height: 80%;
 		position: absolute;
@@ -787,8 +796,8 @@
 	}
 	.text_proc {
 		// padding: 5rem 8rem 5rem;
-		width: 50%;
-		margin: auto;
+		width: 70%;
+		margin: auto 20%;
 		position: relative;
 	}
 	.number {
@@ -829,233 +838,234 @@
 		line-height: 34px;
 		text-align: center;
 	}
-	@media screen and (max-width: 767px) {
-		padding: 2rem 10% 1rem;
-		.image {
-			position: relative;
-			img {
-				display: inline-block;
-				height: 200px;
-				width: 100%;
-				position: relative;
-				border-radius: 8px;
-				margin-bottom: 10%;
-				z-index: 2;
-			}
+	// @media screen and (max-width: 767px) {
+	// 	padding: 2rem 10% 1rem;
+	// 	.image {
+	// 		position: relative;
+	// 		img {
+	// 			display: inline-block;
+	// 			height: 200px;
+	// 			width: 100%;
+	// 			position: relative;
+	// 			border-radius: 8px;
+	// 			margin-bottom: 10%;
+	// 			z-index: 2;
+	// 		}
 
-			.dots {
-				position: absolute;
-				background-size: contain;
-				height: 300px;
-				width: 300px;
-				left: -40%;
-				z-index: 1;
-				fill: $r;
-				top: 2rem;
-				opacity: 20%;
-			}
-		}
-		.row.right {
-			flex-direction: row-reverse;
-			.image .dots {
-				left: unset;
-				right: -40%;
-				opacity: 20%;
-			}
-		}
-		.image.one .dots {
-			top: -3rem;
-		}
-		.icon {
-			img {
-				width: 8%;
-				padding-bottom: 1rem;
-			}
-		}
-		.title {
-			color: #161616;
-			font-family: Avenir;
-			font-size: 1.5rem;
-			font-weight: 900;
-			letter-spacing: 0;
-			line-height: 1.6;
-			padding-bottom: 2%;
-		}
-		.sub {
-			color: #161616;
-			font-family: Avenir;
-			font-size: 0.85rem;
-			font-weight: 300;
-			letter-spacing: 0;
-			line-height: 1.6;
-		}
-		.text_proc {
-			padding: 0;
-			position: relative;
-			.number {
-				position: absolute;
-				font-size: 17rem;
-				z-index: 1;
-				top: -45%;
-				bottom: 50%;
-				left: -1.5rem;
-				margin: auto;
-				opacity: 0.04;
-				font-family: Avenir Heavy;
-				// left: 50%;
-				// right: 50%;
-			}
-		}
-		.row_pp {
-			// padding-bottom: 10%;
-		}
-		.pp_sub {
-			color: #505760;
-			font-family: Avenir;
-			font-size: 1rem;
-			font-weight: 500;
-			letter-spacing: 3px;
-			line-height: 1.6;
-			text-align: center;
-			padding-top: 6%;
-			text-transform: uppercase;
-		}
-		.pp_title {
-			color: #282b2f;
-			font-family: Avenir;
-			font-size: 1.5rem;
-			font-weight: 300;
-			letter-spacing: 0;
-			text-align: center;
-			line-height: 1.6;
-		}
-		.progress-container {
-			display: none;
-		}
+	// 		.dots {
+	// 			position: absolute;
+	// 			background-size: contain;
+	// 			height: 300px;
+	// 			width: 300px;
+	// 			left: -40%;
+	// 			z-index: 1;
+	// 			fill: $r;
+	// 			top: 2rem;
+	// 			opacity: 20%;
+	// 		}
+	// 	}
+	// 	.row.right {
+	// 		flex-direction: row-reverse;
+	// 		.image .dots {
+	// 			left: unset;
+	// 			right: -40%;
+	// 			opacity: 20%;
+	// 		}
+	// 	}
+	// 	.image.one .dots {
+	// 		top: -3rem;
+	// 	}
+	// 	.icon {
+	// 		img {
+	// 			width: 8%;
+	// 			padding-bottom: 1rem;
+	// 		}
+	// 	}
+	// 	.title {
+	// 		color: #161616;
+	// 		font-family: Avenir;
+	// 		font-size: 1.5rem;
+	// 		font-weight: 900;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.6;
+	// 		padding-bottom: 2%;
+	// 	}
+	// 	.sub {
+	// 		color: #161616;
+	// 		font-family: Avenir;
+	// 		font-size: 0.85rem;
+	// 		font-weight: 300;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.6;
+	// 	}
+	// 	.text_proc {
+	// 		padding: 0;
+	// 		position: relative;
+	// 		.number {
+	// 			position: absolute;
+	// 			font-size: 17rem;
+	// 			z-index: 1;
+	// 			top: -45%;
+	// 			bottom: 50%;
+	// 			left: -1.5rem;
+	// 			margin: auto;
+	// 			opacity: 0.04;
+	// 			font-family: Avenir Heavy;
+	// 			// left: 50%;
+	// 			// right: 50%;
+	// 		}
+	// 	}
+	// 	.row_pp {
+	// 		// padding-bottom: 10%;
+	// 	}
+	// 	.pp_sub {
+	// 		color: #505760;
+	// 		font-family: Avenir;
+	// 		font-size: 1rem;
+	// 		font-weight: 500;
+	// 		letter-spacing: 3px;
+	// 		line-height: 1.6;
+	// 		text-align: center;
+	// 		padding-top: 6%;
+	// 		text-transform: uppercase;
+	// 	}
+	// 	.pp_title {
+	// 		color: #282b2f;
+	// 		font-family: Avenir;
+	// 		font-size: 1.5rem;
+	// 		font-weight: 300;
+	// 		letter-spacing: 0;
+	// 		text-align: center;
+	// 		line-height: 1.6;
+	// 	}
+	// 	.progress-container {
+	// 		display: none;
+	// 	}
 
-		.progress-bar {
-			display: none;
-		}
-	}
-	@media screen and (max-width: 991px) {
-		padding: 2rem 20% 1rem;
-		.image {
-			position: relative;
-			img {
-				display: inline-block;
-				height: 300px;
-				width: 100%;
-				position: relative;
-				border-radius: 8px;
-				margin-bottom: 10%;
-				z-index: 2;
-			}
+	// 	.progress-bar {
+	// 		display: none;
+	// 	}
+	// }
+	// @media screen and (max-width: 991px) {
+	// 	padding: 2rem 20% 1rem;
+	// 	.image {
+	// 		position: relative;
+	// 		img {
+	// 			display: inline-block;
+	// 			height: 300px;
+	// 			width: 100%;
+	// 			position: relative;
+	// 			border-radius: 8px;
+	// 			margin-bottom: 10%;
+	// 			z-index: 2;
+	// 		}
 
-			.dots {
-				position: absolute;
-				background-size: contain;
-				height: 300px;
-				width: 300px;
-				left: -40%;
-				z-index: 1;
-				fill: $r;
-				top: 2rem;
-				opacity: 20%;
-			}
-		}
-		.row.right {
-			flex-direction: row-reverse;
-			.image .dots {
-				left: unset;
-				right: -40%;
-				opacity: 20%;
-			}
-		}
-		.image.one .dots {
-			top: -3rem;
-		}
-		.icon {
-			img {
-				width: 6%;
-				padding-bottom: 1rem;
-			}
-		}
-		.title {
-			color: #161616;
-			font-family: Avenir;
-			font-size: 1.5rem;
-			font-weight: 900;
-			letter-spacing: 0;
-			line-height: 1.6;
-			padding-bottom: 2%;
-		}
-		.sub {
-			color: #161616;
-			font-family: Avenir;
-			font-size: 0.85rem;
-			font-weight: 300;
-			letter-spacing: 0;
-			line-height: 1.6;
-		}
-		.text_proc {
-			padding: 0;
-			position: relative;
-			.number {
-				position: absolute;
-				font-size: 17rem;
-				z-index: 1;
-				top: -55%;
-				bottom: 50%;
-				left: -1.5rem;
-				margin: auto;
-				opacity: 0.04;
-				font-family: Avenir Heavy;
-				// left: 50%;
-				// right: 50%;
-			}
-		}
-		.row_pp {
-			// padding-bottom: 10%;
-		}
-		.pp_sub {
-			color: #505760;
-			font-family: Avenir;
-			font-size: 1rem;
-			font-weight: 500;
-			letter-spacing: 3px;
-			line-height: 1.6;
-			text-align: center;
-			padding-top: 6%;
-			text-transform: uppercase;
-		}
-		.pp_title {
-			color: #282b2f;
-			font-family: Avenir;
-			font-size: 1.5rem;
-			font-weight: 300;
-			letter-spacing: 0;
-			text-align: center;
-			line-height: 1.6;
-		}
-		.progress-container {
-			display: none;
-		}
+	// 		.dots {
+	// 			position: absolute;
+	// 			background-size: contain;
+	// 			height: 300px;
+	// 			width: 300px;
+	// 			left: -40%;
+	// 			z-index: 1;
+	// 			fill: $r;
+	// 			top: 2rem;
+	// 			opacity: 20%;
+	// 		}
+	// 	}
+	// 	.row.right {
+	// 		flex-direction: row-reverse;
+	// 		.image .dots {
+	// 			left: unset;
+	// 			right: -40%;
+	// 			opacity: 20%;
+	// 		}
+	// 	}
+	// 	.image.one .dots {
+	// 		top: -3rem;
+	// 	}
+	// 	.icon {
+	// 		img {
+	// 			width: 6%;
+	// 			padding-bottom: 1rem;
+	// 		}
+	// 	}
+	// 	.title {
+	// 		color: #161616;
+	// 		font-family: Avenir;
+	// 		font-size: 1.5rem;
+	// 		font-weight: 900;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.6;
+	// 		padding-bottom: 2%;
+	// 	}
+	// 	.sub {
+	// 		color: #161616;
+	// 		font-family: Avenir;
+	// 		font-size: 0.85rem;
+	// 		font-weight: 300;
+	// 		letter-spacing: 0;
+	// 		line-height: 1.6;
+	// 	}
+	// 	.text_proc {
+	// 		padding: 0;
+	// 		position: relative;
+	// 		.number {
+	// 			position: absolute;
+	// 			font-size: 17rem;
+	// 			z-index: 1;
+	// 			top: -55%;
+	// 			bottom: 50%;
+	// 			left: -1.5rem;
+	// 			margin: auto;
+	// 			opacity: 0.04;
+	// 			font-family: Avenir Heavy;
+	// 			// left: 50%;
+	// 			// right: 50%;
+	// 		}
+	// 	}
+	// 	.row_pp {
+	// 		// padding-bottom: 10%;
+	// 	}
+	// 	.pp_sub {
+	// 		color: #505760;
+	// 		font-family: Avenir;
+	// 		font-size: 1rem;
+	// 		font-weight: 500;
+	// 		letter-spacing: 3px;
+	// 		line-height: 1.6;
+	// 		text-align: center;
+	// 		padding-top: 6%;
+	// 		text-transform: uppercase;
+	// 	}
+	// 	.pp_title {
+	// 		color: #282b2f;
+	// 		font-family: Avenir;
+	// 		font-size: 1.5rem;
+	// 		font-weight: 300;
+	// 		letter-spacing: 0;
+	// 		text-align: center;
+	// 		line-height: 1.6;
+	// 	}
+	// 	.progress-container {
+	// 		display: none;
+	// 	}
 
-		.progress-bar {
-			display: none;
-		}
-	}
+	// 	.progress-bar {
+	// 		display: none;
+	// 	}
+	// }
 }
 
 // 	COVID RESPONSE -------------------------------------------------------------------------------------------------------------
 #response {
-	background-color: $w;
-	padding: 3% 10% 5%;
+	background-color: #edeff4;
+	padding: 1% 10% 5%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	background: linear-gradient(to bottom, #f9fbfd 50%, #ef6351 50%);
-
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 80%;
 	.card {
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
 		background-color: #191c20;
@@ -1383,168 +1393,168 @@
 			margin-bottom: 20%;
 		}
 	}
-	@media screen and (max-width: 767px) {
-		padding: 2rem 10% 1rem;
-		.subtitles {
-			font-size: 0.8rem;
-			font-weight: 900;
-			padding-bottom: 0.1rem;
-		}
-		.as-canadas-fastest {
-			color: #ffffff;
-			font-family: Avenir;
-			font-size: 1.3rem;
-			font-weight: 300;
-			line-height: 1.2;
-			text-align: left;
-			padding-bottom: 1rem;
-		}
-		.get-in-touch {
-			width: 100%;
-			font-size: 0.85rem;
-			font-weight: 300;
-			line-height: 1.2;
-		}
-		.phone {
-			font-size: 1rem;
-			line-height: 1.2;
-			img {
-				padding-right: 5%;
-			}
-			padding-bottom: 0.8rem;
-		}
-		.location {
-			font-size: 1rem;
-			line-height: 1.2;
-			img {
-				padding-right: 5%;
-				display: inline-block;
-				padding-bottom: 8%;
-				padding-top: 0;
-			}
-			.text {
-				display: inline-block;
-			}
-		}
-		.form {
-			text-transform: uppercase;
-			padding-top: 10%;
-			color: $w;
-			input[type="text"],
-			input[type="email"] {
-				padding: 0.5rem 0 0.5rem;
-				width: 100%;
-				border-bottom: 2px solid $w;
-				outline: none;
-			}
-			::-webkit-input-placeholder {
-				opacity: 0.42;
-				color: #ffffff;
-				font-family: Avenir;
-				font-size: 14px;
-				font-weight: 300;
-				letter-spacing: 0;
-				line-height: 20px;
-			}
-			textarea {
-				// height: 12%;
-				padding: 0.5rem 0 0;
-				border-bottom: 2px solid $w;
-				outline: none;
-				width: 100%;
-				overflow: hidden;
-			}
+	// @media screen and (max-width: 767px) {
+	// 	padding: 2rem 10% 1rem;
+	// 	.subtitles {
+	// 		font-size: 0.8rem;
+	// 		font-weight: 900;
+	// 		padding-bottom: 0.1rem;
+	// 	}
+	// 	.as-canadas-fastest {
+	// 		color: #ffffff;
+	// 		font-family: Avenir;
+	// 		font-size: 1.3rem;
+	// 		font-weight: 300;
+	// 		line-height: 1.2;
+	// 		text-align: left;
+	// 		padding-bottom: 1rem;
+	// 	}
+	// 	.get-in-touch {
+	// 		width: 100%;
+	// 		font-size: 0.85rem;
+	// 		font-weight: 300;
+	// 		line-height: 1.2;
+	// 	}
+	// 	.phone {
+	// 		font-size: 1rem;
+	// 		line-height: 1.2;
+	// 		img {
+	// 			padding-right: 5%;
+	// 		}
+	// 		padding-bottom: 0.8rem;
+	// 	}
+	// 	.location {
+	// 		font-size: 1rem;
+	// 		line-height: 1.2;
+	// 		img {
+	// 			padding-right: 5%;
+	// 			display: inline-block;
+	// 			padding-bottom: 8%;
+	// 			padding-top: 0;
+	// 		}
+	// 		.text {
+	// 			display: inline-block;
+	// 		}
+	// 	}
+	// 	.form {
+	// 		text-transform: uppercase;
+	// 		padding-top: 10%;
+	// 		color: $w;
+	// 		input[type="text"],
+	// 		input[type="email"] {
+	// 			padding: 0.5rem 0 0.5rem;
+	// 			width: 100%;
+	// 			border-bottom: 2px solid $w;
+	// 			outline: none;
+	// 		}
+	// 		::-webkit-input-placeholder {
+	// 			opacity: 0.42;
+	// 			color: #ffffff;
+	// 			font-family: Avenir;
+	// 			font-size: 14px;
+	// 			font-weight: 300;
+	// 			letter-spacing: 0;
+	// 			line-height: 20px;
+	// 		}
+	// 		textarea {
+	// 			// height: 12%;
+	// 			padding: 0.5rem 0 0;
+	// 			border-bottom: 2px solid $w;
+	// 			outline: none;
+	// 			width: 100%;
+	// 			overflow: hidden;
+	// 		}
 
-			#f-name,
-			#email {
-				margin-bottom: 5%;
-			}
-			.wpcf7-submit {
-				top: -40%;
-			}
-		}
-	}
-	@media screen and (max-width: 991px) {
-		padding: 2rem 20% 1rem;
-		.subtitles {
-			font-size: 0.8rem;
-			font-weight: 900;
-			padding-bottom: 0.1rem;
-		}
-		.as-canadas-fastest {
-			color: #ffffff;
-			font-family: Avenir;
-			font-size: 1.3rem;
-			font-weight: 300;
-			line-height: 1.2;
-			text-align: left;
-			padding-bottom: 1rem;
-		}
-		.get-in-touch {
-			width: 100%;
-			font-size: 0.85rem;
-			font-weight: 300;
-			line-height: 1.2;
-		}
-		.phone {
-			font-size: 1rem;
-			line-height: 1.2;
-			padding-top: 0px;
-			img {
-				padding-right: 5%;
-			}
-			// padding-bottom: 0.8rem;
-		}
-		.location {
-			font-size: 1rem;
-			line-height: 1.5;
-			img {
-				padding-right: 5%;
-				display: inline-block;
-				padding-bottom: 8%;
-				padding-top: 0px;
-			}
-			.text {
-				display: inline-block;
-			}
-		}
-		.form {
-			text-transform: uppercase;
-			color: $w;
-			input[type="text"],
-			input[type="email"] {
-				padding: 0.5rem 0 0.5rem;
-				width: 100%;
-				border-bottom: 2px solid $w;
-				outline: none;
-			}
-			::-webkit-input-placeholder {
-				opacity: 0.42;
-				color: #ffffff;
-				font-family: Avenir;
-				font-size: 14px;
-				font-weight: 300;
-				letter-spacing: 0;
-				line-height: 20px;
-			}
-			textarea {
-				// height: 12%;
-				padding: 0.5rem 0 0;
-				border-bottom: 2px solid $w;
-				outline: none;
-				width: 100%;
-				overflow: hidden;
-			}
+	// 		#f-name,
+	// 		#email {
+	// 			margin-bottom: 5%;
+	// 		}
+	// 		.wpcf7-submit {
+	// 			top: -40%;
+	// 		}
+	// 	}
+	// }
+	// @media screen and (max-width: 991px) {
+	// 	padding: 2rem 20% 1rem;
+	// 	.subtitles {
+	// 		font-size: 0.8rem;
+	// 		font-weight: 900;
+	// 		padding-bottom: 0.1rem;
+	// 	}
+	// 	.as-canadas-fastest {
+	// 		color: #ffffff;
+	// 		font-family: Avenir;
+	// 		font-size: 1.3rem;
+	// 		font-weight: 300;
+	// 		line-height: 1.2;
+	// 		text-align: left;
+	// 		padding-bottom: 1rem;
+	// 	}
+	// 	.get-in-touch {
+	// 		width: 100%;
+	// 		font-size: 0.85rem;
+	// 		font-weight: 300;
+	// 		line-height: 1.2;
+	// 	}
+	// 	.phone {
+	// 		font-size: 1rem;
+	// 		line-height: 1.2;
+	// 		padding-top: 0px;
+	// 		img {
+	// 			padding-right: 5%;
+	// 		}
+	// 		// padding-bottom: 0.8rem;
+	// 	}
+	// 	.location {
+	// 		font-size: 1rem;
+	// 		line-height: 1.5;
+	// 		img {
+	// 			padding-right: 5%;
+	// 			display: inline-block;
+	// 			padding-bottom: 8%;
+	// 			padding-top: 0px;
+	// 		}
+	// 		.text {
+	// 			display: inline-block;
+	// 		}
+	// 	}
+	// 	.form {
+	// 		text-transform: uppercase;
+	// 		color: $w;
+	// 		input[type="text"],
+	// 		input[type="email"] {
+	// 			padding: 0.5rem 0 0.5rem;
+	// 			width: 100%;
+	// 			border-bottom: 2px solid $w;
+	// 			outline: none;
+	// 		}
+	// 		::-webkit-input-placeholder {
+	// 			opacity: 0.42;
+	// 			color: #ffffff;
+	// 			font-family: Avenir;
+	// 			font-size: 14px;
+	// 			font-weight: 300;
+	// 			letter-spacing: 0;
+	// 			line-height: 20px;
+	// 		}
+	// 		textarea {
+	// 			// height: 12%;
+	// 			padding: 0.5rem 0 0;
+	// 			border-bottom: 2px solid $w;
+	// 			outline: none;
+	// 			width: 100%;
+	// 			overflow: hidden;
+	// 		}
 
-			#f-name,
-			#email {
-				margin-bottom: 5%;
-			}
-			.wpcf7-submit {
-				top: -40%;
-			}
-		}
-	}
+	// 		#f-name,
+	// 		#email {
+	// 			margin-bottom: 5%;
+	// 		}
+	// 		.wpcf7-submit {
+	// 			top: -40%;
+	// 		}
+	// 	}
+	// }
 }
 
 // scrolling-section {
