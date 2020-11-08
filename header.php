@@ -30,14 +30,12 @@
 							src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" />
 					</a>
 				</div>
-				<div class="col-lg-7 col-md-9 col-xl-7 d-flex align-items-center menu-col">
+				<div class="col-lg-6 col-md-9 col-xl-7 d-flex align-items-center menu-col">
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 				</div>
-				<div class='nav-contact col-lg-3 col-md-1 col-xl-3'>
-					<!-- <a href="<?php echo get_home_url(); ?>#contact" class="cta btn white arrow">
-						Get in Touch<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/arrow.svg" />
-				</a> -->
+				<div class='nav-contact col-lg-4 col-md-1 col-xl-3'>
 					<a href="<?php echo get_home_url(); ?>#contact" class="nav-phone">647.970.5275</a>
+					<a href="<?php echo get_home_url(); ?>">|</a>
 					<a href="<?php echo get_home_url(); ?>#contact" class="nav-mail">Info@verifyair.com</a>
 				</div>
 			</div>

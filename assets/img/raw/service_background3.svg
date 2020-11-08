@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1808px" height="1471px" viewBox="0 0 1808 1471" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path 2 Copy + Path 2 Copy 2 + Path 2 Copy 3 + Path 3 Mask</title>
+    <defs>
+        <rect id="path-1" x="0.5" y="0.598906659" width="1809" height="1470"></rect>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home---2" transform="translate(0.000000, -794.000000)">
+            <g id="Path-2-Copy-+-Path-2-Copy-2-+-Path-2-Copy-3-+-Path-3-Mask" transform="translate(-1.000000, 794.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#F8FBFD" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)" stroke="#D9E0EF" stroke-opacity="0.81479458">
+                    <g transform="translate(-262.000000, -59.000000)">
+                        <path d="M141.558313,453.242434 C86.950106,925.857844 253.569378,1137.5687 641.416131,1088.375 C1223.18626,1014.58445 2105.36468,517.89917 2495.38343,1121.83259" id="Path-2-Copy"></path>
+                        <path d="M228.364234,756.55857 C181.035561,1229.17398 325.443691,1440.88484 661.588626,1391.69113 C1165.80603,1317.90058 1930.38587,821.215307 2268.41326,1425.14873" id="Path-2-Copy-2"></path>
+                        <path d="M219.60221,142.472738 C386.107241,280.785412 625.117091,318.664434 936.631761,256.109803 C1403.90377,162.277856 1938.63877,-87.0140585 2547.05967,31.7880072" id="Path-2-Copy-3"></path>
+                        <path d="M0.738121547,423.249798 C108.020673,705.894708 372.756883,800.109678 794.946754,705.894708 C1428.23156,564.572253 1746.18945,194.83073 2129.58343,518.150943" id="Path-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

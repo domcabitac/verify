@@ -47,7 +47,7 @@ get_header(); ?>
 
 <?php if ( have_rows( 'services' ) ) : ?>
 	<?php while ( have_rows( 'services' ) ) : the_row(); ?>
-	<section id="services" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/service_background3.png')">
+	<section id="services" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/service_background4.png')">
 		<div class='container'>
 			<div class='row'>
 				<div class="col-12 text-center">
@@ -79,10 +79,15 @@ get_header(); ?>
 						</div>
 					<?php endwhile; ?>
 								</div>
+								<?php else : ?>
+
+
+<?php // no rows found ?>
+<?php endif; ?>
 					<div class='row'>
 						<div class="col-12 text-center ending">
 							<div class="ending_text">
-							<?php the_sub_field( 'tab_text' ); ?>
+							<?php the_sub_field( 'text' ); ?>
 								</div>
 								<div class="btn_green">
 									<a class='btn green' href="#response"> Get In Touch <img class='green_white_arrow' src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/white_arrow.svg" /></a>
@@ -90,11 +95,7 @@ get_header(); ?>
 							</div>
 					</div>
 				</div>
-				<?php else : ?>
 
-
-					<?php // no rows found ?>
-				<?php endif; ?>
 			</div>
 		</div>
 	</section>
