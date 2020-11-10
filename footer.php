@@ -22,7 +22,7 @@ wp_footer(); ?>
                     Privacy Policy
 				</div>
 				<div class='col-lg-3 col-md-4 col-xl-3'>
-                    Designed & developed by Ferraz Creative
+				Designed & developed by <a href='https://www.ferrazcreative.com' target="_blank">Ferraz Creative</a>
 				</div>
 			</div>
 		</div>

@@ -173,7 +173,7 @@ html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scro
 *{font-family:Avenir}
 *:after,*:before{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility}
 @font-face{font-family:Avenir;src:url("/assets/css/font/AvenirLTStd-Book.otf")}
-html{font-size:62.5%;height:100%;min-height:100%;background:#f9fbfd !important;overflow-x:hidden;position:relative;position:relative}
+html{font-size:62.5%;height:100%;min-height:100%;background:#f9fbfd !important;overflow-x:hidden;position:relative}
 body{font:400 16px/1.6 sans-serif;color:#292929;margin:0;height:100%;min-height:100%;text-align:left;background:#fff !important}
 .clear:before,.clear:after{content:" ";display:table}
 .clear:after{clear:both}
@@ -189,6 +189,7 @@ nav#desktop img{width:100%;height:100%;-o-object-fit:contain;object-fit:contain}
 nav#desktop a{display:inline-block;list-style:none;text-align:center;padding-left:.8rem;padding-right:.8rem}
 nav#desktop .nav-contact{display:inline-block;font-size:.8rem;margin-top:.4rem;line-height:22px;display:inline-block;opacity:65%}
 nav#desktop .nav-contact.white{background-color:#fff;float:left;color:#000;font-family:Avenir;font-weight:300}
+nav#desktop .nav-contact .noHover{pointer-events:none}
 nav#mobile{width:100%;left:0;right:0;margin:0 auto;z-index:25;padding:1rem 1rem;background-color:rgba(0,0,0,0.5);position:absolute}
 nav#mobile .logo-wrapper{width:120px;height:auto}
 nav#mobile .logo-wrapper img{width:100%;height:100%;-o-object-fit:contain;object-fit:contain}
@@ -218,6 +219,7 @@ nav#mobile .sub-menu li{font-size:1rem;border:0}
 .hamburger--spring.is-active .hamburger-inner::before{top:0;-webkit-transition:top .1s .15s cubic-bezier(0.33333,0,0.66667,0.33333),-webkit-transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);transition:top .1s .15s cubic-bezier(0.33333,0,0.66667,0.33333),-webkit-transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);transition:top .1s .15s cubic-bezier(0.33333,0,0.66667,0.33333),transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);transition:top .1s .15s cubic-bezier(0.33333,0,0.66667,0.33333),transform .13s .22s cubic-bezier(0.215,0.61,0.355,1),-webkit-transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);-webkit-transform:translate3d(0,10px,0) rotate(45deg);transform:translate3d(0,10px,0) rotate(45deg)}
 .hamburger--spring.is-active .hamburger-inner::after{top:0;-webkit-transition:top .2s cubic-bezier(0.33333,0,0.66667,0.33333),-webkit-transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);transition:top .2s cubic-bezier(0.33333,0,0.66667,0.33333),-webkit-transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);transition:top .2s cubic-bezier(0.33333,0,0.66667,0.33333),transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);transition:top .2s cubic-bezier(0.33333,0,0.66667,0.33333),transform .13s .22s cubic-bezier(0.215,0.61,0.355,1),-webkit-transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);-webkit-transform:translate3d(0,10px,0) rotate(-45deg);transform:translate3d(0,10px,0) rotate(-45deg)}
 #footer{background-color:#161616;color:rgba(217,224,239,0.34);font-size:12px;padding:1.5rem}
+#footer a{color:rgba(217,224,239,0.34)}
 .subtitle{text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:900;position:relative}
 .btn{font-size:.8rem;padding:.75rem 2rem;border-radius:42px;-webkit-transition:250ms all ease;transition:250ms all ease;border:1px solid transparent;display:inline-block}
 .btn.red{background-color:#ef6351;text-align:center;color:#fff;width:250px}
@@ -260,13 +262,15 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .content{display:table-cell;width:100%;vertical-align:middle;margin:0 auto;text-align:center}
 .content h1,.content p{font-family:Lato;font-weight:100}
 .content h1{text-transform:uppercase}
-#masthead{background-size:contain;position:relative;height:700px;color:aliceblue;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:2rem 15% 3rem;font-size:1rem;text-align:left}
+#masthead{background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;height:700px;color:aliceblue;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:2rem 15% 3rem;font-size:1rem;text-align:left}
 #masthead .title{color:#fff;font-family:Avenir;font-size:60px;font-weight:300;line-height:1.2;text-align:left;padding-bottom:1rem}
 #masthead .text .text{padding-top:2%;line-height:1.2;width:70%;font:18px;padding-bottom:5%}
 #masthead .covid_button{position:relative}
-#masthead .covid_button .white_circle{position:absolute;left:2.5%;top:.5rem;z-index:1;-webkit-animation:b 4.5s infinite;animation:b 4.5s infinite}
 #masthead .covid_button .white_arrow{position:absolute;padding-left:3%;top:1rem;z-index:1}
-#services{padding:1% 13% 1%;background-position:center;background-repeat:no-repeat;background-size:auto;background-color:#f9fbfd}
+#masthead .covid_button .ring-container{position:relative}
+#masthead .covid_button .circle{width:15px;height:15px;background-color:white;border-radius:50%;position:absolute;top:.2rem;left:.03rem}
+#masthead .covid_button .ringring{border:3px solid white;-webkit-border-radius:30px;height:25px;width:25px;position:absolute;top:-0.11rem;left:-0.3rem;-webkit-animation:pulsate 2s ease-out;-webkit-animation-iteration-count:infinite;opacity:0}
+#services{padding:1% 13% 1%;background-position:center;background-repeat:no-repeat;background-size:cover;background-color:#f9fbfd}
 #services .subtitle{color:#505760;font-family:Avenir;font-size:14px;font-weight:500;letter-spacing:3px;line-height:50px;text-align:center;padding-top:6%;text-transform:uppercase}
 #services .title{height:100px;color:#282b2f;font-family:Avenir;font-size:45px;font-weight:300;letter-spacing:0;line-height:34px;text-align:center}
 #services .card{-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);padding:10%;text-align:center;background-color:#fff;border:0;margin:.8rem 0 .8rem;border-radius:10px;height:320px}
@@ -291,10 +295,10 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #values .value_quote .exp{color:#fff;font-family:Avenir;font-size:20px;font-weight:300;letter-spacing:0;line-height:31px;padding:1.2rem 10% 1.2rem}
 #values .value_quote .author{color:#35ad68;font-family:Avenir;font-size:16px;font-weight:500;letter-spacing:3.43px;line-height:22px;text-align:center}
 #partner_process{padding:5% 13% 0;position:relative;background-position:center;background-repeat:no-repeat;background-size:cover}
-#partner_process .progress-container{height:80%;position:absolute;width:1px;z-index:2;background:#d9e0ef;top:21rem;left:50%}
-#partner_process .progress-bar{width:1px;background:#26ac77;height:0}
-#partner_process .progress-bar:after{content:"";border-radius:10px;float:left;background:#000;margin-top:-3px;z-index:2}
-#partner_process .progress_circle{height:40px;width:40px;left:30%;top:-8px;position:absolute;z-index:2;background-repeat:no-repeat}
+#partner_process .progress-container{height:80%;position:absolute;width:1px;z-index:2;background:#d9e0ef;top:23rem;left:50%}
+#partner_process .progress-bar{width:1px;background:#26ac77;height:0;z-index:2;max-height:100%}
+#partner_process .progress-bar:after{content:"";border-radius:10px;float:left;background:#000;margin-top:-3px;z-index:2;max-height:100%}
+#partner_process .progress_circle:after{width:40px;left:30%;top:-8px;position:absolute;z-index:2;background-repeat:no-repeat}
 #partner_process .image{position:relative}
 #partner_process .image img{width:80%;height:auto;-o-object-fit:cover;object-fit:cover;border-radius:8px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-left:10%}
 #partner_process .row.right{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
@@ -307,14 +311,16 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #partner_process .number{position:absolute;font-size:17rem;z-index:2;top:-30%;bottom:50%;left:2.5rem;margin:auto;opacity:.04;font-family:Avenir Heavy}
 #partner_process .row_pp{padding-bottom:10%}
 #partner_process .pp_sub{color:#505760;font-family:Avenir;font-size:14px;font-weight:500;letter-spacing:3px;line-height:50px;text-align:center;padding-top:2%;text-transform:uppercase}
-#partner_process .pp_title{height:100px;color:#282b2f;font-family:Avenir;font-size:45px;font-weight:300;letter-spacing:0;line-height:34px;text-align:center}
-#response{background-color:#edeff4;padding:1% 10% 5%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;background-position:bottom;background-repeat:no-repeat;background-size:100% auto}
+#partner_process .pp_title{height:100px;color:#282b2f;font-family:Avenir;font-size:45px;font-weight:300;letter-spacing:0;line-height:34px;text-align:center;margin-bottom:2%}
+#response{background-color:#edeff4;padding:1% 15% 5%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;background-position:bottom;background-repeat:no-repeat;background-size:100% 90%}
 #response .card{-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);background-color:#191c20;text-align:left;background-size:auto;border:0;border-radius:10px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;height:auto}
 #response .card .response-image img{height:100%;width:100%;float:left;-o-object-fit:cover;object-fit:cover;border-radius:10px 0 0 10px}
 #response .card .text{height:auto;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:5%}
-#response .card .text .our-covid-19-respons{color:#ef6351;font-family:Avenir;font-size:14px;font-weight:500;letter-spacing:3px;text-transform:uppercase;position:relative;margin-left:30px;margin-bottom:5%}
+#response .card .text .ring-container{position:relative}
+#response .card .text .circle{width:15px;height:15px;background-color:#ef6351;border-radius:50%;position:absolute;top:.2rem;left:.5rem}
+#response .card .text .ringring{border:3px solid #ef6351;-webkit-border-radius:30px;height:25px;width:25px;position:absolute;top:-0.11rem;left:.19rem;-webkit-animation:pulsate 2s ease-out;-webkit-animation-iteration-count:infinite;opacity:0}
+#response .card .text .our-covid-19-respons{color:#ef6351;font-family:Avenir;font-size:14px;font-weight:500;letter-spacing:3px;text-transform:uppercase;position:relative;margin-left:40px;margin-bottom:2%}
 #response .card .text .our-covid-19-respons .covid_sub{margin-left:25px}
-#response .card .text .circle{height:40px;width:40px;left:-30px;top:-8px;position:absolute;z-index:1;background-repeat:no-repeat;-webkit-animation:b 4.5s infinite;animation:b 4.5s infinite}
 #response .card .text .the-world-is-not-cha{color:#fff;font-family:Avenir;font-size:36px;font-weight:500;letter-spacing:0;line-height:1.6}
 #response .card .text .over-the-past-few-de{color:#505760;font-family:Avenir;font-size:16px;font-weight:300;letter-spacing:0;line-height:24px}
 #contact{background-color:#282b2f;padding:5% 13% 5%}
@@ -681,7 +687,9 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #masthead .subtitle{color:#26ac77;font-family:Avenir;text-transform:uppercase;letter-spacing:2px;font-weight:900;line-height:1.6;font-size:.8rem;font-weight:bold}
 #masthead .text .text{padding-bottom:20%;line-height:1.2;top:15px}
 #masthead .covid_button{position:relative;margin-top:20%}
-#masthead .covid_button .white_circle{position:absolute;left:4%;top:.5rem;z-index:1;-webkit-animation:b 4.5s infinite;animation:b 4.5s infinite}
+#masthead .covid_button .ring-container{position:relative}
+#masthead .covid_button .circle{width:15px;height:15px;background-color:white;border-radius:50%;position:absolute;top:.2rem;left:.01rem}
+#masthead .covid_button .ringring{border:3px solid white;-webkit-border-radius:30px;height:25px;width:25px;position:absolute;top:-0.11rem;left:-0.3rem;-webkit-animation:pulsate 2s ease-out;-webkit-animation-iteration-count:infinite;opacity:0}
 #masthead .covid_button .white_arrow{position:absolute;padding-left:7%;top:1rem;z-index:1}
 #masthead .picture{display:inline-block;height:200px;width:100%;position:relative;border-radius:8px;margin-top:1rem}
 #services{padding:1rem 10% 2rem}
@@ -722,13 +730,15 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #partner_process .pp_title{color:#282b2f;font-family:Avenir;font-size:1.5rem;font-weight:300;letter-spacing:0;text-align:center;line-height:1.6}
 #partner_process .progress-container{display:none}
 #partner_process .progress-bar{display:none}
-#response{background-position:bottom;background-repeat:no-repeat;background-size:175% auto;padding:0 7% 5%}
+#response{background-position:bottom;background-repeat:no-repeat;background-size:175% 50%;padding:0 7% 5%}
 #response .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 #response .card .response-image img{display:inline-block;height:300px;width:100%;position:relative;border-radius:10px 10px 0 0}
 #response .card .text{height:auto;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;padding:7%}
-#response .card .text .our-covid-19-respons{color:#ef6351;font-family:Avenir;font-size:.9rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;position:relative;margin-left:30px;margin-bottom:2%}
+#response .card .text .our-covid-19-respons{color:#ef6351;font-family:Avenir;font-size:.9rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;position:relative;margin-left:40px;margin-bottom:2%}
 #response .card .text .our-covid-19-respons .covid_sub{margin-left:25px}
-#response .card .text .circle{height:40px;width:40px;left:-30px;top:-8px;position:absolute;z-index:1;background-repeat:no-repeat;-webkit-animation:b 4.5s infinite;animation:b 4.5s infinite}
+#response .card .text .ring-container{position:relative}
+#response .card .text .circle{width:15px;height:15px;background-color:#ef6351;border-radius:50%;position:absolute;top:.2rem;left:.5rem}
+#response .card .text .ringring{border:3px solid #ef6351;-webkit-border-radius:30px;height:25px;width:25px;position:absolute;top:-0.11rem;left:.19rem;-webkit-animation:pulsate 2s ease-out;-webkit-animation-iteration-count:infinite;opacity:0}
 #response .card .text .the-world-is-not-cha{color:#fff;font-family:Avenir;font-size:1.5rem;font-weight:500;letter-spacing:0;line-height:1.6;margin-bottom:.8rem}
 #response .card .text .over-the-past-few-de{color:#505760;font-family:Avenir;font-size:1rem;font-weight:300;letter-spacing:0;line-height:1.3}
 #contact .as-canadas-fastest{font-size:20px;font-weight:400;line-height:20px}
@@ -748,7 +758,6 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #contact .form #f-name,#contact .form #email{margin-bottom:5%}
 #contact .form .wpcf7-submit{top:-40%}
 }@media screen and (max-width:991px) and (max-width:575px){#partner_process .number{left:-15px;top:-40%;bottom:50%}
-#response .card .text .circle{height:40px;width:40px;left:-30px;top:-0}
 }@media print{.d-print-none{display:none !important}
 .d-print-inline{display:inline !important}
 .d-print-inline-block{display:inline-block !important}
@@ -762,4 +771,7 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 50%{-webkit-transform:scale(1.1);transform:scale(1.1)}
 }@keyframes b{0%,to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:scale(0.8);transform:scale(0.8)}
 50%{-webkit-transform:scale(1.1);transform:scale(1.1)}
+}@-webkit-keyframes pulsate{0%{-webkit-transform:scale(0.1,0.1);opacity:0}
+50%{opacity:1}
+100%{-webkit-transform:scale(1.2,1.2);opacity:0}
 }

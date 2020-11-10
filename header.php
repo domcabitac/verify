@@ -16,7 +16,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script type="text/javascript" src="menu_1.0.17.js"></script>
 
 <?php wp_head(); ?>
 </head>
@@ -35,7 +34,7 @@
 				</div>
 				<div class='nav-contact col-lg-4 col-md-1 col-xl-3'>
 					<a href="<?php echo get_home_url(); ?>#contact" class="nav-phone">647.970.5275</a>
-					<a href="<?php echo get_home_url(); ?>">|</a>
+					<a href="<?php echo get_home_url(); ?>" class='noHover'>|</a>
 					<a href="<?php echo get_home_url(); ?>#contact" class="nav-mail">Info@verifyair.com</a>
 				</div>
 			</div>
