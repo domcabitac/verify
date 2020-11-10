@@ -179,7 +179,7 @@ body{font:400 16px/1.6 sans-serif;color:#292929;margin:0;height:100%;min-height:
 .clear:after{clear:both}
 .clear{*zoom:1}
 a{color:#fff;text-decoration:none}
-a:hover{color:#444}
+a:hover{color:#35ad68}
 a:focus{outline:0}
 a:hover,a:active{outline:0}
 nav#desktop{position:absolute;width:100%;z-index:100;margin:2rem 3rem 3rem;text-transform:uppercase}
@@ -262,7 +262,7 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .content{display:table-cell;width:100%;vertical-align:middle;margin:0 auto;text-align:center}
 .content h1,.content p{font-family:Lato;font-weight:100}
 .content h1{text-transform:uppercase}
-#masthead{background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;height:700px;color:aliceblue;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:2rem 15% 3rem;font-size:1rem;text-align:left}
+#masthead{position:relative;height:700px;color:aliceblue;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:2rem 15% 3rem;font-size:1rem;text-align:left}
 #masthead .title{color:#fff;font-family:Avenir;font-size:60px;font-weight:300;line-height:1.2;text-align:left;padding-bottom:1rem}
 #masthead .text .text{padding-top:2%;line-height:1.2;width:70%;font:18px;padding-bottom:5%}
 #masthead .covid_button{position:relative}
