@@ -2,12 +2,36 @@
  * Base SCSS
  */
 @font-face {
-	font-family: Avenir;
+	font-family: Avenir_Book;
 	src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
 }
 @font-face {
-	font-family: Avenir;
+	font-family: Avenir_Book;
 	src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
+}
+@font-face {
+	font-family: Avenir_Med;
+	src: url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
+}
+@font-face {
+	font-family: Avenir_Med;
+	src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
+}
+@font-face {
+	font-family: Avenir_Rom;
+	src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
+}
+@font-face {
+	font-family: Avenir_Rom;
+	src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
+}
+@font-face {
+	font-family: Avenir_Hea;
+	src: url("/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");
+}
+@font-face {
+	font-family: Avenir_Hea;
+	src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");
 }
 * {
 	font-family: Avenir;
@@ -86,243 +110,186 @@
 		transform: scale(1.1);
 	}
 }
+@keyframes pulsate {
+	0% {
+		-webkit-transform: scale(0.1, 0.1);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1.2, 1.2);
+		opacity: 0;
+	}
+}
 
 // MASTHEAD -------------------------------------------------------------------------------------------------------------
 #masthead {
-	background-size: contain;
+	padding: 6.5rem 12% 3rem;
 	position: relative;
-	height: 700px;
+	height: 720px;
 	color: aliceblue;
 	display: flex;
 	align-items: center;
-	padding: 2rem 15% 3rem;
 	font-size: 1rem;
 	text-align: left;
-
 	.title {
 		color: #ffffff;
-		font-family: Avenir;
+		font-family: Avenir_Med;
 		font-size: 60px;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.2;
 		text-align: left;
-		padding-bottom: 1rem;
-		// @media screen and (max-width: 991px) {
-		// 	font-size: 20px;
-		// 	font-weight: 400;
-		// 	line-height: 20px;
-		// }
+		padding-bottom: 0.3rem;
+		// padding-top: 10%;
 	}
 	.text .text {
 		padding-top: 2%;
 		// padding-bottom: 20%;
-		line-height: 1.2;
-		width: 70%;
-		font: 18px;
-		padding-bottom: 5%;
+		line-height: 1.6;
+		width: 100%;
+		max-width: 600px;
+		font-size: 18px;
+		margin-bottom: 8%;
+		font-family: Avenir_Book;
 	}
 	.covid_button {
-		position: relative;
-		.white_circle {
-			position: absolute;
-			left: 2.5%;
-			top: 0.5rem;
-			z-index: 1;
-			animation: b 4.5s infinite;
-		}
+		display: block;
 		.white_arrow {
+			position: relative;
+			object-fit: contain;
+		}
+
+		.ring-container {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 25px;
+			width: 25px;
+			padding: 0;
+			margin: 0;
+		}
+		.circle {
+			width: 15px;
+			height: 15px;
+			background-color: white;
+			border-radius: 50%;
+			position: relative;
+		}
+		.button_text {
+			display: inline-block;
+			// margin-top: 0.5rem;
+		}
+		.ringring {
+			border: 3px solid white;
+			-webkit-border-radius: 30px;
+			height: 25px;
+			width: 25px;
+			// position: absolute;
 			position: absolute;
-			// right: 60%;
-			padding-left: 3%;
-			top: 1rem;
-			z-index: 1;
+			-webkit-animation: pulsate 2s ease-out;
+			-webkit-animation-iteration-count: infinite;
+			opacity: 0;
 		}
 	}
-	// .picture {
-	// 	display: inline-block;
-	// 	max-width: 1000px;
-	// 	height: 850px;
-	// 	float: right;
-	// 	border-radius: 0 0 0 40px;
-	// 	position: absolute;
-	// 	right: 0;
-	// 	top: 0;
-	// 	object-fit: cover;
-	// 	@media screen and (max-width: 1400px) {
-	// 		max-width: 500px;
-	// 	}
-	// }
 	@media screen and (max-width: 991px) {
-		padding: 2rem 10% 1rem;
+		padding: 2rem 10% 0rem;
 		display: flex;
-		height: 500px;
-		.text {
-			// top: 30px;
-			text-align: left;
-			position: relative;
-			font-size: 1rem;
-			font-weight: 200;
-			display: inline;
-			letter-spacing: 0;
-		}
+		height: 600px;
 		.title {
 			color: #ffffff;
 			font-family: Avenir;
 			text-align: left;
-			font-size: 1.5rem;
-			font-weight: 767;
+			font-size: 50px;
+			font-weight: 400;
 			line-height: 1.2;
-			padding-bottom: 2%;
-		}
-		.subtitle {
-			color: #26ac77;
-			font-family: Avenir;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			font-weight: 900;
-			line-height: 1.6;
-			font-size: 0.8rem;
-			font-weight: bold;
+			padding-bottom: 1rem;
 		}
 		.text .text {
-			padding-bottom: 20%;
-			line-height: 1.2;
-			top: 15px;
+			padding-bottom: 1rem;
+			width: auto;
+			// top: 15px;
 		}
 		.covid_button {
-			position: relative;
-			margin-top: 20%;
-			.white_circle {
-				position: absolute;
-				left: 4%;
-				top: 0.5rem;
-				z-index: 1;
-				animation: b 4.5s infinite;
+			// margin-top: 5%;
+			.button_text {
+				font-size: 16px;
 			}
-			.white_arrow {
-				position: absolute;
-				padding-left: 7%;
-				top: 1rem;
-				z-index: 1;
-			}
-			// padding-bottom: 10%;
-		}
-		.picture {
-			display: inline-block;
-			height: 200px;
-			width: 100%;
-			position: relative;
-			border-radius: 8px;
-			margin-top: 1rem;
 		}
 	}
-	// @media screen and (max-width: 991px) {
-	// 	padding: 2rem 25% 1rem;
-	// 	display: flex;
-	// 	flex-direction: column-reverse;
-	// 	height: 700px;
-	// 	.text {
-	// 		top: 30px;
-	// 		text-align: left;
-	// 		position: relative;
-	// 		font-size: 0.8rem;
-	// 		font-weight: 200;
-	// 		display: inline-block;
-	// 		letter-spacing: 0;
-	// 	}
-	// 	.title {
-	// 		color: #ffffff;
-	// 		font-family: Avenir;
-	// 		text-align: left;
-	// 		font-size: 1.5rem;
-	// 		font-weight: 767;
-	// 		line-height: 1.2;
-	// 		padding-bottom: 2%;
-	// 	}
-	// 	.subtitle {
-	// 		color: #26ac77;
-	// 		font-family: Avenir;
-	// 		text-transform: uppercase;
-	// 		letter-spacing: 2px;
-	// 		font-weight: 900;
-	// 		line-height: 1.6;
-	// 		font-size: 0.8rem;
-	// 		font-weight: bold;
-	// 	}
-	// 	.text .text {
-	// 		padding-top: 0;
-	// 		padding-bottom: 20%;
-	// 		line-height: 1.2;
-	// 		top: 15px;
-	// 	}
-	// 	.covid_button {
-	// 		position: relative;
-	// 		justify-content: center;
-	// 		.white_circle {
-	// 			position: absolute;
-	// 			left: 4%;
-	// 			top: 0.5rem;
-	// 			z-index: 1;
-	// 			animation: b 4.5s infinite;
-	// 		}
-	// 		.white_arrow {
-	// 			position: absolute;
-	// 			padding-left: 7%;
-	// 			top: 1rem;
-	// 			z-index: 1;
-	// 		}
-	// 		// padding-bottom: 10%;
-	// 	}
-	// 	.picture {
-	// 		display: inline-block;
-	// 		height: 250px;
-	// 		width: 100%;
-	// 		position: relative;
-	// 		border-radius: 8px;
-	// 		margin-top: 2rem;
-	// 	}
-	// }
+	@media screen and (max-width: 767px) {
+		padding: 120px 7% 80px;
+		display: flex;
+		height: 80vh;
+		.title {
+			color: #ffffff;
+			font-family: Avenir;
+			text-align: left;
+			font-size: 2.3rem;
+			font-weight: 500;
+			line-height: 1.2;
+			padding-bottom: 2%;
+			width: 120%;
+			max-width: 450px;
+		}
+		.text .text {
+			padding-bottom: 0;
+			width: auto;
+			font-size: 1rem;
+			line-height: 1.4;
+			font-weight: 100;
+			padding-top: 12%;
+			margin-bottom: 20%;
+		}
+		.covid_button {
+			.button_text {
+				font-size: 0.9rem;
+			}
+		}
+	}
 }
 
 // SERVICES -------------------------------------------------------------------------------------------------------------
 #services {
-	padding: 1% 13% 1%;
+	padding: 0 12% 3rem;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
 	// overflow: hidden;
 	background-color: $grey;
 	.subtitle {
 		color: #505760;
-		font-family: Avenir;
+		font-family: Avenir_Med;
 		font-size: 14px;
-		font-weight: 500;
-		letter-spacing: 3px;
+		font-weight: 300;
+		letter-spacing: 3.43px;
 		line-height: 50px;
 		text-align: center;
 		padding-top: 6%;
 		text-transform: uppercase;
-		// height: 120px;
 	}
 	.title {
 		height: 100px;
 		color: #282b2f;
-		font-family: Avenir;
+		font-family: Avenir_Med;
 		font-size: 45px;
-		font-weight: 300;
+		font-weight: 100;
 		letter-spacing: 0;
 		line-height: 34px;
 		text-align: center;
+		// text-transform: uppercase;
 	}
 	.card {
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
-		padding: 10%;
+		box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.05);
+		padding: 10% 15% 10%;
 		text-align: center;
 		background-color: #ffffff;
 		border: none;
-		margin: 0.8rem 0 0.8rem;
+		margin: 1rem 0 1rem;
 		border-radius: 10px;
-		height: 320px;
+		height: 300px;
 	}
 
 	.card-title {
@@ -331,24 +298,24 @@
 		color: #161616;
 		font-family: Avenir;
 		font-size: 22px;
-		font-weight: 900;
+		font-weight: 500;
 		letter-spacing: 0;
-		line-height: 26px;
+		line-height: 1.2;
+		margin-top: 1rem;
 	}
 
 	.card-text {
 		width: 100%;
 		color: #505760;
 		font-family: Avenir;
-		font-size: 0.85rem;
-		// line-height: 21px;
+		font-size: 15px;
+		line-height: 1.4;
 		text-align: center;
-		margin-top: 5%;
+		margin-top: 1rem;
 	}
 	.icon {
 		img {
-			width: 9%;
-			padding-bottom: 2rem;
+			width: 95%;
 		}
 		.service_icon {
 			filter: invert(51%) sepia(100%) saturate(282%) hue-rotate(104deg)
@@ -358,86 +325,36 @@
 	.ending {
 		width: 100%;
 		text-align: center;
-		padding-top: 5%;
+		padding-top: 3rem;
 	}
 	.ending_text {
-		display: inline-block;
+		display: inline-flex;
 		color: #191c20;
-		font-family: Avenir;
-		font-size: 20px;
+		font-family: Avenir_Med;
+		font-size: 1rem;
 		font-weight: 500;
-		letter-spacing: 0;
-		// text-align: right;
+		text-align: center;
 		padding-right: 3%;
+		text-align: center;
+		position: relative;
 	}
 	.btn_green {
-		display: inline-block;
+		display: inline-flex;
+		justify-content: center;
+		align-items: left;
 		position: relative;
+		text-align: left;
+		font-size: 16px;
+		font-family: Avenir_Med;
+		font-weight: 500;
 		.green_white_arrow {
-			position: absolute;
-			padding-left: 5%;
+			position: relative;
+			object-fit: contain;
+			padding-left: 2rem;
 		}
 	}
-	// @media screen and (max-width: 767px) {
-	// 	padding: 2rem 10% 1rem;
-	// 	.subtitle {
-	// 		font-size: 0.8rem;
-	// 		font-weight: 300;
-	// 		letter-spacing: 3px;
-	// 		line-height: 1.6;
-	// 		text-align: center;
-	// 		padding-top: 10%;
-	// 		text-transform: uppercase;
-	// 		// height: 120px;
-	// 	}
-	// 	.title {
-	// 		height: 50px;
-	// 		font-size: 1.5rem;
-	// 		font-weight: 900;
-	// 		letter-spacing: 0;
-	// 		line-height: 1.2;
-	// 		text-align: center;
-	// 	}
-	// 	.card {
-	// 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
-	// 		padding: 7%;
-	// 		text-align: center;
-	// 		background-color: #ffffff;
-	// 		border: none;
-	// 		margin: 0.8rem 0 0.8rem;
-	// 		border-radius: 10px;
-	// 		height: 240px;
-	// 	}
-
-	// 	.card-title {
-	// 		// margin: 0 60px 0;
-	// 		text-align: center;
-	// 		color: #161616;
-	// 		font-family: Avenir;
-	// 		font-size: 1rem;
-	// 		font-weight: 900;
-	// 		letter-spacing: 0;
-	// 		line-height: 1.2;
-	// 	}
-
-	// 	.card-text {
-	// 		width: 100%;
-	// 		color: #505760;
-	// 		font-family: Avenir;
-	// 		font-size: 0.85rem;
-	// 		line-height: 1.6;
-	// 		text-align: center;
-	// 		margin-top: 5%;
-	// 	}
-	// 	.icon {
-	// 		img {
-	// 			width: 7%;
-	// 			padding-bottom: 0.8rem;
-	// 		}
-	// 	}
-	// }
 	@media screen and (max-width: 991px) {
-		padding: 1rem 10% 2rem;
+		padding: 1rem 0 1rem;
 		.subtitle {
 			font-size: 0.8rem;
 			font-weight: 300;
@@ -450,21 +367,22 @@
 		}
 		.title {
 			height: 50px;
-			font-size: 1.5rem;
+			font-size: 2rem;
 			font-weight: 900;
 			letter-spacing: 0;
 			line-height: 1.2;
 			text-align: center;
+			margin-bottom: 1rem;
 		}
 		.card {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
-			padding: 7%;
+			padding: 12%;
 			text-align: center;
 			background-color: #ffffff;
 			border: none;
 			margin: 0.8rem 0 0.8rem;
 			border-radius: 10px;
-			height: 240px;
+			height: 300px;
 		}
 
 		.card-title {
@@ -472,8 +390,8 @@
 			text-align: center;
 			color: #161616;
 			font-family: Avenir;
-			font-size: 1rem;
-			font-weight: 900;
+			font-size: 1.2rem;
+			font-weight: 600;
 			letter-spacing: 0;
 			line-height: 1.2;
 		}
@@ -482,21 +400,21 @@
 			width: 100%;
 			color: #505760;
 			font-family: Avenir;
-			font-size: 0.85rem;
-			line-height: 1.6;
+			font-size: 0.9rem;
+			line-height: 1.4;
 			text-align: center;
 			margin-top: 4%;
 		}
 		.icon {
 			img {
-				width: 10%;
+				width: 85%;
 				padding-bottom: 0.8rem;
 			}
 		}
 		.ending {
 			width: 100%;
 			text-align: center;
-			padding-top: 5%;
+			padding-top: 2rem;
 		}
 		.ending_text {
 			display: inline-block;
@@ -507,60 +425,157 @@
 			letter-spacing: 0;
 			text-align: center;
 			padding-right: 3%;
-			padding-bottom: 5%;
 			z-index: 2;
 		}
 		.btn_green {
-			display: inline-block;
+			display: inline-flex;
+			justify-content: center;
+			align-items: left;
 			position: relative;
+			text-align: left;
+			font-size: 14px;
+			font-family: Avenir_Med;
+			font-weight: 500;
 			.green_white_arrow {
-				position: absolute;
-				padding-left: 5%;
+				padding-left: 2rem;
 			}
 		}
-		// @media
+		@media screen and (max-width: 767px) {
+			padding: 1rem 7% 1rem;
+			.subtitle {
+				font-size: 0.8rem;
+				font-weight: 300;
+				letter-spacing: 3px;
+				line-height: 1.6;
+				text-align: center;
+				padding-top: 10%;
+				text-transform: uppercase;
+				// height: 120px;
+			}
+			.title {
+				height: 50px;
+				font-size: 1.5rem;
+				font-family: Avenir_Med;
+				font-weight: 900;
+				letter-spacing: 0;
+				line-height: 1.2;
+				text-align: center;
+				margin-bottom: 1rem;
+			}
+			.card {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
+				padding: 15%;
+				text-align: center;
+				background-color: #ffffff;
+				border: none;
+				margin: 1rem 0 1rem;
+				border-radius: 10px;
+				height: auto;
+			}
+
+			.card-title {
+				// margin: 0 60px 0;
+				text-align: center;
+				color: #161616;
+				font-family: Avenir;
+				font-size: 1rem;
+				font-weight: 700;
+				letter-spacing: 0;
+				line-height: 1.2;
+			}
+
+			.card-text {
+				width: 100%;
+				color: #505760;
+				font-family: Avenir;
+				font-size: 0.9rem;
+				line-height: 1.4;
+				text-align: center;
+				margin-top: 4%;
+			}
+			.icon {
+				img {
+					width: 80%;
+					padding-bottom: 0.8rem;
+				}
+			}
+			.ending {
+				width: 100%;
+				text-align: center;
+				padding-top: 20%;
+				padding-bottom: 20%;
+			}
+			.ending_text {
+				display: inline-block;
+				color: #191c20;
+				font-family: Avenir;
+				font-size: 1rem;
+				font-weight: 500;
+				letter-spacing: 0;
+				text-align: center;
+				padding-right: 3%;
+				z-index: 2;
+				padding-bottom: 1rem;
+			}
+			.btn_green {
+				.green_white_arrow {
+					padding-left: 2rem;
+				}
+			}
+		}
 	}
 }
 
 // VALUES -------------------------------------------------------------------------------------------------------------
 #values {
-	padding: 3% 10% 5%;
-	background: url("assets/img/values_background.svg") #f8fbfd repeat-x;
-	background-position: bottom, top;
-	width: 100%;
-	height: auto;
-	background-size: auto 60%;
+	padding: 1rem 12% 5%;
+	background-color: #f8fbfd;
+	position: relative;
+	.dark_background {
+		background: url("assets/img/values_background.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		background-size: cover;
+		width: 100%;
+		height: 60%;
+		bottom: 0;
+		z-index: 1;
+		left: 0;
+		right: 0;
+	}
 	.card {
+		position: relative;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
-		// margin-top: 0%;
-		padding: 3% 7%;
+		padding: 5rem;
 		text-align: left;
-		background-image: url("assets/img/val_background.png");
+		background-image: url("assets/img/val_card_background.svg");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: auto;
+		background-size: cover;
 		border: none;
 		border-radius: 10px;
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
 		height: auto;
 		width: 100%;
+		z-index: 2;
 		.title {
 			color: #ffffff;
-			font-family: Avenir;
+			font-family: Avenir_Med;
 			font-size: 45px;
-			font-weight: 300;
+			font-weight: 100;
 			letter-spacing: 0;
 			line-height: 50px;
 		}
 		.subtitle {
-			color: rgba(217, 224, 239, 0.81);
+			color: #ffffff;
 			font-family: Avenir;
 			font-size: 14px;
 			font-weight: 500;
 			letter-spacing: 3px;
-			line-height: 19px;
+			line-height: 1.2;
 			text-transform: uppercase;
+			padding-bottom: 1rem;
 		}
 		.icon {
 			img {
@@ -578,7 +593,7 @@
 			color: #ffffff;
 			font-family: Avenir;
 			font-size: 22px;
-			font-weight: 900;
+			font-weight: 500;
 			letter-spacing: 0;
 			line-height: 24px;
 		}
@@ -586,19 +601,26 @@
 		.value-text {
 			color: #ffffff;
 			font-family: Avenir;
-			font-size: 12px;
+			font-size: 1rem;
 			font-weight: 300;
 			letter-spacing: 0;
-			line-height: 21px;
+			line-height: 1.4;
 			margin-top: 0.8rem;
 			text-align: left;
-			margin-right: 4rem;
+			margin-right: 2.5rem;
 		}
+	}
+	.toggle {
+		color: $gb;
+		float: left;
 	}
 	.value_quote {
 		text-align: center;
-		margin-top: 7%;
+		margin-top: 5%;
 		z-index: 2;
+		border: none;
+		overflow: visible;
+		border-raidus: none;
 		.quote {
 			color: #ffffff;
 			font-family: Avenir;
@@ -624,29 +646,88 @@
 			letter-spacing: 3.43px;
 			line-height: 22px;
 			text-align: center;
+			text-transform: uppercase;
 		}
 	}
-	@media screen and (max-width: 991px) {
-		padding: 2rem 10% 4rem;
+	@media screen and (max-width: 1199px) {
+		overflow-x: hidden;
+		padding: 4% 0% 5%;
+		.card {
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			height: auto;
+			padding: 4rem 7%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			.title {
+				color: #ffffff;
+				font-family: Avenir;
+				font-size: 2rem;
+				font-weight: 300;
+				letter-spacing: 0;
+				line-height: 1.2;
+			}
+			.subtitle {
+				color: rgba(217, 224, 239, 0.81);
+				font-family: Avenir;
+				font-size: 0.8rem;
+				font-weight: 500;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+			}
+			.icon {
+				img {
+					width: 50px;
+					display: inline-flex;
+					position: relative;
+				}
+			}
+			.values-content {
+				display: inline-flex;
+			}
+			.values-content .text {
+				padding-left: 2rem;
+				// padding-top: 3%;
+				.value-title {
+					display: inline-block;
+					color: #ffffff;
+					font-family: Avenir;
+					font-weight: 500;
+					letter-spacing: 0;
+					line-height: 1.2;
+					font-size: 1.2rem;
+				}
+				.value-text {
+					font-size: 1rem;
+					line-height: 1.4;
+					width: 100%;
+					margin-top: 0.3rem;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 767px) {
+		overflow-x: hidden;
+		padding: 2rem 2rem 3rem;
+		background-size: cover;
 		.card {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
-			// margin-top: 0%;
-			padding: 8% 7%;
+			padding: 3rem 2rem;
 			text-align: left;
 			background-image: url("assets/img/val_background.png");
 			background-position: center;
 			background-repeat: no-repeat;
-			background-size: auto;
+			background-size: cover;
 			border: none;
 			border-radius: 10px;
 			-webkit-border-radius: 10px;
 			-moz-border-radius: 10px;
 			height: auto;
 			width: 100%;
-
 			.title {
 				color: #ffffff;
-				font-family: Avenir;
+				font-family: Avenir_Med;
 				font-size: 1.5rem;
 				font-weight: 300;
 				letter-spacing: 0;
@@ -662,35 +743,40 @@
 			}
 			.icon {
 				img {
-					width: 12%;
-					padding-bottom: 0.8rem;
-					padding-top: 0.8rem;
+					align-items: flex-start;
+					width: 15%;
 				}
 			}
 			.values-content {
-				padding-top: 1%;
+				flex-direction: column;
+				width: 100%;
+				padding-top: 0;
 			}
-			.value-title {
-				height: 30px;
-				width: 280px;
-				color: #ffffff;
-				font-family: Avenir;
-				font-size: 1.05rem;
-				font-weight: 900;
-				letter-spacing: 0;
-				line-height: 1.2;
-			}
+			.values-content .text {
+				padding-left: 0;
+				.value-title {
+					height: 1rem;
+					width: 280px;
+					color: #ffffff;
+					font-family: Avenir;
+					font-size: 1.2rem;
+					font-weight: 700;
+					letter-spacing: 0;
+					line-height: 1.2;
+					margin-bottom: 0.9rem;
+				}
 
-			.value-text {
-				color: #ffffff;
-				font-family: Avenir;
-				font-size: 0.85rem;
-				font-weight: 100;
-				letter-spacing: 0;
-				line-height: 1.6;
-				margin-top: 0.1rem;
-				text-align: left;
-				margin-right: 0.1rem;
+				.value-text {
+					color: #ffffff;
+					font-family: Avenir;
+					font-size: 0.85rem;
+					font-weight: 100;
+					letter-spacing: 0;
+					line-height: 1.6;
+					margin-top: 0.1rem;
+					text-align: left;
+					margin-right: 0.1rem;
+				}
 			}
 		}
 		.value_quote {
@@ -699,18 +785,23 @@
 			.quote {
 				color: #ffffff;
 				font-family: Avenir;
-				font-size: 1.3rem;
+				font-size: 1.5rem;
 				font-weight: 500;
 				letter-spacing: 0;
 				line-height: 1.6;
+				width: 100%;
+				max-width: 200px;
+				text-align: center;
+				margin: 0 auto;
 			}
 			.exp {
 				color: #ffffff;
 				font-family: Avenir;
-				font-size: 0.9rem;
-				font-weight: 300;
-				letter-spacing: 0;
+				font-size: 16px;
+				font-weight: 500;
+				// letter-spacing: 3.43px;
 				line-height: 1.2;
+				text-align: center;
 				padding: 1rem 10%;
 			}
 			.author {
@@ -724,62 +815,11 @@
 			}
 		}
 	}
-	// @media screen and (max-width: 991px) {
-	// 	padding: 2rem 20% 3rem;
-	// 	.title {
-	// 		color: #ffffff;
-	// 		font-family: Avenir;
-	// 		font-size: 1.5rem;
-	// 		font-weight: 300;
-	// 		letter-spacing: 0;
-	// 		line-height: 1.2;
-	// 	}
-	// 	.subtitle {
-	// 		color: rgba(217, 224, 239, 0.81);
-	// 		font-family: Avenir;
-	// 		font-size: 1rem;
-	// 		font-weight: 500;
-	// 		letter-spacing: 3px;
-	// 		text-transform: uppercase;
-	// 	}
-	// 	.icon {
-	// 		img {
-	// 			width: 12%;
-	// 			padding-bottom: 0.8rem;
-	// 			padding-top: 0.8rem;
-	// 		}
-	// 	}
-	// 	.values-content {
-	// 		padding-top: 1%;
-	// 	}
-	// 	.value-title {
-	// 		height: 30px;
-	// 		width: 280px;
-	// 		color: #ffffff;
-	// 		font-family: Avenir;
-	// 		font-size: 1.05rem;
-	// 		font-weight: 900;
-	// 		letter-spacing: 0;
-	// 		line-height: 1.2;
-	// 	}
-
-	// 	.value-text {
-	// 		color: #ffffff;
-	// 		font-family: Avenir;
-	// 		font-size: 0.85rem;
-	// 		font-weight: 100;
-	// 		letter-spacing: 0;
-	// 		line-height: 1.6;
-	// 		margin-top: 0.1rem;
-	// 		text-align: left;
-	// 		margin-right: 0.1rem;
-	// 	}
-	// }
 }
 
 // PARTNER PROCESS -------------------------------------------------------------------------------------------------------------
 #partner_process {
-	padding: 5% 13% 0%;
+	padding: 5% 12% 0%;
 	position: relative;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -790,41 +830,80 @@
 		width: 1px;
 		z-index: 2;
 		background: #d9e0ef;
-		top: 21rem;
+		top: 22rem;
 		left: 50%;
+		max-height: 100%;
+		@media screen and (max-width: 1250px) {
+			display: none;
+		}
 	}
+	// .code {
+	// 	height: 150px;
+	// 	width: 250px;
+	// 	background: #000;
+	// 	color: #fff;
+	// 	margin: 20px;
+	// 	width: 10%;
+	// 	clear: both;
+	// 	height: 200px;
+	// 	background: #000;
+	// 	border-radius: 2px;
+	// 	margin: 100vh 0;
+	// 	padding: 10px;
+	// }
+	// svg {
+	// 	width: 100%;
+	// 	height: auto;
+	// }
+	// #svg {
+	// 	position: absolute;
+	// 	width: 600px;
+	// 	height: auto;
+	// 	top: 200px;
+	// 	overflow: visible;
+	// }
 
+	// .ball {
+	// 	fill: darkgreen;
+	// 	// visibility: hidden;
+	// 	r: 20;
+	// 	z-index: 2;
+	// }
+
+	// .line {
+	// 	fill: none;
+	// 	stroke: green;
+	// 	stroke-width: 1px;
+	// }
+	// text {
+	// 	fill: darkgreen;
+	// 	font-size: 15px;
+	// 	font-family: sans-serif;
+	// 	visibility: hidden;
+	// }
 	.progress-bar {
 		width: 1px;
 		background: #26ac77;
 		height: 0%;
+		z-index: 2;
+		max-height: 100%;
+		transition: 600ms all ease;
 	}
 	.progress-bar:after {
 		content: "";
 		border-radius: 10px;
-		float: left;
 		background: #000;
 		margin-top: -3px;
 		z-index: 2;
+		max-height: 100%;
+		transition: 600ms all ease;
 	}
-
-	.progress_circle {
-		height: 40px;
-		width: 40px;
-		left: 30%;
-		top: -8px;
-		position: absolute;
-		z-index: 2;
-		background-repeat: no-repeat;
-	}
-
 	.image {
 		position: relative;
 		img {
 			width: 80%;
 			height: auto;
 			object-fit: cover;
-			// box-shadow: 0 12px 24px 0 rgba(23, 25, 30, 0.16);
 			border-radius: 8px;
 			display: flex;
 			align-items: center;
@@ -846,18 +925,26 @@
 			padding-bottom: 1rem;
 		}
 		.PP_icon {
+			-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+			filter: grayscale(1);
+			transition: 0.5s all ease;
+		}
+		.active_icon {
+			-webkit-filter: invert(32%) sepia(9%) saturate(613%) hue-rotate(174deg)
+				brightness(95%) contrast(87%);
 			filter: invert(32%) sepia(9%) saturate(613%) hue-rotate(174deg)
 				brightness(95%) contrast(87%);
+			transition: 0.5s all ease;
 		}
 	}
 	.title {
 		color: #161616;
 		font-family: Avenir;
 		font-size: 24px;
-		font-weight: 900;
+		font-weight: 550;
 		letter-spacing: 0;
 		line-height: 26px;
-		padding-bottom: 2%;
+		padding-bottom: 6%;
 	}
 	.sub {
 		color: #161616;
@@ -866,26 +953,32 @@
 		font-weight: 300;
 		letter-spacing: 0;
 		line-height: 24px;
+		padding-bottom: 30%;
 	}
 	.text_proc {
 		// padding: 5rem 8rem 5rem;
-		width: 70%;
-		margin: auto 20%;
+		width: 100%;
+		margin: auto auto;
 		position: relative;
-		padding-top: 7%;
+		padding-top: 13%;
+		max-width: 350px;
+		@media screen and (min-width: 1920px) {
+			padding-top: 12%;
+		}
 	}
 	.number {
 		position: absolute;
-		font-size: 17rem;
+		font-size: 23rem;
 		z-index: 2;
-		top: -30%;
+		top: -35%;
 		bottom: 50%;
 		left: 2.5rem;
 		margin: auto;
 		opacity: 0.04;
 		font-family: Avenir Heavy;
-		// left: 50%;
-		// right: 50%;
+	}
+	.num_mobile {
+		display: none;
 	}
 	.row_pp {
 		padding-bottom: 10%;
@@ -905,15 +998,16 @@
 	.pp_title {
 		height: 100px;
 		color: #282b2f;
-		font-family: Avenir;
+		font-family: Avenir_Med;
 		font-size: 45px;
 		font-weight: 300;
 		letter-spacing: 0;
 		line-height: 34px;
 		text-align: center;
+		margin-bottom: 2%;
 	}
 	@media screen and (max-width: 991px) {
-		padding: 2rem 10% 1rem;
+		padding: 2rem 2rem 1rem;
 		.image {
 			position: relative;
 			img {
@@ -939,18 +1033,18 @@
 		}
 		.icon {
 			img {
-				width: 8%;
+				width: 10%;
 				padding-bottom: 1rem;
 			}
 		}
 		.title {
 			color: #161616;
 			font-family: Avenir;
-			font-size: 1.5rem;
-			font-weight: 900;
+			font-size: 1.2rem;
+			font-weight: 700;
 			letter-spacing: 0;
 			line-height: 1.6;
-			padding-bottom: 2%;
+			padding-bottom: 3%;
 		}
 		.sub {
 			color: #161616;
@@ -958,37 +1052,31 @@
 			font-size: 0.85rem;
 			font-weight: 300;
 			letter-spacing: 0;
-			line-height: 1.6;
+			line-height: 1.4;
+			padding-bottom: 20%;
 		}
 		.text_proc {
 			padding: 0;
 			position: relative;
+			width: 95%;
 		}
 		.number {
-			position: absolute;
-			font-size: 16rem;
-			z-index: 1;
-			top: -50%;
-			bottom: 50%;
-			left: 3;
-			margin: auto;
-			opacity: 0.04;
-			font-family: Avenir Heavy;
-			// left: 50%;
-			// right: 50%;
-			@media screen and (max-width: 575px) {
-				left: -15px;
-				top: -40%;
-				bottom: 50%;
-			}
+			display: none;
 		}
-		// .row_pp {
-		// 	// padding-bottom: 10%;
-		// }
+		.num_mobile {
+			display: inline;
+			color: #505760;
+			font-family: Avenir;
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 3px;
+			line-height: 1.2;
+			text-transform: uppercase;
+		}
 		.pp_sub {
 			color: #505760;
 			font-family: Avenir;
-			font-size: 1rem;
+			font-size: 0.8rem;
 			font-weight: 500;
 			letter-spacing: 3px;
 			line-height: 1.6;
@@ -999,11 +1087,12 @@
 		.pp_title {
 			color: #282b2f;
 			font-family: Avenir;
-			font-size: 1.5rem;
+			font-size: 2rem;
 			font-weight: 300;
 			letter-spacing: 0;
 			text-align: center;
 			line-height: 1.6;
+			margin-bottom: 0;
 		}
 		.progress-container {
 			display: none;
@@ -1013,126 +1102,30 @@
 			display: none;
 		}
 	}
-	// @media screen and (max-width: 991px) {
-	// 	padding: 2rem 20% 1rem;
-	// 	.image {
-	// 		position: relative;
-	// 		img {
-	// 			display: inline-block;
-	// 			height: 300px;
-	// 			width: 100%;
-	// 			position: relative;
-	// 			border-radius: 8px;
-	// 			margin-bottom: 10%;
-	// 			z-index: 2;
-	// 		}
-
-	// 		.dots {
-	// 			position: absolute;
-	// 			background-size: contain;
-	// 			height: 300px;
-	// 			width: 300px;
-	// 			left: -40%;
-	// 			z-index: 1;
-	// 			fill: $r;
-	// 			top: 2rem;
-	// 			opacity: 20%;
-	// 		}
-	// 	}
-	// 	.row.right {
-	// 		flex-direction: row-reverse;
-	// 		.image .dots {
-	// 			left: unset;
-	// 			right: -40%;
-	// 			opacity: 20%;
-	// 		}
-	// 	}
-	// 	.image.one .dots {
-	// 		top: -3rem;
-	// 	}
-	// 	.icon {
-	// 		img {
-	// 			width: 6%;
-	// 			padding-bottom: 1rem;
-	// 		}
-	// 	}
-	// 	.title {
-	// 		color: #161616;
-	// 		font-family: Avenir;
-	// 		font-size: 1.5rem;
-	// 		font-weight: 900;
-	// 		letter-spacing: 0;
-	// 		line-height: 1.6;
-	// 		padding-bottom: 2%;
-	// 	}
-	// 	.sub {
-	// 		color: #161616;
-	// 		font-family: Avenir;
-	// 		font-size: 0.85rem;
-	// 		font-weight: 300;
-	// 		letter-spacing: 0;
-	// 		line-height: 1.6;
-	// 	}
-	// 	.text_proc {
-	// 		padding: 0;
-	// 		position: relative;
-	// 		.number {
-	// 			position: absolute;
-	// 			font-size: 17rem;
-	// 			z-index: 1;
-	// 			top: -55%;
-	// 			bottom: 50%;
-	// 			left: -1.5rem;
-	// 			margin: auto;
-	// 			opacity: 0.04;
-	// 			font-family: Avenir Heavy;
-	// 			// left: 50%;
-	// 			// right: 50%;
-	// 		}
-	// 	}
-	// 	.row_pp {
-	// 		// padding-bottom: 10%;
-	// 	}
-	// 	.pp_sub {
-	// 		color: #505760;
-	// 		font-family: Avenir;
-	// 		font-size: 1rem;
-	// 		font-weight: 500;
-	// 		letter-spacing: 3px;
-	// 		line-height: 1.6;
-	// 		text-align: center;
-	// 		padding-top: 6%;
-	// 		text-transform: uppercase;
-	// 	}
-	// 	.pp_title {
-	// 		color: #282b2f;
-	// 		font-family: Avenir;
-	// 		font-size: 1.5rem;
-	// 		font-weight: 300;
-	// 		letter-spacing: 0;
-	// 		text-align: center;
-	// 		line-height: 1.6;
-	// 	}
-	// 	.progress-container {
-	// 		display: none;
-	// 	}
-
-	// 	.progress-bar {
-	// 		display: none;
-	// 	}
-	// }
 }
 
 // 	COVID RESPONSE -------------------------------------------------------------------------------------------------------------
 #response {
 	background-color: #edeff4;
-	padding: 1% 10% 5%;
-	width: 100%;
+	padding: 1% 15% 5%;
 	display: flex;
 	flex-direction: row;
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
+	position: relative;
+	@media screen and (max-width: 1400px) {
+		padding: 1% 10% 5%;
+	}
+	.orange_background {
+		background: url("assets/img/covid_background.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		background-size: cover;
+		width: 100%;
+		height: 60%;
+		bottom: 0;
+		z-index: 1;
+		left: 0;
+		right: 0;
+	}
 	.card {
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0); /* this adds the "card" effect */
 		background-color: #191c20;
@@ -1143,11 +1136,14 @@
 		width: 100%;
 		display: flex;
 		height: auto;
+		position: relative;
+		z-index: 2;
 		.response-image img {
 			height: 100%;
 			width: 100%;
 			float: left;
 			object-fit: cover;
+			object-position: top;
 			border-radius: 10px 0 0 10px;
 		}
 
@@ -1156,7 +1152,32 @@
 			width: 100%;
 			display: flex;
 			flex-direction: column;
-			padding: 5%;
+			margin: 7rem;
+			.ring-container {
+				position: relative;
+			}
+			.circle {
+				width: 15px;
+				height: 15px;
+				background-color: $r;
+				border-radius: 50%;
+				position: absolute;
+				top: 0.2rem;
+				left: 0.5rem;
+			}
+
+			.ringring {
+				border: 3px solid $r;
+				-webkit-border-radius: 30px;
+				height: 25px;
+				width: 25px;
+				position: absolute;
+				top: -0.11rem;
+				left: 0.19rem;
+				-webkit-animation: pulsate 2s ease-out;
+				-webkit-animation-iteration-count: infinite;
+				opacity: 0;
+			}
 			.our-covid-19-respons {
 				color: $r;
 				font-family: Avenir;
@@ -1166,201 +1187,38 @@
 				// line-height: 19px;
 				text-transform: uppercase;
 				position: relative;
-				margin-left: 30px;
-				margin-bottom: 5%;
+				margin-left: 40px;
+				margin-bottom: 2%;
 				.covid_sub {
 					margin-left: 25px;
 				}
-			}
-			.circle {
-				height: 40px;
-				width: 40px;
-				left: -30px;
-				top: -8px;
-				position: absolute;
-				z-index: 1;
-				background-repeat: no-repeat;
-				animation: b 4.5s infinite;
-				// box-shadow: 0 0 0 5px $r;
 			}
 
 			.the-world-is-not-cha {
 				color: #ffffff;
 				font-family: Avenir;
 				font-size: 36px;
-				font-weight: 500;
+				font-weight: 400;
 				letter-spacing: 0;
-				line-height: 1.6;
+				line-height: 1.3;
+				padding: 1.5rem 0;
 			}
 			.over-the-past-few-de {
-				color: #505760;
+				color: rgba(239, 241, 247, 0.81);
 				font-family: Avenir;
 				font-size: 16px;
 				font-weight: 300;
 				letter-spacing: 0;
-				line-height: 24px;
+				line-height: 1.6;
 				// margin-right: 7%;
 			}
 		}
 	}
 
-	// @media screen and (max-width: 767px) {
-	// 	padding: 2rem 10% 1rem;
-	// 	.response-image {
-	// 		padding: none;
-	// 		img {
-	// 			width: 100%;
-	// 			border-radius: 8px;
-	// 			display: inline-block;
-	// 			height: 200px;
-	// 		}
-	// 	}
-	// 	.our-covid-19-respons {
-	// 		color: $r;
-	// 		font-family: Avenir;
-	// 		font-size: 1rem;
-	// 		font-weight: 500;
-	// 		letter-spacing: 3px;
-	// 		line-height: 1.2;
-	// 		text-transform: uppercase;
-	// 		position: relative;
-	// 		margin-left: 30px;
-	// 		margin-bottom: 5%;
-	// 		margin-top: 10%;
-	// 		.covid_sub {
-	// 			margin-left: 25px;
-	// 		}
-	// 	}
-	// 	// // work in progress
-	// 	.response_line {
-	// 		background: #fff;
-	// 		&::before {
-	// 			content: "";
-	// 			width: 100%;
-	// 			border-bottom: solid 1px $r;
-	// 			position: absolute;
-	// 			left: -105%;
-	// 			float: left;
-	// 			z-index: 1;
-	// 			top: 50%;
-	// 			bottom: 50%;
-	// 			margin: auto;
-	// 		}
-	// 	}
-	// 	.circle {
-	// 		height: 40px;
-	// 		width: 40px;
-	// 		left: -30px;
-	// 		top: 0px;
-	// 		position: absolute;
-	// 		z-index: 1;
-	// 		background-repeat: no-repeat;
-	// 		animation: b 4.5s infinite;
-	// 		// box-shadow: 0 0 0 5px $r;
-	// 	}
-
-	// 	.the-world-is-not-cha {
-	// 		color: #161616;
-	// 		font-family: Avenir;
-	// 		font-size: 1.5rem;
-	// 		font-weight: 300;
-	// 		letter-spacing: 0;
-	// 		line-height: 41px;
-	// 		margin-bottom: 5%;
-	// 	}
-	// 	.over-the-past-few-de {
-	// 		color: #505760;
-	// 		font-family: Avenir;
-	// 		font-size: 0.85rem;
-	// 		font-weight: 300;
-	// 		letter-spacing: 0;
-	// 		line-height: 24px;
-	// 		margin-right: 7%;
-	// 		padding-bottom: 5%;
-	// 	}
-	// }
-	// @media screen and (max-width: 991px) {
-	// 	padding: 2rem 20% 1rem;
-	// 	.response-image {
-	// 		padding: none;
-	// 		img {
-	// 			width: 100%;
-	// 			border-radius: 8px;
-	// 			display: inline-block;
-	// 			height: auto;
-	// 		}
-	// 	}
-	// 	.our-covid-19-respons {
-	// 		color: $r;
-	// 		font-family: Avenir;
-	// 		font-size: 1rem;
-	// 		font-weight: 500;
-	// 		letter-spacing: 3px;
-	// 		line-height: 1.2;
-	// 		text-transform: uppercase;
-	// 		position: relative;
-	// 		margin-left: 30px;
-	// 		margin-bottom: 5%;
-	// 		margin-top: 10%;
-	// 		.covid_sub {
-	// 			margin-left: 25px;
-	// 		}
-	// 	}
-	// 	// // work in progress
-	// 	// .response_line {
-	// 	// 	background: #fff;
-	// 	// 	&::before {
-	// 	// 		content: "";
-	// 	// 		width: 100%;
-	// 	// 		border-bottom: solid 1px $r;
-	// 	// 		position: absolute;
-	// 	// 		left: -103%;
-	// 	// 		float: left;
-	// 	// 		z-index: 1;
-	// 	// 		top: 40%;
-	// 	// 		bottom: 50%;
-	// 	// 		margin: auto;
-	// 	// 	}
-	// 	// }
-	// 	.circle {
-	// 		height: 40px;
-	// 		width: 40px;
-	// 		left: -30px;
-	// 		top: -10px;
-	// 		position: absolute;
-	// 		z-index: 1;
-	// 		background-repeat: no-repeat;
-	// 		animation: b 4.5s infinite;
-	// 		// box-shadow: 0 0 0 5px $r;
-	// 	}
-	// 	.text {
-	// 		display: inline-block;
-	// 		width: 100%;
-	// 	}
-	// 	.the-world-is-not-cha {
-	// 		color: #161616;
-	// 		font-family: Avenir;
-	// 		font-size: 1.5rem;
-	// 		font-weight: 300;
-	// 		letter-spacing: 0;
-	// 		line-height: 41px;
-	// 		margin-bottom: 5%;
-	// 	}
-	// 	.over-the-past-few-de {
-	// 		color: #505760;
-	// 		font-family: Avenir;
-	// 		font-size: 0.85rem;
-	// 		font-weight: 300;
-	// 		letter-spacing: 0;
-	// 		line-height: 24px;
-	// 		margin-right: 7%;
-	// 		padding-bottom: 5%;
-	// 	}
-	// }
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: 1199px) {
 		background-position: bottom;
 		background-repeat: no-repeat;
-		background-size: 175% auto;
+		background-size: 175% 50%;
 		padding: 0 7% 5%;
 		.card {
 			display: flex;
@@ -1371,46 +1229,52 @@
 				width: 100%;
 				position: relative;
 				border-radius: 10px 10px 0 0;
-				// margin-top: 3rem;
 			}
 
 			.text {
 				height: auto;
-				width: 100%;
+				width: auto;
 				display: flex;
-				// flex-direction: column;
-				padding: 7%;
+				padding: 3%;
+				margin: 0;
 				.our-covid-19-respons {
 					color: $r;
 					font-family: Avenir;
 					font-size: 0.9rem;
 					font-weight: 500;
 					letter-spacing: 3px;
-					// line-height: 19px;
 					text-transform: uppercase;
 					position: relative;
-					margin-left: 30px;
-					margin-bottom: 2%;
+					margin-left: 40px;
+					margin-bottom: 0;
 					.covid_sub {
 						margin-left: 25px;
 					}
 				}
+				.ring-container {
+					position: relative;
+				}
 				.circle {
-					height: 40px;
-					width: 40px;
-					left: -30px;
-					top: -8px;
+					width: 15px;
+					height: 15px;
+					background-color: $r;
+					border-radius: 50%;
 					position: absolute;
-					z-index: 1;
-					background-repeat: no-repeat;
-					animation: b 4.5s infinite;
-					// box-shadow: 0 0 0 5px $r;
-					@media screen and (max-width: 575px) {
-						height: 40px;
-						width: 40px;
-						left: -30px;
-						top: -0px;
-					}
+					top: 0.2rem;
+					left: 0.5rem;
+				}
+
+				.ringring {
+					border: 3px solid $r;
+					-webkit-border-radius: 30px;
+					height: 25px;
+					width: 25px;
+					position: absolute;
+					top: -0.11rem;
+					left: 0.19rem;
+					-webkit-animation: pulsate 2s ease-out;
+					-webkit-animation-iteration-count: infinite;
+					opacity: 0;
 				}
 
 				.the-world-is-not-cha {
@@ -1420,10 +1284,11 @@
 					font-weight: 500;
 					letter-spacing: 0;
 					line-height: 1.6;
-					margin-bottom: 0.8rem;
+					margin-bottom: 0;
+					padding-bottom: 0.5rem;
+					padding-top: 0.5rem;
 				}
 				.over-the-past-few-de {
-					color: #505760;
 					font-family: Avenir;
 					font-size: 1rem;
 					font-weight: 300;
@@ -1433,21 +1298,117 @@
 				}
 			}
 		}
+		@media screen and (max-width: 991px) {
+			.card {
+				.text {
+					padding: 3rem;
+				}
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			// background-image: none;
+			background-size: 0 100%;
+			background-color: #191c20;
+			padding: 0 0 0;
+			margin: 0;
+			width: 100%;
+			.card {
+				display: flex;
+				flex-direction: column;
+				border-radius: 0 0 0 0;
+				.response-image img {
+					display: inline-block;
+					height: 300px;
+					width: 100%;
+					position: relative;
+					border-radius: 0 0 0 0;
+				}
+
+				.text {
+					width: 100%;
+					display: flex;
+					padding: 2rem;
+					margin: 0 0;
+					.our-covid-19-respons {
+						color: $r;
+						font-family: Avenir;
+						font-size: 0.9rem;
+						font-weight: 500;
+						letter-spacing: 3px;
+						text-transform: uppercase;
+						position: relative;
+						margin-left: 40px;
+						margin-bottom: 2%;
+						.covid_sub {
+							margin-left: 25px;
+						}
+					}
+					.ring-container {
+						position: relative;
+					}
+					.circle {
+						width: 15px;
+						height: 15px;
+						background-color: $r;
+						border-radius: 50%;
+						position: absolute;
+						top: 0.2rem;
+						left: 0.5rem;
+					}
+
+					.ringring {
+						border: 3px solid $r;
+						-webkit-border-radius: 30px;
+						height: 25px;
+						width: 25px;
+						position: absolute;
+						top: -0.11rem;
+						left: 0.19rem;
+						-webkit-animation: pulsate 2s ease-out;
+						-webkit-animation-iteration-count: infinite;
+						opacity: 0;
+					}
+
+					.the-world-is-not-cha {
+						color: #ffffff;
+						font-family: Avenir;
+						font-size: 1.5rem;
+						font-weight: 500;
+						letter-spacing: 0;
+						line-height: 1.6;
+						margin-bottom: 0.3rem;
+						padding-bottom: 0;
+						padding-top: 0;
+					}
+					.over-the-past-few-de {
+						font-family: Avenir;
+						font-size: 1rem;
+						font-weight: 300;
+						letter-spacing: 0;
+						line-height: 1.3;
+						// margin-right: 7%;
+					}
+				}
+			}
+		}
 	}
 }
-
+#response .col-12 {
+	padding: 0;
+}
 // CONTACT -------------------------------------------------------------------------------------------------------------
 #contact {
 	background-color: $form;
-	// display: flex;
-	padding: 5% 13% 5%;
+	padding: 5% 15% 5%;
 	.subtitles {
-		color: #26ac77;
+		color: #ffffff;
 		font-family: Avenir;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		font-size: 0.8rem;
-		font-weight: 900;
+		font-size: 0.9rem;
+		font-weight: 300;
+		opacity: 0.65;
 		padding-bottom: 1rem;
 	}
 	.as-canadas-fastest {
@@ -1472,12 +1433,16 @@
 		font-size: 16px;
 		font-weight: 300;
 		letter-spacing: 0;
-		line-height: 20px;
+		line-height: 1.4;
+		opacity: 0.6;
+		@media screen and (max-width: 1100px) {
+			width: 300px;
+		}
 	}
 	.phone {
 		color: #ffffff;
 		font-family: Avenir;
-		font-size: 24px;
+		font-size: 1.5rem;
 		font-weight: 300;
 		letter-spacing: 0;
 		line-height: 34px;
@@ -1490,30 +1455,40 @@
 	.location {
 		color: #ffffff;
 		font-family: Avenir;
-		font-size: 24px;
+		font-size: 1.5rem;
 		font-weight: 300;
 		letter-spacing: 0;
 		line-height: 30px;
+		align-self: center;
+		align-content: center;
+		display: flex;
+		flex-direction: row;
 		img {
 			padding-right: 5%;
-			display: inline-block;
-			padding-bottom: 5%;
+			// display: inline-block;
+			object-position: top;
+			object-fit: contain;
 		}
 		.text {
-			display: inline-block;
+			// display: inline-block;
+			width: 55%;
 		}
 	}
 	.form {
 		text-transform: uppercase;
 		color: $w;
+		letter-spacing: 2px;
 		input[type="text"],
 		input[type="email"] {
 			padding: 0.5rem 0 0.5rem;
 			width: 100%;
 			border-bottom: 2px solid $w;
 			outline: none;
+			&.wpcf7-not-valid {
+				border-bottom: 2px solid $r;
+			}
 		}
-		::-webkit-input-placeholder {
+		#f-name ::-webkit-input-placeholder {
 			opacity: 0.42;
 			color: #ffffff;
 			font-family: Avenir;
@@ -1528,6 +1503,12 @@
 			border-bottom: 2px solid $w;
 			outline: none;
 			width: 100%;
+			&.wpcf7-not-valid {
+				border-bottom: 2px solid $r;
+			}
+		}
+		.wpcf7-not-valid-tip {
+			display: none;
 		}
 		.wpcf7-form textarea {
 			width: 100% !important;
@@ -1535,94 +1516,28 @@
 		}
 		.wpcf7-submit {
 			margin-top: 15%;
+			@media screen and (max-width: 1100) {
+				margin-top: 25%;
+			}
 		}
 		#f-name {
 			margin-bottom: 20%;
 		}
+		.wpcf7-response-output {
+			border: none;
+			color: $r;
+			transform: translateY(-140px);
+			font-size: 0.8rem;
+			text-transform: none;
+			padding: 1rem;
+		}
+		div.wpcf7 .ajax-loader {
+			background-image: url("assets/img/loading.gif");
+			background-size: 100%;
+		}
 	}
-	// @media screen and (max-width: 767px) {
-	// 	padding: 2rem 10% 1rem;
-	// 	.subtitles {
-	// 		font-size: 0.8rem;
-	// 		font-weight: 900;
-	// 		padding-bottom: 0.1rem;
-	// 	}
-	// 	.as-canadas-fastest {
-	// 		color: #ffffff;
-	// 		font-family: Avenir;
-	// 		font-size: 1.3rem;
-	// 		font-weight: 300;
-	// 		line-height: 1.2;
-	// 		text-align: left;
-	// 		padding-bottom: 1rem;
-	// 	}
-	// 	.get-in-touch {
-	// 		width: 100%;
-	// 		font-size: 0.85rem;
-	// 		font-weight: 300;
-	// 		line-height: 1.2;
-	// 	}
-	// 	.phone {
-	// 		font-size: 1rem;
-	// 		line-height: 1.2;
-	// 		img {
-	// 			padding-right: 5%;
-	// 		}
-	// 		padding-bottom: 0.8rem;
-	// 	}
-	// 	.location {
-	// 		font-size: 1rem;
-	// 		line-height: 1.2;
-	// 		img {
-	// 			padding-right: 5%;
-	// 			display: inline-block;
-	// 			padding-bottom: 8%;
-	// 			padding-top: 0;
-	// 		}
-	// 		.text {
-	// 			display: inline-block;
-	// 		}
-	// 	}
-	// 	.form {
-	// 		text-transform: uppercase;
-	// 		padding-top: 10%;
-	// 		color: $w;
-	// 		input[type="text"],
-	// 		input[type="email"] {
-	// 			padding: 0.5rem 0 0.5rem;
-	// 			width: 100%;
-	// 			border-bottom: 2px solid $w;
-	// 			outline: none;
-	// 		}
-	// 		::-webkit-input-placeholder {
-	// 			opacity: 0.42;
-	// 			color: #ffffff;
-	// 			font-family: Avenir;
-	// 			font-size: 14px;
-	// 			font-weight: 300;
-	// 			letter-spacing: 0;
-	// 			line-height: 20px;
-	// 		}
-	// 		textarea {
-	// 			// height: 12%;
-	// 			padding: 0.5rem 0 0;
-	// 			border-bottom: 2px solid $w;
-	// 			outline: none;
-	// 			width: 100%;
-	// 			overflow: hidden;
-	// 		}
-
-	// 		#f-name,
-	// 		#email {
-	// 			margin-bottom: 5%;
-	// 		}
-	// 		.wpcf7-submit {
-	// 			top: -40%;
-	// 		}
-	// 	}
-	// }
 	@media screen and (max-width: 991px) {
-		padding: 2rem 10% 1rem;
+		padding: 1rem 5% 1rem;
 		.subtitles {
 			font-size: 0.8rem;
 			font-weight: 900;
@@ -1642,33 +1557,33 @@
 			font-size: 0.9rem;
 			font-weight: 300;
 			line-height: 1.2;
-			margin-bottom: 1.1rem;
+			margin-bottom: 1rem;
+			@media screen and (max-width: 767px) {
+				margin-bottom: 0;
+			}
 		}
 		.phone {
 			font-size: 0.9rem;
 			line-height: 1.2;
-			padding-top: 0px;
+			padding-top: 2px;
 			img {
-				padding-right: 5%;
+				padding-right: 4%;
 			}
 			// padding-bottom: 0.8rem;
 		}
 		.location {
 			font-size: 0.9rem;
 			line-height: 1.5;
-			img {
-				padding-right: 5%;
-				display: inline-block;
-				padding-bottom: 8%;
-				padding-top: 0px;
-			}
 			.text {
-				display: inline-block;
+				width: 100%;
+				max-width: 200px;
 			}
 		}
 		.form {
 			text-transform: uppercase;
 			color: $w;
+			padding-right: 0;
+			padding-left: 0;
 			input[type="text"],
 			input[type="email"] {
 				padding: 0.5rem 0 0.5rem;
@@ -1693,13 +1608,26 @@
 				width: 100%;
 				overflow: hidden;
 			}
-
+			.row {
+				padding-bottom: 1rem;
+			}
 			#f-name,
 			#email {
 				margin-bottom: 5%;
 			}
 			.wpcf7-submit {
 				top: -40%;
+			}
+			.wpcf7-form {
+				padding-top: 1.5rem;
+			}
+			.wpcf7-response-output {
+				border: none;
+				color: $r;
+				transform: translateY(-160px);
+				font-size: 0.8rem;
+				text-transform: none;
+				padding: 1rem;
 			}
 		}
 	}

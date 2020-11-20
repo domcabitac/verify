@@ -12,16 +12,18 @@
 
 wp_footer(); ?>
 
-<footer id="footer" class="d-none d-lg-block">
-		<div class="container">
-			<div class="row justify-content-between align-items-start">
-				<div class="col-4 align-items-start">
-                    © Verify 2020 | All Rights Restricted
+<footer id="footer" class=" d-lg-block">
+		<div class="container-fluid">
+			<div class="row foot justify-content-between">
+				<div class="col-12 col-xl-5 col-lg-5 offset-md-1 col-xs-4 align-items-start">
+					© Verify 2020 | All Rights Restricted
+					<div class="privacy">
+						Privacy Policy
+					</div>
 				</div>
-				<div class="col-2">
-                    Privacy Policy
-				</div>
-				<div class='col-lg-3 col-md-4 col-xl-3'>
+				<!-- <div class="col-12 col-xl-2 col-lg-2">
+				</div> -->
+				<div class='col-12 col-xl-5 col-lg-5 FC align-text-end'>
 				Designed & developed by <a href='https://www.ferrazcreative.com' target="_blank">Ferraz Creative</a>
 				</div>
 			</div>
