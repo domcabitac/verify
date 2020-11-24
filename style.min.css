@@ -201,15 +201,15 @@ nav#mobile{width:100%;left:0;right:0;margin:0 auto;z-index:25;padding:1rem 1rem;
 nav#mobile .logo-wrapper{width:120px;height:auto}
 nav#mobile .logo-wrapper img{width:100%;height:100%;-o-object-fit:contain;object-fit:contain;position:relative;z-index:21}
 nav#mobile.open{top:0 !important}
-nav#mobile.open .logo-wrapper{-webkit-transform:translateX(10px);transform:translateX(10px);z-index:24;-webkit-animation:slide-right 1s cubic-bezier(0.25,0.46,0.45,0.94) both;animation:slide-right 1s cubic-bezier(0.25,0.46,0.45,0.94) both}
+nav#mobile.open .logo-wrapper{-webkit-transform:translateX(2rem);transform:translateX(2rem);z-index:24;-webkit-animation:slide-right 1s cubic-bezier(0.25,0.46,0.45,0.94) both;animation:slide-right 1s cubic-bezier(0.25,0.46,0.45,0.94) both}
 nav#mobile .current-menu-item>a{color:#35ad68}
 nav#mobile .sub-menu li{font-size:1rem;border:0}
-#mobile_menu{background-color:rgba(25,28,32,0.99);color:#fff;position:fixed;width:100%;height:100%;z-index:20;font-size:1.4rem;overflow-x:hidden;-webkit-transition:.5s;transition:.5s;left:0;top:0;display:none;text-transform:uppercase;letter-spacing:3px;padding:40% 1.3rem;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-#mobile_menu.open{display:-webkit-box;display:-ms-flexbox;display:flex}
-#mobile_menu li{padding:.5rem 0;display:inline-block;width:100%;float:center;font-size:1.5rem;-webkit-animation:slide-right 1s cubic-bezier(0.25,0.46,0.45,0.94) both;animation:slide-right 1s cubic-bezier(0.25,0.46,0.45,0.94) both}
+#mobile_menu{background-color:rgba(25,28,32,0.99);color:#fff;font-size:1.4rem;text-transform:uppercase;letter-spacing:3px;padding:40% 1.3rem;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100vw;height:100vh;position:fixed;right:0;top:0;-webkit-transform:translate3d(100vw,0,0);transform:translate3d(100vw,0,0);-webkit-transition:-webkit-transform .5s cubic-bezier(0,0.52,0,1);transition:-webkit-transform .5s cubic-bezier(0,0.52,0,1);transition:transform .5s cubic-bezier(0,0.52,0,1);transition:transform .5s cubic-bezier(0,0.52,0,1),-webkit-transform .5s cubic-bezier(0,0.52,0,1)}
+#mobile_menu.open{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+#mobile_menu li{padding:.5rem 0;display:inline-block;width:100%;float:center;font-size:1.5rem}
 #mobile_menu li.current-menu-item,#mobile_menu li.current-menu-parent{border-top:1px solid #fff;border-bottom:1px solid #fff}
 #mobile_menu li .hamb_contact{font-size:1rem}
-#mobile_menu a{color:#fff}
+#mobile_menu a{color:#fff;padding-left:2rem}
 .hamburger{display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible;z-index:21;outline:0;padding-right:.8rem}
 .hamburger:hover{opacity:.7}
 .hamburger.is-active:hover{opacity:.7}
@@ -230,6 +230,7 @@ nav#mobile .sub-menu li{font-size:1rem;border:0}
 #footer{background-color:#161616;color:rgba(217,224,239,0.34);font-size:12px;padding:1.5rem 15% 1.5rem}
 #footer a{color:rgba(217,224,239,0.34)}
 #footer .FC{text-align:right}
+#footer .FC:hover{color:#fff}
 #footer .foot{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 #footer .privacy{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;padding-left:1rem}
 .subtitle{text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:900;position:relative}
@@ -317,7 +318,7 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #values .card .subtitle{color:#fff;font-family:Avenir;font-size:14px;font-weight:500;letter-spacing:3px;line-height:1.2;text-transform:uppercase;padding-bottom:1rem}
 #values .card .icon img{width:20%;padding-bottom:2rem;padding-top:2rem}
 #values .card .values-content{padding-top:5%}
-#values .card .value-title{height:48px;width:250px;color:#fff;font-family:Avenir;font-size:22px;font-weight:500;letter-spacing:0;line-height:24px}
+#values .card .value-title{color:#fff;font-family:Avenir;font-size:22px;font-weight:500;letter-spacing:0;line-height:24px}
 #values .card .value-text{color:#fff;font-family:Avenir;font-size:1rem;font-weight:300;letter-spacing:0;line-height:1.4;margin-top:.8rem;text-align:left;margin-right:2.5rem}
 #values .toggle{color:#686868;float:left}
 #values .value_quote{text-align:center;margin-top:5%;z-index:2;border:0;overflow:visible;border-raidus:none}
@@ -355,7 +356,7 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #response .card .text .our-covid-19-respons .covid_sub{margin-left:25px}
 #response .card .text .the-world-is-not-cha{color:#fff;font-family:Avenir;font-size:36px;font-weight:400;letter-spacing:0;line-height:1.3;padding:1.5rem 0}
 #response .card .text .over-the-past-few-de{color:rgba(239,241,247,0.81);font-family:Avenir;font-size:16px;font-weight:300;letter-spacing:0;line-height:1.6}
-#response .col-12{padding:0}
+#response .col-12{padding:0;padding-bottom:3rem}
 #contact{background-color:#191c20;padding:5% 15% 5%}
 #contact .subtitles{color:#fff;font-family:Avenir;text-transform:uppercase;letter-spacing:2px;font-size:.9rem;font-weight:300;opacity:.65;padding-bottom:1rem}
 #contact .as-canadas-fastest{color:#fff;font-family:Avenir;font-size:45px;font-weight:300;line-height:50px;text-align:left;padding-bottom:1rem}
@@ -728,6 +729,8 @@ nav#desktop .nav-contact .line{display:none}
 #values .card .icon img{width:50px;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;position:relative}
 #values .card .values-content{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}
 #values .card .values-content .text{padding-left:2rem}
+#values .card .values-content .text br{content:' '}
+#values .card .values-content .text br:after{content:' '}
 #values .card .values-content .text .value-title{display:inline-block;color:#fff;font-family:Avenir;font-weight:500;letter-spacing:0;line-height:1.2;font-size:1.2rem}
 #values .card .values-content .text .value-text{font-size:1rem;line-height:1.4;width:100%;margin-top:.3rem}
 #response{background-position:bottom;background-repeat:no-repeat;background-size:175% 50%;padding:0 7% 5%}
@@ -742,17 +745,17 @@ nav#desktop .nav-contact .line{display:none}
 #response .card .text .the-world-is-not-cha{color:#fff;font-family:Avenir;font-size:1.5rem;font-weight:500;letter-spacing:0;line-height:1.6;margin-bottom:0;padding-bottom:.5rem;padding-top:.5rem}
 #response .card .text .over-the-past-few-de{font-family:Avenir;font-size:1rem;font-weight:300;letter-spacing:0;line-height:1.3}
 }@media screen and (max-width:1199px) and (max-width:991px){#response .card .text{padding:3rem}
-}@media screen and (max-width:1199px) and (max-width:767px){#response{background-size:0 100%;background-color:#191c20;padding:0;margin:0;width:100%}
+}@media screen and (max-width:1199px) and (max-width:767px){#response{background-position:bottom;padding:0;margin:0;width:100%}
 #response .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border-radius:0}
 #response .card .response-image img{display:inline-block;height:300px;width:100%;position:relative;border-radius:0}
-#response .card .text{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;padding:2rem;margin:0}
+#response .card .text{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;padding:3rem;margin:0}
 #response .card .text .our-covid-19-respons{color:#ef6351;font-family:Avenir;font-size:.9rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;position:relative;margin-left:40px;margin-bottom:2%}
 #response .card .text .our-covid-19-respons .covid_sub{margin-left:25px}
 #response .card .text .ring-container{position:relative}
 #response .card .text .circle{width:15px;height:15px;background-color:#ef6351;border-radius:50%;position:absolute;top:.2rem;left:.5rem}
 #response .card .text .ringring{border:3px solid #ef6351;-webkit-border-radius:30px;height:25px;width:25px;position:absolute;top:-0.11rem;left:.19rem;-webkit-animation:pulsate 2s ease-out;-webkit-animation-iteration-count:infinite;opacity:0}
-#response .card .text .the-world-is-not-cha{color:#fff;font-family:Avenir;font-size:1.5rem;font-weight:500;letter-spacing:0;line-height:1.6;margin-bottom:.3rem;padding-bottom:0;padding-top:0}
-#response .card .text .over-the-past-few-de{font-family:Avenir;font-size:1rem;font-weight:300;letter-spacing:0;line-height:1.3}
+#response .card .text .the-world-is-not-cha{color:#fff;font-family:Avenir;font-size:1.5rem;font-weight:500;letter-spacing:0;line-height:1.2;margin-bottom:2rem;padding-bottom:0;padding-top:0}
+#response .card .text .over-the-past-few-de{font-family:Avenir;font-size:1rem;font-weight:300;letter-spacing:0;line-height:1.6}
 }@media screen and (max-width:1100px){#contact .get-in-touch{width:300px}
 }@media screen and (max-width:1100){#contact .form .wpcf7-submit{margin-top:25%}
 }@media screen and (max-width:992px){html,body{position:relative;scroll-behavior:smooth !important}
@@ -784,10 +787,11 @@ nav#desktop .nav-contact .line{display:none}
 #partner_process .row.right{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 #partner_process .row.right .image .dots{left:unset;right:-40%;opacity:20%}
 #partner_process .image.one .dots{top:-3rem}
-#partner_process .icon img{width:10%;padding-bottom:1rem}
+#partner_process .icon img{width:20%;padding-bottom:1rem}
 #partner_process .title{color:#161616;font-family:Avenir;font-size:1.2rem;font-weight:700;letter-spacing:0;line-height:1.6;padding-bottom:3%}
-#partner_process .sub{color:#161616;font-family:Avenir;font-size:.85rem;font-weight:300;letter-spacing:0;line-height:1.4;padding-bottom:20%}
-#partner_process .text_proc{padding:0;position:relative;width:95%}
+#partner_process .sub{color:#161616;font-family:Avenir;font-size:.85rem;font-weight:300;letter-spacing:0;line-height:1.4;padding-bottom:7%;margin-top:3rem;width:65%}
+#partner_process .text_proc{padding:0;position:relative;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;max-width:95%}
+#partner_process .text_proc .process_header{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding-right:7%;width:35%}
 #partner_process .number{display:none}
 #partner_process .num_mobile{display:inline;color:#505760;font-family:Avenir;font-size:14px;font-weight:500;letter-spacing:3px;line-height:1.2;text-transform:uppercase}
 #partner_process .pp_sub{color:#505760;font-family:Avenir;font-size:.8rem;font-weight:500;letter-spacing:3px;line-height:1.6;text-align:center;padding-top:6%;text-transform:uppercase}
@@ -795,10 +799,10 @@ nav#desktop .nav-contact .line{display:none}
 #partner_process .progress-container{display:none}
 #partner_process .progress-bar{display:none}
 #contact .as-canadas-fastest{font-size:20px;font-weight:400;line-height:20px}
-#contact{padding:1rem 5% 1rem}
+#contact{padding:2rem 5% 2rem}
 #contact .subtitles{font-size:.8rem;font-weight:900;padding-bottom:.1rem}
 #contact .as-canadas-fastest{color:#fff;font-family:Avenir;font-size:1.3rem;font-weight:300;line-height:1.2;text-align:left;padding-bottom:1rem}
-#contact .get-in-touch{width:100%;font-size:.9rem;font-weight:300;line-height:1.2;margin-bottom:1rem}
+#contact .get-in-touch{width:100%;font-size:.9rem;font-weight:300;line-height:1.6;margin-bottom:1rem}
 #contact .phone{font-size:.9rem;line-height:1.2;padding-top:2px}
 #contact .phone img{padding-right:4%}
 #contact .location{font-size:.9rem;line-height:1.5}
@@ -819,8 +823,8 @@ nav#desktop .nav-contact .line{display:none}
 #services .card-title{text-align:center;color:#161616;font-family:Avenir;font-size:1rem;font-weight:700;letter-spacing:0;line-height:1.2}
 #services .card-text{width:100%;color:#505760;font-family:Avenir;font-size:.9rem;line-height:1.4;text-align:center;margin-top:4%}
 #services .icon img{width:80%;padding-bottom:.8rem}
-#services .ending{width:100%;text-align:center;padding-top:20%;padding-bottom:20%}
-#services .ending_text{display:inline-block;color:#191c20;font-family:Avenir;font-size:1rem;font-weight:500;letter-spacing:0;text-align:center;padding-right:3%;z-index:2;padding-bottom:1rem}
+#services .ending{width:100%;text-align:center;padding-top:6rem;padding-bottom:4rem}
+#services .ending_text{display:inline-block;color:#191c20;font-family:Avenir;font-size:1rem;font-weight:500;letter-spacing:0;text-align:center;padding-right:3%;z-index:2;padding-bottom:2rem}
 #services .btn_green .green_white_arrow{padding-left:2rem}
 #contact .get-in-touch{margin-bottom:0}
 }@media screen and (max-width:767px){.btn.red{padding:1rem 1rem}
@@ -835,12 +839,16 @@ nav#desktop .nav-contact .line{display:none}
 #values .card .icon img{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;width:15%}
 #values .card .values-content{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;padding-top:0}
 #values .card .values-content .text{padding-left:0}
-#values .card .values-content .text .value-title{height:1rem;width:280px;color:#fff;font-family:Avenir;font-size:1.2rem;font-weight:700;letter-spacing:0;line-height:1.2;margin-bottom:.9rem}
+#values .card .values-content .text .value-title{height:1rem;width:280px;color:#fff;font-family:Avenir;font-size:1.2rem;font-weight:700;letter-spacing:0;line-height:1.2;margin-bottom:.9rem;max-width:160px}
 #values .card .values-content .text .value-text{color:#fff;font-family:Avenir;font-size:.85rem;font-weight:100;letter-spacing:0;line-height:1.6;margin-top:.1rem;text-align:left;margin-right:.1rem}
 #values .value_quote{text-align:center;margin-top:7%}
 #values .value_quote .quote{color:#fff;font-family:Avenir;font-size:1.5rem;font-weight:500;letter-spacing:0;line-height:1.6;width:100%;max-width:200px;text-align:center;margin:0 auto}
 #values .value_quote .exp{color:#fff;font-family:Avenir;font-size:16px;font-weight:500;line-height:1.2;text-align:center;padding:1rem 10%}
 #values .value_quote .author{color:#35ad68;font-family:Avenir;font-size:16px;font-weight:500;letter-spacing:3.43px;line-height:1.6;text-align:center}
+}@media screen and (max-width:600px){#partner_process .text_proc{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+#partner_process .text_proc .process_header{padding-right:0;width:100%}
+#partner_process .text_proc .sub{margin-top:0;width:100%}
+#partner_process .text_proc .icon img{width:10%;padding-bottom:1rem}
 }@media print{.d-print-none{display:none !important}
 .d-print-inline{display:inline !important}
 .d-print-inline-block{display:inline-block !important}
@@ -851,9 +859,9 @@ nav#desktop .nav-contact .line{display:none}
 .d-print-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
 .d-print-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
 }@-webkit-keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}
-100%{-webkit-transform:translateX(10px);transform:translateX(10px)}
+100%{-webkit-transform:translateX(2rem);transform:translateX(2rem)}
 }@keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}
-100%{-webkit-transform:translateX(10px);transform:translateX(10px)}
+100%{-webkit-transform:translateX(2rem);transform:translateX(2rem)}
 }@-webkit-keyframes b{0%,to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:scale(0.8);transform:scale(0.8)}
 50%{-webkit-transform:scale(1.1);transform:scale(1.1)}
 }@keyframes b{0%,to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:scale(0.8);transform:scale(0.8)}

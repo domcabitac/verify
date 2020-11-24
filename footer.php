@@ -21,10 +21,8 @@ wp_footer(); ?>
 						Privacy Policy
 					</div>
 				</div>
-				<!-- <div class="col-12 col-xl-2 col-lg-2">
-				</div> -->
 				<div class='col-12 col-xl-5 col-lg-5 FC align-text-end'>
-				Designed & developed by <a href='https://www.ferrazcreative.com' target="_blank">Ferraz Creative</a>
+					<a href='https://www.ferrazcreative.com' target="_blank">REVAMPED™ by Ferraz Creative</a>
 				</div>
 			</div>
 		</div>

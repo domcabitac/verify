@@ -256,28 +256,31 @@ get_header(); ?>
 					</div>
 					<div class="col-12 col-lg-6">
 						<div class="text_proc">
+						<div class="process_header">
 							<div class="icon">
-							<?php $icon = get_sub_field( 'icon' ); ?>
-									<?php if ( $icon ) : ?>
-										<img class='PP_icon' src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
-									<?php endif; ?>
-							</div>
-							<div class="num_mobile">
-							<?php 
-									if($i ==1){
-										echo 'Step One';
-									} elseif($i ==2){
-										echo 'Step Two';
+								<?php $icon = get_sub_field( 'icon' ); ?>
+										<?php if ( $icon ) : ?>
+											<img class='PP_icon' src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+										<?php endif; ?>
+								</div>
+								<div class="num_mobile">
+								<?php 
+										if($i ==1){
+											echo 'Step One';
+										} elseif($i ==2){
+											echo 'Step Two';
 
-									} elseif($i ==3){
-										echo 'Step Three';
-									} elseif($i==4){
-										echo 'Step Four';
-									} ?>
-							</div>
-							<div class="title">
-								<?php the_sub_field( 'title' ); ?>
-							</div>
+										} elseif($i ==3){
+											echo 'Step Three';
+										} elseif($i==4){
+											echo 'Step Four';
+										} ?>
+								</div>
+								<div class="title">
+									<?php the_sub_field( 'title' ); ?>
+								</div>
+						</div>
+	
 							<div class="sub">
 								<?php the_sub_field( 'text' ); ?>
 							</div>

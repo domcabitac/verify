@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="../dist/css/animsition.min.css">
 <!-- animsition.js -->
 <script src="../dist/js/animsition.min.js"></script>
-
+<title><?php wp_title();?></title>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -58,7 +58,10 @@
 				<ul>
 					<li>
 						<?php the_sub_field( 'text' ); ?>
-						<a class='hamb_contact' href="tel:6479705275">647.970.5275</a>
+					</li>
+					<li>
+					<a class='hamb_contact' href="tel:6479705275">647.970.5275</a>
+
 					</li>
 					<li>
 						<a class='hamb_contact' href="mailto:info@verifytab.ca">Info@verifyair.com</a>
