@@ -360,7 +360,7 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #contact{background-color:#191c20;padding:5% 15% 5%}
 #contact .subtitles{color:#fff;font-family:Avenir;text-transform:uppercase;letter-spacing:2px;font-size:.9rem;font-weight:300;opacity:.65;padding-bottom:1rem}
 #contact .as-canadas-fastest{color:#fff;font-family:Avenir;font-size:45px;font-weight:300;line-height:50px;text-align:left;padding-bottom:1rem}
-#contact .get-in-touch{height:80px;width:410px;color:#fff;font-family:Avenir;font-size:16px;font-weight:300;letter-spacing:0;line-height:1.4;opacity:.6}
+#contact .get-in-touch{width:410px;color:#fff;font-family:Avenir;font-size:16px;font-weight:300;letter-spacing:0;line-height:1.4;padding-bottom:1rem;opacity:.6}
 #contact .phone{color:#fff;font-family:Avenir;font-size:1.5rem;font-weight:300;letter-spacing:0;line-height:34px;padding-top:3rem;padding-bottom:.8rem}
 #contact .phone img{padding-right:5%}
 #contact .location{color:#fff;font-family:Avenir;font-size:1.5rem;font-weight:300;letter-spacing:0;line-height:30px;-ms-flex-item-align:center;align-self:center;-ms-flex-line-pack:center;align-content:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
@@ -826,7 +826,7 @@ nav#desktop .nav-contact .line{display:none}
 #services .ending{width:100%;text-align:center;padding-top:6rem;padding-bottom:4rem}
 #services .ending_text{display:inline-block;color:#191c20;font-family:Avenir;font-size:1rem;font-weight:500;letter-spacing:0;text-align:center;padding-right:3%;z-index:2;padding-bottom:2rem}
 #services .btn_green .green_white_arrow{padding-left:2rem}
-#contact .get-in-touch{margin-bottom:0}
+#contact .get-in-touch{margin-bottom:.5rem}
 }@media screen and (max-width:767px){.btn.red{padding:1rem 1rem}
 #masthead{padding:120px 7% 80px;display:-webkit-box;display:-ms-flexbox;display:flex;height:80vh}
 #masthead .title{color:#fff;font-family:Avenir;text-align:left;font-size:2.3rem;font-weight:500;line-height:1.2;padding-bottom:2%;width:120%;max-width:450px}
