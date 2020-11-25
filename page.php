@@ -17,11 +17,14 @@ get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
 <section id="post">
 	<div class="container">
-        <div class="row text-center">
-        <h1><?php the_title(); ?></h1>
+	<div class="row justify-content-center subtitle">
+        	IMPORTANT
         </div>
-		<div class="row justify-content-center">
-			<div class="col-10">
+        <div class="row justify-content-center title">
+        	<?php the_title(); ?>
+        </div>
+		<div class="row justify-content-center policy_text">
+			<div class="col-lg-10 col-xl-10 col-sm-12 col-sm-12">
 				<?php the_content();?>
 			</div>
 		</div>

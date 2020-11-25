@@ -418,13 +418,15 @@ nav#mobile {
     color: rgba(217, 224, 239, 0.34);
     font-size: 12px;
     padding: 1.5rem 15% 1.5rem;
+    bottom: 0;
+    flex-shrink: 0;
     a {
         color: rgba(217, 224, 239, 0.34);
     }
     .FC {
         text-align: right;
     }
-    .FC:hover {
+    a:hover {
         color: #fff;
     }
     .foot {
@@ -502,6 +504,20 @@ nav#mobile {
             filter: invert(46%) sepia(16%) saturate(2007%) hue-rotate(319deg) brightness(105%) contrast(96%);
         }
     }
+    &.error {
+        background-color: $r;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+        text-align: center;
+        float: center;
+    }
+    &.error:hover {
+        border: 1px solid $r;
+        background-color: transparent;
+        color: $r;
+    }
     &.white {
         background-color: $w;
         float: left;
@@ -534,31 +550,6 @@ nav#mobile {
             filter: invert(51%) sepia(100%) saturate(282%) hue-rotate(104deg) brightness(88%) contrast(104%);
             transform: translateX(2px);
             transition: 250m;
-        }
-    }
-    &.green_hamb {
-        background-color: $g;
-        float: left;
-        color: $b;
-        font-family: Avenir;
-        font-weight: 300;
-        font-size: 0.9rem;
-        display: inline-block;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem 1.25rem 1rem 2rem;
-        position: absolute;
-        bottom: 5%;
-        left: 20%;
-        right: 20%;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 230px;
-        letter-spacing: 0;
-        .green_white_arrow {
-            position: relative;
-            object-fit: contain;
-            padding-left: 2.5rem;
         }
     }
     &.arrow {

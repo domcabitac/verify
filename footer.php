@@ -18,7 +18,7 @@ wp_footer(); ?>
 				<div class="col-12 col-xl-5 col-lg-5 offset-md-1 col-xs-4 align-items-start">
 					© Verify 2020 | All Rights Restricted
 					<div class="privacy">
-						Privacy Policy
+						<a href='<?php echo get_site_url()?>/privacy-policy'>Privacy Policy</a>
 					</div>
 				</div>
 				<div class='col-12 col-xl-5 col-lg-5 FC align-text-end'>
