@@ -6,7 +6,7 @@
 /* global box-sizing */
 
 * {
-    font-family: Avenir;
+    font-family: "Avenir";
 }
 
 *:after,
@@ -19,43 +19,51 @@
 }
 
 @font-face {
-    font-family: Avenir_Book;
-    src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
-}
-
-@font-face {
-    font-family: Avenir_Book;
-    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
-}
-
-@font-face {
-    font-family: Avenir_Med;
-    src: url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
-}
-
-@font-face {
-    font-family: Avenir_Med;
-    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
-}
-
-@font-face {
-    font-family: Avenir_Rom;
-    src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
-}
-
-@font-face {
-    font-family: Avenir_Rom;
-    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
-}
-
-@font-face {
-    font-family: Avenir_Hea;
+    font-family: "Avenir";
     src: url("/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");
+    font-weight: bolder;
 }
 
 @font-face {
-    font-family: Avenir_Hea;
+    font-family: "Avenir";
     src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
+    font-weight: lighter;
 }
 
 

@@ -170,16 +170,16 @@ html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scro
 .align-self-center{-ms-flex-item-align:center !important;align-self:center !important}
 .align-self-baseline{-ms-flex-item-align:baseline !important;align-self:baseline !important}
 .align-self-stretch{-ms-flex-item-align:stretch !important;align-self:stretch !important}
-*{font-family:Avenir}
+*{font-family:"Avenir"}
 *:after,*:before{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility}
-@font-face{font-family:Avenir_Book;src:url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf")}
-@font-face{font-family:Avenir_Book;src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf")}
-@font-face{font-family:Avenir_Med;src:url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf")}
-@font-face{font-family:Avenir_Med;src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf")}
-@font-face{font-family:Avenir_Rom;src:url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf")}
-@font-face{font-family:Avenir_Rom;src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf")}
-@font-face{font-family:Avenir_Hea;src:url("/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf")}
-@font-face{font-family:Avenir_Hea;src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf")}
+@font-face{font-family:"Avenir";src:url("/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");font-weight:bolder}
+@font-face{font-family:"Avenir";src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");font-weight:bolder}
+@font-face{font-family:"Avenir";src:url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");font-weight:bold}
+@font-face{font-family:"Avenir";src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");font-weight:bold}
+@font-face{font-family:"Avenir";src:url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");font-weight:normal}
+@font-face{font-family:"Avenir";src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");font-weight:normal}
+@font-face{font-family:"Avenir";src:url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");font-weight:lighter}
+@font-face{font-family:"Avenir";src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");font-weight:lighter}
 html{height:100%;min-height:100%;background:#f9fbfd !important;overflow-x:hidden;position:relative}
 body{font:400 16px/1.6 sans-serif;color:#292929;margin:0;height:100%;min-height:100%;text-align:left;background:#fff !important}
 .clear:before,.clear:after{content:" ";display:table}
@@ -277,22 +277,22 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #wp-calendar tfoot #next{font-size:10px;text-transform:uppercase;text-align:right}
 #wp-calendar tfoot #prev{font-size:10px;text-transform:uppercase;padding-top:10px}
 .size-auto,.size-full,.size-large,.size-medium,.size-thumbnail{max-width:100%;height:auto}
-@font-face{font-family:Avenir_Book;src:url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf")}
-@font-face{font-family:Avenir_Book;src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf")}
-@font-face{font-family:Avenir_Med;src:url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf")}
-@font-face{font-family:Avenir_Med;src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf")}
-@font-face{font-family:Avenir_Rom;src:url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf")}
-@font-face{font-family:Avenir_Rom;src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf")}
-@font-face{font-family:Avenir_Hea;src:url("/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf")}
-@font-face{font-family:Avenir_Hea;src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf")}
-*{font-family:Avenir}
+@font-face{font-family:"Avenir";src:url("/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");font-weight:900}
+@font-face{font-family:"Avenir";src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");font-weight:900}
+@font-face{font-family:"Avenir";src:url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");font-weight:500}
+@font-face{font-family:"Avenir";src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");font-weight:500}
+@font-face{font-family:"Avenir";src:url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");font-weight:300}
+@font-face{font-family:"Avenir";src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");font-weight:300}
+@font-face{font-family:"Avenir";src:url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");font-weight:200}
+@font-face{font-family:"Avenir";src:url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");font-weight:200}
+*{font-family:"Avenir"}
 .wrap{display:table;width:100%;height:100%;font-size:5vh;padding:3vh;background:#ed4846;color:#fff}
 .content{display:table-cell;width:100%;vertical-align:middle;margin:0 auto;text-align:center}
 .content h1,.content p{font-family:Lato;font-weight:100}
 .content h1{text-transform:uppercase}
 #masthead{padding:6.5rem 12% 3rem;position:relative;height:720px;color:aliceblue;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:1rem;text-align:left}
-#masthead .title{color:#fff;font-family:Avenir_Med;font-size:60px;font-weight:400;line-height:1.2;text-align:left;padding-bottom:.3rem}
-#masthead .text .text{padding-top:2%;line-height:1.6;width:100%;max-width:600px;font-size:18px;margin-bottom:8%;font-family:Avenir_Book}
+#masthead .title{color:#fff;font-family:Avenir;font-size:60px;font-weight:400;line-height:1.2;text-align:left;padding-bottom:.3rem}
+#masthead .text .text{padding-top:2%;line-height:1.6;width:100%;max-width:600px;font-size:18px;margin-bottom:8%;font-family:Avenir}
 #masthead .covid_button{display:block}
 #masthead .covid_button .white_arrow{position:relative;-o-object-fit:contain;object-fit:contain}
 #masthead .covid_button .ring-container{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:25px;width:25px;padding:0;margin:0}
@@ -300,21 +300,21 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #masthead .covid_button .button_text{display:inline-block}
 #masthead .covid_button .ringring{border:3px solid white;-webkit-border-radius:30px;height:25px;width:25px;position:absolute;-webkit-animation:pulsate 2s ease-out;-webkit-animation-iteration-count:infinite;opacity:0}
 #services{padding:0 12% 3rem;background-position:center;background-repeat:no-repeat;background-size:cover;background-color:#f9fbfd}
-#services .subtitle{color:#505760;font-family:Avenir_Med;font-size:14px;font-weight:300;letter-spacing:3.43px;line-height:50px;text-align:center;padding-top:6%;text-transform:uppercase}
-#services .title{height:100px;color:#282b2f;font-family:Avenir_Med;font-size:45px;font-weight:100;letter-spacing:0;line-height:34px;text-align:center}
+#services .subtitle{color:#505760;font-family:Avenir;font-size:14px;font-weight:300;letter-spacing:3.43px;line-height:50px;text-align:center;padding-top:6%;text-transform:uppercase}
+#services .title{height:100px;color:#282b2f;font-family:Avenir;font-size:45px;font-weight:100;letter-spacing:0;line-height:34px;text-align:center}
 #services .card{-webkit-box-shadow:0 12px 30px 0 rgba(0,0,0,0.05);box-shadow:0 12px 30px 0 rgba(0,0,0,0.05);padding:10% 15% 10%;text-align:center;background-color:#fff;border:0;margin:1rem 0 1rem;border-radius:10px;height:300px}
 #services .card-title{text-align:center;color:#161616;font-family:Avenir;font-size:22px;font-weight:500;letter-spacing:0;line-height:1.2;margin-top:1rem}
 #services .card-text{width:100%;color:#505760;font-family:Avenir;font-size:15px;line-height:1.4;text-align:center;margin-top:1rem}
 #services .icon img{width:95%}
 #services .icon .service_icon{-webkit-filter:invert(51%) sepia(100%) saturate(282%) hue-rotate(104deg) brightness(88%) contrast(104%);filter:invert(51%) sepia(100%) saturate(282%) hue-rotate(104deg) brightness(88%) contrast(104%)}
 #services .ending{width:100%;text-align:center;padding-top:3rem}
-#services .ending_text{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;color:#191c20;font-family:Avenir_Med;font-size:1rem;font-weight:500;text-align:center;padding-right:3%;text-align:center;position:relative}
-#services .btn_green{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:left;-ms-flex-align:left;align-items:left;position:relative;text-align:left;font-size:16px;font-family:Avenir_Med;font-weight:500}
+#services .ending_text{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;color:#191c20;font-family:Avenir;font-size:1rem;font-weight:500;text-align:center;padding-right:3%;text-align:center;position:relative}
+#services .btn_green{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:left;-ms-flex-align:left;align-items:left;position:relative;text-align:left;font-size:16px;font-family:Avenir;font-weight:500}
 #services .btn_green .green_white_arrow{position:relative;-o-object-fit:contain;object-fit:contain;padding-left:2rem}
 #values{padding:1rem 12% 5%;background-color:#f8fbfd;position:relative}
 #values .dark_background{background:url("assets/img/values_background.svg");background-repeat:no-repeat;position:absolute;background-size:cover;width:100%;height:60%;bottom:0;z-index:1;left:0;right:0}
 #values .card{position:relative;-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);padding:5rem;text-align:left;background-image:url("assets/img/val_card_background.svg");background-position:center;background-repeat:no-repeat;background-size:cover;border:0;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;height:auto;width:100%;z-index:2}
-#values .card .title{color:#fff;font-family:Avenir_Med;font-size:45px;font-weight:100;letter-spacing:0;line-height:50px}
+#values .card .title{color:#fff;font-family:Avenir;font-size:45px;font-weight:100;letter-spacing:0;line-height:50px}
 #values .card .subtitle{color:#fff;font-family:Avenir;font-size:14px;font-weight:500;letter-spacing:3px;line-height:1.2;text-transform:uppercase;padding-bottom:1rem}
 #values .card .icon img{width:20%;padding-bottom:2rem;padding-top:2rem}
 #values .card .values-content{padding-top:5%}
@@ -339,11 +339,11 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #partner_process .title{color:#161616;font-family:Avenir;font-size:24px;font-weight:550;letter-spacing:0;line-height:26px;padding-bottom:6%}
 #partner_process .sub{color:#161616;font-family:Avenir;font-size:16px;font-weight:300;letter-spacing:0;line-height:24px;padding-bottom:30%}
 #partner_process .text_proc{width:100%;margin:auto auto;position:relative;padding-top:13%;max-width:350px}
-#partner_process .number{position:absolute;font-size:23rem;z-index:2;top:-35%;bottom:50%;left:2.5rem;margin:auto;opacity:.04;font-family:Avenir Heavy}
+#partner_process .number{position:absolute;font-size:23rem;z-index:2;top:-35%;bottom:50%;left:2.5rem;margin:auto;opacity:.04;font-family:Avenir}
 #partner_process .num_mobile{display:none}
 #partner_process .row_pp{padding-bottom:10%}
 #partner_process .pp_sub{color:#505760;font-family:Avenir;font-size:14px;font-weight:500;letter-spacing:3px;line-height:50px;text-align:center;padding-top:2%;text-transform:uppercase}
-#partner_process .pp_title{height:100px;color:#282b2f;font-family:Avenir_Med;font-size:45px;font-weight:300;letter-spacing:0;line-height:34px;text-align:center;margin-bottom:2%}
+#partner_process .pp_title{height:100px;color:#282b2f;font-family:Avenir;font-size:45px;font-weight:300;letter-spacing:0;line-height:34px;text-align:center;margin-bottom:2%}
 #response{background-color:#edeff4;padding:1% 15% 5%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;position:relative}
 #response .orange_background{background:url("assets/img/covid_background.svg");background-repeat:no-repeat;position:absolute;background-size:cover;width:100%;height:60%;bottom:0;z-index:1;left:0;right:0}
 #response .card{-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);background-color:#191c20;text-align:left;background-size:auto;border:0;border-radius:10px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;height:auto;position:relative;z-index:2}
@@ -379,7 +379,7 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #contact .form .wpcf7-response-output{border:0;color:#ef6351;-webkit-transform:translateY(-140px);transform:translateY(-140px);font-size:.8rem;text-transform:none;padding:1rem}
 #contact .form div.wpcf7 .ajax-loader{background-image:url("assets/img/loading.gif");background-size:100%}
 #post{background:url("assets/img/privacy_background.png");background-repeat:no-repeat;position:absolute;background-size:cover;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;position:relative;color:#fff;padding:6.5rem 13% 5rem}
-#post .subtitle{color:#fff;font-family:Avenir_Med;font-size:.9rem;font-weight:300;letter-spacing:3.43px;opacity:.65;text-align:center;padding-top:2rem;text-transform:uppercase}
+#post .subtitle{color:#fff;font-family:Avenir;font-size:.9rem;font-weight:300;letter-spacing:3.43px;opacity:.65;text-align:center;padding-top:2rem;text-transform:uppercase}
 #post .title{color:#35ad68;font-family:Avenir;font-size:60px;font-weight:400;line-height:1.2;padding-bottom:3rem}
 #post .row{margin-left:0;margin-right:0}
 #post .policy_text{width:100%}
@@ -387,8 +387,8 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #post .policy_text a:hover{color:#35ad68;opacity:1}
 #not-found-page{background:url("assets/img/values_background.svg");padding:2rem 20% 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 #not-found-page .card{-webkit-box-shadow:0 12px 30px 0 rgba(0,0,0,0.05);box-shadow:0 12px 30px 0 rgba(0,0,0,0.05);padding:10% 15% 10%;text-align:center;background:url("assets/img/service_background4.png");background-size:cover;background-repeat:no-repeat;border:0;border-radius:10px;margin-top:10rem;margin-bottom:10rem;width:auto}
-#not-found-page .card .numb{font-size:150px;font-family:Avenir_Book;font-weight:600;color:#292929;line-height:1.2}
-#not-found-page .card .sub{color:#292929;font-family:Avenir_Med;font-size:.9rem;font-weight:300;letter-spacing:3.43px;opacity:.65;text-align:center;text-transform:uppercase}
+#not-found-page .card .numb{font-size:150px;font-family:Avenir;font-weight:600;color:#292929;line-height:1.2}
+#not-found-page .card .sub{color:#292929;font-family:Avenir;font-size:.9rem;font-weight:300;letter-spacing:3.43px;opacity:.65;text-align:center;text-transform:uppercase}
 #not-found-page .card .return_text{color:#292929;font-family:Avenir;font-size:1rem;font-weight:300;letter-spacing:0;line-height:1.6;margin-top:.8rem;margin-bottom:1.5rem}
 #not-found-page .card .home_button{text-align:center}
 @media screen{[hidden~="screen"]{display:inherit}
@@ -762,7 +762,7 @@ nav#desktop .nav-contact .line{display:none}
 #response .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border-radius:0}
 #response .card .response-image img{display:inline-block;height:300px;width:100%;position:relative;border-radius:0}
 #response .card .text{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;padding:3rem;margin:0}
-#response .card .text .our-covid-19-respons{color:#ef6351;font-family:Avenir;font-size:.9rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;position:relative;margin-left:40px;margin-bottom:2%}
+#response .card .text .our-covid-19-respons{color:#ef6351;font-family:Avenir;font-size:.9rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;position:relative;margin-left:40px;margin-bottom:4%}
 #response .card .text .our-covid-19-respons .covid_sub{margin-left:25px}
 #response .card .text .ring-container{position:relative}
 #response .card .text .circle{width:15px;height:15px;background-color:#ef6351;border-radius:50%;position:absolute;top:.2rem;left:.5rem}
@@ -785,14 +785,14 @@ nav#desktop .nav-contact .line{display:none}
 #masthead .covid_button .button_text{font-size:16px}
 #services{padding:1rem 0 1rem}
 #services .subtitle{font-size:.8rem;font-weight:300;letter-spacing:3px;line-height:1.6;text-align:center;padding-top:10%;text-transform:uppercase}
-#services .title{height:50px;font-size:2rem;font-weight:900;letter-spacing:0;line-height:1.2;text-align:center;margin-bottom:1rem}
+#services .title{height:50px;font-size:2rem;letter-spacing:0;line-height:1.2;text-align:center;margin-bottom:1rem}
 #services .card{-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);padding:12%;text-align:center;background-color:#fff;border:0;margin:.8rem 0 .8rem;border-radius:10px;height:300px}
 #services .card-title{text-align:center;color:#161616;font-family:Avenir;font-size:1.2rem;font-weight:600;letter-spacing:0;line-height:1.2}
 #services .card-text{width:100%;color:#505760;font-family:Avenir;font-size:.9rem;line-height:1.4;text-align:center;margin-top:4%}
 #services .icon img{width:85%;padding-bottom:.8rem}
 #services .ending{width:100%;text-align:center;padding-top:2rem}
 #services .ending_text{display:inline-block;color:#191c20;font-family:Avenir;font-size:1rem;font-weight:500;letter-spacing:0;text-align:center;padding-right:3%;z-index:2}
-#services .btn_green{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:left;-ms-flex-align:left;align-items:left;position:relative;text-align:left;font-size:14px;font-family:Avenir_Med;font-weight:500}
+#services .btn_green{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:left;-ms-flex-align:left;align-items:left;position:relative;text-align:left;font-size:14px;font-family:Avenir;font-weight:500}
 #services .btn_green .green_white_arrow{padding-left:2rem}
 #partner_process{padding:2rem 2rem 1rem}
 #partner_process .image{position:relative}
@@ -808,7 +808,7 @@ nav#desktop .nav-contact .line{display:none}
 #partner_process .number{display:none}
 #partner_process .num_mobile{display:inline;color:#505760;font-family:Avenir;font-size:14px;font-weight:500;letter-spacing:3px;line-height:1.2;text-transform:uppercase}
 #partner_process .pp_sub{color:#505760;font-family:Avenir;font-size:.8rem;font-weight:500;letter-spacing:3px;line-height:1.6;text-align:center;padding-top:6%;text-transform:uppercase}
-#partner_process .pp_title{color:#282b2f;font-family:Avenir;font-size:2rem;font-weight:300;letter-spacing:0;text-align:center;line-height:1.6;margin-bottom:0}
+#partner_process .pp_title{color:#282b2f;font-family:Avenir;font-size:1.5rem;font-weight:300;letter-spacing:0;text-align:center;line-height:1.6;margin-bottom:0;height:70px}
 #partner_process .progress-container{display:none}
 #partner_process .progress-bar{display:none}
 #contact .as-canadas-fastest{font-size:20px;font-weight:400;line-height:20px}
@@ -831,7 +831,7 @@ nav#desktop .nav-contact .line{display:none}
 #contact .form .wpcf7-response-output{border:0;color:#ef6351;-webkit-transform:translateY(-160px);transform:translateY(-160px);font-size:.8rem;text-transform:none;padding:1rem}
 }@media screen and (max-width:991px) and (max-width:767px){#services{padding:1rem 7% 1rem}
 #services .subtitle{font-size:.8rem;font-weight:300;letter-spacing:3px;line-height:1.6;text-align:center;padding-top:10%;text-transform:uppercase}
-#services .title{height:50px;font-size:1.5rem;font-family:Avenir_Med;font-weight:900;letter-spacing:0;line-height:1.2;text-align:center;margin-bottom:1rem}
+#services .title{height:50px;font-size:1.5rem;font-family:Avenir;font-weight:900;letter-spacing:0;line-height:1.2;text-align:center;margin-bottom:1rem}
 #services .card{-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);padding:15%;text-align:center;background-color:#fff;border:0;margin:1rem 0 1rem;border-radius:10px;height:auto}
 #services .card-title{text-align:center;color:#161616;font-family:Avenir;font-size:1rem;font-weight:700;letter-spacing:0;line-height:1.2}
 #services .card-text{width:100%;color:#505760;font-family:Avenir;font-size:.9rem;line-height:1.4;text-align:center;margin-top:4%}
@@ -847,7 +847,7 @@ nav#desktop .nav-contact .line{display:none}
 #masthead .covid_button .button_text{font-size:.9rem}
 #values{overflow-x:hidden;padding:2rem 2rem 3rem;background-size:cover}
 #values .card{-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);padding:3rem 2rem;text-align:left;background-image:url("assets/img/val_background.png");background-position:center;background-repeat:no-repeat;background-size:cover;border:0;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;height:auto;width:100%}
-#values .card .title{color:#fff;font-family:Avenir_Med;font-size:1.5rem;font-weight:300;letter-spacing:0;line-height:1.2}
+#values .card .title{color:#fff;font-family:Avenir;font-size:1.5rem;font-weight:300;letter-spacing:0;line-height:1.2}
 #values .card .subtitle{color:rgba(217,224,239,0.81);font-family:Avenir;font-size:1rem;font-weight:500;letter-spacing:3px;text-transform:uppercase}
 #values .card .icon img{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;width:15%}
 #values .card .values-content{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;padding-top:0}
@@ -861,10 +861,10 @@ nav#desktop .nav-contact .line{display:none}
 #post{padding:2rem 5% 3rem}
 #post .subtitle{font-size:.8rem;font-weight:300;margin-top:2rem}
 #post .title{font-size:2rem;line-height:1.2;padding-bottom:2rem}
-#not-found-page{padding:10rem 5% 10rem}
-#not-found-page .card{-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);padding:15%;text-align:center;background-color:#fff;border:0;border-radius:10px;height:auto}
-#not-found-page .card .numb{font-size:120px;font-family:Avenir_Book;font-weight:600;color:#292929;line-height:1.2}
-#not-found-page .card .sub{color:#292929;font-family:Avenir_Med;font-size:1rem;font-weight:300;letter-spacing:3.43px;opacity:.65;text-align:center;text-transform:uppercase}
+#not-found-page{padding:0 5% 0;height:100vh}
+#not-found-page .card{-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);padding:15%;text-align:center;background-color:#fff;border:0;border-radius:10px;height:auto;margin-top:0;margin-bottom:0}
+#not-found-page .card .numb{font-size:120px;font-family:Avenir;font-weight:600;color:#292929;line-height:1.2}
+#not-found-page .card .sub{color:#292929;font-family:Avenir;font-size:1rem;font-weight:300;letter-spacing:3.43px;opacity:.65;text-align:center;text-transform:uppercase}
 #not-found-page .card .return_text{color:#292929;font-family:Avenir;font-size:.9rem;font-weight:300;letter-spacing:0;line-height:1.6;margin-top:.8rem;margin-bottom:1.5rem}
 }@media screen and (max-width:600px){#partner_process .text_proc{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 #partner_process .text_proc .process_header{padding-right:0;width:100%}

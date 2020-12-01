@@ -3,47 +3,55 @@
  */
 
 @font-face {
-    font-family: Avenir_Book;
-    src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
-}
-
-@font-face {
-    font-family: Avenir_Book;
-    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
-}
-
-@font-face {
-    font-family: Avenir_Med;
-    src: url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
-}
-
-@font-face {
-    font-family: Avenir_Med;
-    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
-}
-
-@font-face {
-    font-family: Avenir_Rom;
-    src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
-}
-
-@font-face {
-    font-family: Avenir_Rom;
-    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
-}
-
-@font-face {
-    font-family: Avenir_Hea;
+    font-family: "Avenir";
     src: url("/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");
+    font-weight: 900;
 }
 
 @font-face {
-    font-family: Avenir_Hea;
+    font-family: "Avenir";
     src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
+    font-weight: 200;
 }
 
 * {
-    font-family: Avenir;
+    font-family: "Avenir";
 }
 
 .wrap {
@@ -145,7 +153,7 @@
     text-align: left;
     .title {
         color: #ffffff;
-        font-family: Avenir_Med;
+        font-family: Avenir;
         font-size: 60px;
         font-weight: 400;
         line-height: 1.2;
@@ -161,7 +169,7 @@
         max-width: 600px;
         font-size: 18px;
         margin-bottom: 8%;
-        font-family: Avenir_Book;
+        font-family: Avenir;
     }
     .covid_button {
         display: block;
@@ -269,7 +277,7 @@
     background-color: $grey;
     .subtitle {
         color: #505760;
-        font-family: Avenir_Med;
+        font-family: Avenir;
         font-size: 14px;
         font-weight: 300;
         letter-spacing: 3.43px;
@@ -281,7 +289,7 @@
     .title {
         height: 100px;
         color: #282b2f;
-        font-family: Avenir_Med;
+        font-family: Avenir;
         font-size: 45px;
         font-weight: 100;
         letter-spacing: 0;
@@ -335,7 +343,7 @@
     .ending_text {
         display: inline-flex;
         color: #191c20;
-        font-family: Avenir_Med;
+        font-family: Avenir;
         font-size: 1rem;
         font-weight: 500;
         text-align: center;
@@ -350,7 +358,7 @@
         position: relative;
         text-align: left;
         font-size: 16px;
-        font-family: Avenir_Med;
+        font-family: Avenir;
         font-weight: 500;
         .green_white_arrow {
             position: relative;
@@ -373,7 +381,6 @@
         .title {
             height: 50px;
             font-size: 2rem;
-            font-weight: 900;
             letter-spacing: 0;
             line-height: 1.2;
             text-align: center;
@@ -438,7 +445,7 @@
             position: relative;
             text-align: left;
             font-size: 14px;
-            font-family: Avenir_Med;
+            font-family: Avenir;
             font-weight: 500;
             .green_white_arrow {
                 padding-left: 2rem;
@@ -459,7 +466,7 @@
             .title {
                 height: 50px;
                 font-size: 1.5rem;
-                font-family: Avenir_Med;
+                font-family: Avenir;
                 font-weight: 900;
                 letter-spacing: 0;
                 line-height: 1.2;
@@ -564,7 +571,7 @@
         z-index: 2;
         .title {
             color: #ffffff;
-            font-family: Avenir_Med;
+            font-family: Avenir;
             font-size: 45px;
             font-weight: 100;
             letter-spacing: 0;
@@ -733,7 +740,7 @@
             width: 100%;
             .title {
                 color: #ffffff;
-                font-family: Avenir_Med;
+                font-family: Avenir;
                 font-size: 1.5rem;
                 font-weight: 300;
                 letter-spacing: 0;
@@ -935,7 +942,7 @@
         left: 2.5rem;
         margin: auto;
         opacity: 0.04;
-        font-family: Avenir Heavy;
+        font-family: Avenir;
     }
     .num_mobile {
         display: none;
@@ -958,7 +965,7 @@
     .pp_title {
         height: 100px;
         color: #282b2f;
-        font-family: Avenir_Med;
+        font-family: Avenir;
         font-size: 45px;
         font-weight: 300;
         letter-spacing: 0;
@@ -1056,12 +1063,13 @@
         .pp_title {
             color: #282b2f;
             font-family: Avenir;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 300;
             letter-spacing: 0;
             text-align: center;
             line-height: 1.6;
             margin-bottom: 0;
+            height: 70px;
         }
         .progress-container {
             display: none;
@@ -1317,7 +1325,7 @@
                         text-transform: uppercase;
                         position: relative;
                         margin-left: 40px;
-                        margin-bottom: 2%;
+                        margin-bottom: 4%;
                         .covid_sub {
                             margin-left: 25px;
                         }
@@ -1629,7 +1637,7 @@
     padding: 6.5rem 13% 5rem;
     .subtitle {
         color: $w;
-        font-family: Avenir_Med;
+        font-family: Avenir;
         font-size: 0.9rem;
         font-weight: 300;
         letter-spacing: 3.43px;
@@ -1697,14 +1705,14 @@
         // height: 300px;
         .numb {
             font-size: 150px;
-            font-family: Avenir_Book;
+            font-family: Avenir;
             font-weight: 600;
             color: $c2;
             line-height: 1.2;
         }
         .sub {
             color: $c2;
-            font-family: Avenir_Med;
+            font-family: Avenir;
             font-size: 0.9rem;
             font-weight: 300;
             letter-spacing: 3.43px;
@@ -1728,7 +1736,8 @@
         }
     }
     @media screen and (max-width: 767px) {
-        padding: 10rem 5% 10rem;
+        padding: 0 5% 0;
+        height: 100vh;
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
             /* this adds the "card" effect */
@@ -1738,16 +1747,18 @@
             border: none;
             border-radius: 10px;
             height: auto;
+            margin-top: 0;
+            margin-bottom: 0;
             .numb {
                 font-size: 120px;
-                font-family: Avenir_Book;
+                font-family: Avenir;
                 font-weight: 600;
                 color: $c2;
                 line-height: 1.2;
             }
             .sub {
                 color: $c2;
-                font-family: Avenir_Med;
+                font-family: Avenir;
                 font-size: 1rem;
                 font-weight: 300;
                 letter-spacing: 3.43px;
