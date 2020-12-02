@@ -1132,7 +1132,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 #services { padding: 0 12% 3rem; background-position: center; background-repeat: no-repeat; background-size: cover; background-color: #f9fbfd; }
 
-#services .subtitle { color: #505760; font-family: Avenir; font-size: 14px; font-weight: 300; letter-spacing: 3.43px; line-height: 50px; text-align: center; padding-top: 6%; text-transform: uppercase; }
+#services .subtitle { color: #505760; font-family: Avenir; font-size: 14px; font-weight: 500; letter-spacing: 3.43px; line-height: 50px; text-align: center; padding-top: 6%; text-transform: uppercase; }
 
 #services .title { height: 100px; color: #282b2f; font-family: Avenir; font-size: 45px; font-weight: 100; letter-spacing: 0; line-height: 34px; text-align: center; }
 
@@ -1271,7 +1271,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 #partner_process .pp_sub { color: #505760; font-family: Avenir; font-size: 14px; font-weight: 500; letter-spacing: 3px; line-height: 50px; text-align: center; padding-top: 2%; text-transform: uppercase; }
 
-#partner_process .pp_title { height: 100px; color: #282b2f; font-family: Avenir; font-size: 45px; font-weight: 300; letter-spacing: 0; line-height: 34px; text-align: center; margin-bottom: 2%; }
+#partner_process .pp_title { height: 100px; color: #282b2f; font-family: Avenir; font-size: 45px; font-weight: 100; letter-spacing: 0; line-height: 34px; text-align: center; margin-bottom: 2%; }
 
 @media screen and (max-width: 991px) { #partner_process { padding: 2rem 2rem 1rem; }
   #partner_process .image { position: relative; }

@@ -16,6 +16,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<!-- <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/Verify Favi.png" type="image/x-icon"/> -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon-16x16.png"/>
+<link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/site.webmanifest"/>
+<link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/safari-pinned-tab.svg" color="#5bbad5"/>
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <!-- animsition.css -->
 <link rel="stylesheet" href="../dist/css/animsition.min.css">
 <!-- animsition.js -->
