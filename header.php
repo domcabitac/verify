@@ -48,7 +48,7 @@
 				<div class='nav-contact d-flex justify-content-end text-right col-lg-4 col-md-3 col-xl-5 '>
 					<a href="tel:6479705275" class="nav-phone">647.970.5275</a>
 					<div class="line"></div>
-					<a href="mailto:info@verifytab.ca" class="nav-mail">Info@verifyair.com</a>
+					<a href="mailto:info@verifytab.ca" class="nav-mail">info@verifytab.com</a>
 				</div>
 			</div>
 		</div>
@@ -64,25 +64,18 @@
 			<div id="mobile_menu">
 				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 				<div class="ending_text">
-				<ul>
-					<li>
-						<?php the_sub_field( 'text' ); ?>
-					</li>
-					<li>
-					<a class='hamb_contact' href="tel:6479705275">647.970.5275</a>
+					<ul>
+						<li>
+							<?php the_sub_field( 'text' ); ?>
+						</li>
+						<li>
+						<a class='hamb_contact' href="tel:6479705275">647.970.5275</a>
 
-					</li>
-					<li>
-						<a class='hamb_contact' href="mailto:info@verifytab.ca">Info@verifyair.com</a>
-					</li>
-				</ul>
-					<!-- <div class='nav-contact d-flex justify-content-end text-right col-lg-4 col-md-3 col-xl-5 '> -->
-				<!-- </div> -->
-						</div>
-						<!-- <div class="btn_green_hamb">
-							<a class='btn green_hamb' href="#contact"> Get In Touch <img class='green_white_arrow' src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/white_arrow.svg" /></a>
-						</div> -->
-					</div>
-			</div>
-	
-		</nav>
+						</li>
+						<li>
+							<a class='hamb_contact' href="mailto:info@verifytab.ca">info@verifytab.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>	
+	</nav>

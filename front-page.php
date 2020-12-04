@@ -11,7 +11,7 @@
 get_header(); ?>
 <?php if ( have_rows( 'masthead' ) ) : ?>
 	<?php while ( have_rows( 'masthead' ) ) : the_row(); ?>
-	<section id="masthead" style="background: linear-gradient(270deg, rgba(25, 28, 32, 0) 0%, #191C20 100%), url(<?php the_sub_field('background');?>); 	background-position: center;
+	<section id="masthead" style="background: url(<?php the_sub_field('background');?>); 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;">
 	<div class='container'>
@@ -199,46 +199,7 @@ get_header(); ?>
 					<div class="progress-container">
 						<div class="progress-bar" id="myBar">
 						</div>
-						<!-- <svg id="svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 600 1200">
-							<path class="line01 line" d="M 300,0
-									L 300 230 
-									L 300 750
-									L 300 850
-									L 300 1200" ></path>
-							<path class="theGreenLine" 
-									d="M 300,0
-									L 300 230 
-									L 300 750
-									L 300 850
-									L 300 1200"
-									fill="none" stroke="green" stroke-width="10px" />
-							<circle class="ball ball01" cx="25" cy="25"></circle>
-						</svg> -->
-						<!-- <div style="position:sticky; top:0; left:0px; right:0; bottom:0 ;width:100%; height:0; background:url('background-map.jpg') no-repeat;" id="route">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="svgRoute">
-							<line id="underlay"
-							x1="50" 
-							y1="0" 
-							x2="50" 
-							y2="100" 
-							stroke="#aaa"
-							fill="none"
-							/>
-							<line id="path"
-							x1="50" 
-							y1="0" 
-							x2="50" 
-							y2="100" 
-							stroke="#35ad68"
-							fill="none"
-							/>
-		
-		<circle r="1" id="dot" cy="0" cx="0"  fill="#35ad68" fill-opacity=".96" fill-rule="evenodd" stroke="#35ad68" stroke-width=".25"/>
-
-    
-	</svg>   -->
 </div>
-					<!-- </div> -->
 				<?php if ( have_rows( 'steps' ) ) : ?>
 					<?php $i=0; ?> 
 				<?php while ( have_rows( 'steps' ) ) : the_row(); $i++; ?>
@@ -331,10 +292,6 @@ get_header(); ?>
 					</div>
 					</div>
 					</div>
-					<!-- <?php $background = get_sub_field( 'background' ); ?>
-		<?php if ( $background ) : ?>
-			<img src="<?php echo esc_url( $background['url'] ); ?>" alt="<?php echo esc_attr( $background['alt'] ); ?>" />
-		<?php endif; ?> -->
 				</div>
 		</div>
 		<div class="orange_background"></div>

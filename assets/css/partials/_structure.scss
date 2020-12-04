@@ -21,49 +21,49 @@
 @font-face {
     font-family: "Avenir";
     src: url("/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 @font-face {
     font-family: "Avenir";
     src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirHeavy.ttf");
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 @font-face {
     font-family: "Avenir";
     src: url("/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
-    font-weight: bold;
+    font-weight: 500;
 }
 
 @font-face {
     font-family: "Avenir";
     src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirMedium.ttf");
-    font-weight: bold;
+    font-weight: 500;
 }
 
 @font-face {
     font-family: "Avenir";
     src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
-    font-weight: normal;
+    font-weight: 300;
 }
 
 @font-face {
     font-family: "Avenir";
     src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Book.otf");
-    font-weight: normal;
+    font-weight: 300;
 }
 
 @font-face {
     font-family: "Avenir";
     src: url("/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
-    font-weight: lighter;
+    font-weight: 200;
 }
 
 @font-face {
     font-family: "Avenir";
     src: url("/clients/verify/wp-content/themes/verify/assets/css/font/AvenirLTStd-Roman.otf");
-    font-weight: lighter;
+    font-weight: 200;
 }
 
 
@@ -132,12 +132,6 @@ a:active {
     outline: 0;
 }
 
-// ol,
-// ul {
-// }
-// select {
-// 	width: 100%;
-// }
 nav#desktop {
     position: absolute;
     width: 100%;
@@ -153,8 +147,7 @@ nav#desktop {
         display: flex;
         align-items: left;
         background: none;
-        // margin-top: 5%;
-        font-family: Avenir_Med;
+        font-family: Avenir;
         font-weight: 300;
         letter-spacing: 0;
         font-size: 0.8rem;
@@ -168,7 +161,6 @@ nav#desktop {
         list-style: none;
         text-align: center;
         color: rgba(255, 255, 255, 0.81);
-        // opacity: 65%;
         padding-right: 2rem;
         letter-spacing: 0.1rem;
         display: inline-block;

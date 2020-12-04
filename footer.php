@@ -21,9 +21,9 @@ wp_footer(); ?>
 						<a href='<?php echo get_site_url()?>/privacy-policy'>Privacy Policy</a>
 					</div>
 				</div>
-				<div class='col-12 col-xl-5 col-lg-5 FC align-text-end'>
+				<!-- <div class='col-12 col-xl-5 col-lg-5 FC align-text-end'>
 					<a href='https://revampedweb.com/' target="_blank">REVAMPED™ by Ferraz Creative</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 </footer>
