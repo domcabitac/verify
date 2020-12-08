@@ -749,7 +749,7 @@ nav#desktop .nav-contact .line{display:none}
 #values .card .values-content .text{padding-left:2rem}
 #values .card .values-content .text br{content:' '}
 #values .card .values-content .text br:after{content:' '}
-#values .card .values-content .text .value-title{display:inline-block;color:#fff;font-weight:600;letter-spacing:0;line-height:1.2;font-size:1.2rem}
+#values .card .values-content .text .value-title{display:inline-block;color:#fff;font-weight:500;letter-spacing:0;line-height:1.2;font-size:1.2rem}
 #values .card .values-content .text .value-text{font-size:1rem;line-height:1.4;width:100%;margin-top:.3rem}
 #response{background-position:bottom;background-repeat:no-repeat;background-size:175% 50%;padding:0 7% 5%}
 #response .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
@@ -793,7 +793,7 @@ nav#desktop .nav-contact .line{display:none}
 #services .subtitle{font-size:.8rem;font-weight:300;letter-spacing:3px;line-height:1.6;text-align:center;padding-top:10%;text-transform:uppercase}
 #services .title{height:50px;font-size:2rem;letter-spacing:0;line-height:1.2;text-align:center;margin-bottom:1rem}
 #services .card{-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0);box-shadow:0 4px 8px 0 rgba(0,0,0,0);padding:12%;text-align:center;background-color:#fff;border:0;margin:.8rem 0 .8rem;border-radius:10px;height:300px}
-#services .card-title{text-align:center;color:#161616;font-size:1.2rem;font-weight:600;letter-spacing:0;line-height:1.2}
+#services .card-title{text-align:center;color:#161616;font-size:1.2rem;font-weight:500;letter-spacing:0;line-height:1.2}
 #services .card-text{width:100%;color:#505760;font-size:.9rem;line-height:1.4;text-align:center;margin-top:4%}
 #services .icon img{width:85%;padding-bottom:.8rem}
 #services .ending{width:100%;text-align:center;padding-top:2rem}
@@ -807,7 +807,7 @@ nav#desktop .nav-contact .line{display:none}
 #partner_process .row.right .image .dots{left:unset;right:-40%;opacity:20%}
 #partner_process .image.one .dots{top:-3rem}
 #partner_process .icon img{width:20%;padding-bottom:1rem}
-#partner_process .title{color:#161616;font-size:1.2rem;font-weight:700;letter-spacing:0;line-height:1.6;padding-bottom:3%}
+#partner_process .title{color:#161616;font-size:1.2rem;font-weight:500;letter-spacing:0;line-height:1.6;padding-bottom:3%}
 #partner_process .sub{color:#161616;font-size:.85rem;font-weight:300;letter-spacing:0;line-height:1.4;padding-bottom:7%;margin-top:3rem;width:65%}
 #partner_process .text_proc{padding:0;position:relative;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;max-width:95%}
 #partner_process .text_proc .process_header{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding-right:7%;width:35%}
